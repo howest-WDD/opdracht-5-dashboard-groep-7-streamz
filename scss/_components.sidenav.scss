@@ -1,0 +1,24 @@
+
+  .c-sidenav {
+    display: block;
+    position: sticky;
+    background-color: $color-dark;
+    height: 100vh;
+    z-index: 3;
+    overflow: hidden;
+
+    &__item{
+      text-align: center;
+      margin-top: 5rem;
+      list-style-type: none;
+    }
+    &__link{
+      text-decoration: none;
+      color: white;
+      &:hover{
+        color: $color-accent;
+      }
+    }
+  }
+  
+  
