@@ -1,0 +1,50 @@
+.c-releasesdb {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.9375rem 1.875rem 0 1.875rem;
+    align-items: center;
+    color: $color-text-grey;
+    i{
+        font-size: 1.5rem;
+        color: $color-white;
+    }
+  }
+  &__releases {
+    display: flex;
+    flex: 1 1 0px;
+    // justify-content: space-between;
+  }
+  &__left {
+    width: 50%;
+    border-right: solid 1px $color-accent;
+    padding: 0 4.375rem 0 1.875rem;
+  }
+  &__right {
+    width: 50%;
+    padding: 0 1.875rem 0 4.375rem;
+  }
+  &__item {
+    margin-top: 0.4375rem;
+    &:first-child {
+      margin-top: -1rem;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    line-height: normal;
+  }
+  &__type {
+    color: $color-accent;
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+  &__date {
+    margin-left: 1rem;
+    color: $color-accent;
+  }
+  &__days {
+    color: $color-text-grey;
+  }
+}

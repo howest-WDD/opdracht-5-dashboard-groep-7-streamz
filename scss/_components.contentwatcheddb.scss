@@ -1,0 +1,20 @@
+.c-contentwatcheddb {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.1875rem;
+  &__uren {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__maand {
+    margin-left: 3rem;
+    text-align: center;
+  }
+  &__amount{
+    margin: 0;
+  }
+  h2{
+    margin: 0;
+    font-size: 18;
+  }
+}
