@@ -1,4 +1,4 @@
-.c-gebruikers {
+.c-table {
   border-radius: .3125rem;
     background-color: $color-background;
     width: 75%;
@@ -68,12 +68,20 @@
 
 .c-contain input:checked ~ .c-input::after {
   display: block;
+
 }
 
+tr:has(input:checked){
+  background-color: $color-accent;
+  color: $color-light;
+}
+
+
+
 .c-contain:hover input[type="checkbox"]:not([disabled]):checked ~ .c-input,
-.c-contain input[type="checkbox"]:checked:focus ~ .c-input {
+.c-contain input[type="checkbox"]:checked ~ .c-input {
   background: #e2e8f0;
-  border-color: #64748b;
+  border-color: transparent;
   }
 }
 
