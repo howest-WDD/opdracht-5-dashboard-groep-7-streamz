@@ -25,7 +25,10 @@
  # COMPONENTS
 /*---------------------------------------*/
 
-@import "components.gebruikers.scss"
+
+@import "components.gebruikers"
+@import 'components.nav';
+@import 'components.sidenav'
 
 /*---------------------------------------/*
  # UTILITIES
