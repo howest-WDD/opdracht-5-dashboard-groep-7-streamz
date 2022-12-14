@@ -1,64 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-
-<body>
-    <nav class="c-nav js-nav">
-        <div class="o-container container col-md-fluid">
-            <div class="row">
-                <div class="col-9 col-md-4 c-nav__logo">
-                    <a href="index.html" class="c-logo">
-                        <img class="c-logo__svg" src="./img/logo.svg" alt="Logo">
-                    </a>
-                </div>
-                <div class="col-3 col-md-8 c-nav__containerfix">
-                    <div class="c-navtoggled__container">
-                        <input class="c-nav__toggle" type="checkbox">
-                        <span class="c-nav__bar c-nav__bar--top"></span>
-                        <span class="c-nav__bar c-nav__bar--mid"></span>
-                        <span class="c-nav__bar c-nav__bar--bottom"></span>
-
-                        <ul class="c-nav__list">
-                            <li class="c-nav__item">
-                            </li>
-                            <li class="c-nav__item">
-                                <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
-                                <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
-                            </li>
-                            <li class="c-nav__item">
-                                <a class="c-nav__link" href="jobs.html">Portfolio</a>
-                            </li>
-                            <li class="c-nav__item">
-                                <a class="c-nav__link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <nav class="c-sidenav col-lg-2 navbar-primary">
-        <ul class="c-sidenav__menu navbar-primary-menu">
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="#">Dasboard</a>
-            </li>
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="#">Content</a>
-            </li>  
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="#">Gebruikers</a>
-            </li>     
-        </ul>
-    </nav>
-
+    <link rel="stylesheet" href="dist/styles.css" />
     <script src="dist/main.js"></script>
-</body>
+  </head>
+  <body>
+    <main>
+      <nav class="c-nav js-nav">
+        <div class="o-container container col-md-fluid">
+          <div class="row">
+            <div class="col-9 col-md-4 c-nav__logo">
+              <a href="index.html" class="c-logo">
+                <img class="c-logo__svg" src="./img/logo.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="col-3 col-md-8 c-nav__containerfix">
+              <div class="c-navtoggled__container">
+                <input class="c-nav__toggle" type="checkbox" />
+                <span class="c-nav__bar c-nav__bar--top"></span>
+                <span class="c-nav__bar c-nav__bar--mid"></span>
+                <span class="c-nav__bar c-nav__bar--bottom"></span>
 
+                <ul class="c-nav__list">
+                  <li class="c-nav__item"></li>
+                  <li class="c-nav__item">
+                    <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
+                    <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
+                  </li>
+                  <li class="c-nav__item">
+                    <a class="c-nav__link" href="jobs.html">Portfolio</a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a class="c-nav__link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="c-sidenav col-lg-2 navbar-primary">
+        <ul class="c-sidenav__menu navbar-primary-menu">
+          <li class="c-sidenav__item">
+            <a class="c-sidenav__link" href="#">Dasboard</a>
+          </li>
+          <li class="c-sidenav__item">
+            <a class="c-sidenav__link" href="overzichtspagina.html">Content</a>
+          </li>
+          <li class="c-sidenav__item">
+            <a class="c-sidenav__link" href="gebruikers.html">Gebruikers</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="c-dashboard">
+        <div class="c-dashboard__item c-dashboard__belgium">kaart van belgie</div>
+        <div class="c-dashboard__item c-dashboard__users">
+          <div class="c-gebruikersdb">
+            <div class="c-gebruikersdb__item">
+              <h2 class="c-gebruikersdb__title">Totaal</h2>
+              <div class="c-gebruikersdb__amountcont">
+                <img class="c-gebruikersdb__arrow" src="img/arrow-up.png" alt="arrow-up" />
+                <p class="c-gebruikersdb__amount">420.696</p>
+                <p class="c-gebruikersdb__percent c-gebruikersdb__percent--positive">&plus;4.2&#x25;</p>
+              </div>
+            </div>
+            <div class="c-gebruikersdb__item">
+              <h2 class="c-gebruikersdb__title">Gratis</h2>
+              <div class="c-gebruikersdb__amountcont">
+                <img class="c-gebruikersdb__arrow" src="img/arrow-down.png" alt="arrow-down" />
+                <p class="c-gebruikersdb__amount">5</p>
+                <p class="c-gebruikersdb__percent c-gebruikersdb__percent--negative">&minus;1.5&#x25;</p>
+              </div>
+            </div>
+            <div class="c-gebruikersdb__item">
+              <h2 class="c-gebruikersdb__title">Streamz</h2>
+              <div class="c-gebruikersdb__amountcont">
+                <img class="c-gebruikersdb__arrow" src="img/arrow-up.png" alt="arrow-up" />
+                <p class="c-gebruikersdb__amount">420.696</p>
+                <p class="c-gebruikersdb__percent c-gebruikersdb__percent--positive">&plus;12&#x25;</p>
+              </div>
+            </div>
+            <div class="c-gebruikersdb__item">
+              <h2 class="c-gebruikersdb__title">Streamz+</h2>
+              <div class="c-gebruikersdb__amountcont">
+                <img class="c-gebruikersdb__arrow" src="img/arrow-up.png" alt="arrow-up" />
+                <p class="c-gebruikersdb__amount">420.696</p>
+                <p class="c-gebruikersdb__percent c-gebruikersdb__percent--positive">&plus;12&#x25;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-dashboard__item c-dashboard__subs">subscripties</div>
+        <div class="c-dashboard__item c-dashboard__watchhours">kijkuren</div>
+        <div class="c-dashboard__item c-dashboard__movieswatched">
+          <div class="c-contentwatcheddb">
+            <div class="c-contentwatcheddb__type">
+              <h3 class="c-contentwatcheddb__title">Uren bekeken</h3>
+              <h3 class="text-uppercase c-contentwatcheddb__amount">films</h3>
+            </div>
+            <div class="c-contentwatcheddb__uren">
+              <div class="c-contentwatcheddb__week text-center">
+                <h3 class="c-contentwatcheddb__title">Deze week</h3>
+                <div class="c-contentwatcheddb__amountcont">
+                  <h3 class="c-contentwatcheddb__amount">1.635.000</h3>
+                  <img class="c-contentwatcheddb__arrow" src="img/arrow-down.png" alt="arrow-up" />
+                </div>
+                <p>uur</p>
+              </div>
+              <div class="c-contentwatcheddb__maand text-center">
+                <h3 class="c-contentwatcheddb__title">Deze maand</h3>
+                <div class="c-contentwatcheddb__amountcont">
+                  <h3 class="c-contentwatcheddb__amount">12.350.056</h3>
+                  <img class="c-contentwatcheddb__arrow" src="img/arrow-up.png" alt="arrow-up" />
+                </div>
+                <p>uur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-dashboard__item c-dashboard__serieswatched">
+          <div class="c-contentwatcheddb">
+            <div class="c-contentwatcheddb__type">
+              <h3 class="c-contentwatcheddb__title">Uren bekeken</h3>
+              <h3 class="text-uppercase c-contentwatcheddb__amount">series</h3>
+            </div>
+            <div class="c-contentwatcheddb__uren">
+              <div class="c-contentwatcheddb__week text-center">
+                <h3 class="c-contentwatcheddb__title">Deze week</h3>
+                <div class="c-contentwatcheddb__amountcont">
+                  <h3 class="c-contentwatcheddb__amount">1.635.000</h3>
+                  <img class="c-contentwatcheddb__arrow" src="img/arrow-down.png" alt="arrow-up" />
+                </div>
+                <p>uur</p>
+              </div>
+              <div class="c-contentwatcheddb__maand text-center">
+                <h3 class="c-contentwatcheddb__title">Deze maand</h3>
+                <div class="c-contentwatcheddb__amountcont">
+                  <h3 class="c-contentwatcheddb__amount">12.350.056</h3>
+                  <img class="c-contentwatcheddb__arrow" src="img/arrow-up.png" alt="arrow-up" />
+                </div>
+                <p>uur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-dashboard__item c-dashboard__upcoming">
+          <div class="c-releasesdb">
+            <div class="c-releasesdb__title">
+              <h3>Aankomende releases</h3>
+              <p><i class="bi bi-three-dots"></i></p>
+            </div>
+            <div class="c-releasesdb__releases">
+              <div class="c-releasesdb__left">
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">The last of us <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">The last of us <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">The last of us <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">GELDWOLVEN <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="c-releasesdb__right">
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">The last of us <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">The last of us <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">The last of us <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+                <div class="c-releasesdb__item">
+                  <p class="c-releasesdb__type">Serie</p>
+                  <div class="c-releasesdb__content">
+                    <h3 class="c-releasesdb__contenttitle">GELDWOLVEN <span class="c-releasesdb__date">15-12</span></h3>
+                    <h3 class="c-releasesdb__days">in 12 dagen</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-dashboard__item c-dashboard__top5">
+          <div class="c-top5db">
+            <div class="c-top5db__image c-top5db__image--1">
+              <h3 class="c-top5db__nr">1</h3>
+              <div class="c-top5db__text text-center">
+                <h3>Deze maand</h3>
+                <h3 class="c-top5db__amount">1.635.000</h3>
+                <p>uur</p>
+              </div>
+            </div>
+            <div class="c-top5db__image c-top5db__image--2">
+              <h3 class="c-top5db__nr">2</h3>
+            </div>
+            <div class="c-top5db__image c-top5db__image--3">
+              <h3 class="c-top5db__nr">3</h3>
+            </div>
+            <div class="c-top5db__image c-top5db__image--4">
+              <h3 class="c-top5db__nr">4</h3>
+            </div>
+            <div class="c-top5db__image c-top5db__image--5">
+              <h3 class="c-top5db__nr">5</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

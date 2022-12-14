@@ -1,0 +1,40 @@
+.c-gebruikersdb {
+  display: flex;
+  justify-content: space-around;
+  &__item {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5625rem;
+    padding: 0 5rem;
+  }
+  &__title {
+    color: $color-text-grey;
+  }
+  &__amountcont {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__amount {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    // padding: 0 1rem;
+  }
+  &__arrow {
+    margin-bottom: 0.8rem;
+    position: absolute;
+    left: -2.5rem;
+  }
+  &__percent {
+    right: -3rem;
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: $color-positive;
+    &--negative {
+      color: $color-accent;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.c-dashboard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 500px 152px 414px 134px 134px 430px;
+  gap: 1.5625rem;
+  padding: 1.875rem;
+  margin-left: 295px;
+}
+
+.c-dashboard__item {
+  background-color: $color-itembackground;
+  border-radius: 5px;
+}
+
+.c-dashboard__belgium {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+.c-dashboard__users {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+.c-dashboard__subs {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.c-dashboard__watchhours {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+.c-dashboard__movieswatched {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.c-dashboard__serieswatched {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.c-dashboard__upcoming {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.c-dashboard__top5 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  background-color: transparent;
+}
+
+.tempnav {
+  width: 295px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  //   background-color: greenyellow;
+}

@@ -1,6 +1,6 @@
-.c-gebruikers {
+.c-table {
   border-radius: .3125rem;
-    background-color: #171431;
+    background-color: $color-background;
     width: 75%;
     height: 200px;
     text-align: left;
@@ -9,12 +9,11 @@
     &__head{
     font-size: 15px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: $color-white;
     }
     &__body{
       font-size: 16px;
-      color: #CCCCCC;
-      font-family: 'Red Hat Text', sans-serif;
+      color: $color-text-grey;
       font-weight: bold;
     }
     td{
@@ -69,12 +68,20 @@
 
 .c-contain input:checked ~ .c-input::after {
   display: block;
+
 }
 
+tr:has(input:checked){
+  background-color: $color-accent;
+  color: $color-light;
+}
+
+
+
 .c-contain:hover input[type="checkbox"]:not([disabled]):checked ~ .c-input,
-.c-contain input[type="checkbox"]:checked:focus ~ .c-input {
+.c-contain input[type="checkbox"]:checked ~ .c-input {
   background: #e2e8f0;
-  border-color: #64748b;
+  border-color: transparent;
   }
 }
 

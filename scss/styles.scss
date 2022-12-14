@@ -25,12 +25,17 @@
  # COMPONENTS
 /*---------------------------------------*/
 
-@import "components.gebruikers";
+@import "components.dashboard";
+@import "components.gebruikersdb";
+@import "components.contentwatcheddb";
+@import "components.releasesdb";
+@import "components.top5db";
+
+@import "components.table";
 @import 'components.nav';
 @import 'components.sidenav';
 
 @import 'components.overzichtspagina';
-
 
 /*---------------------------------------/*
  # UTILITIES
