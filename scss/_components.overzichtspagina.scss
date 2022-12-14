@@ -1,13 +1,31 @@
 .c-overzichtspagina {
-    background-color: hotpink;
+    background-color: $color-dark-blue;
+    width: 100%;
+    height: 7.5rem;
+    text-align: left;
+    border-radius: .3125rem;
+    border-collapse: collapse;
+    margin: auto;
+    font-family: $font-standard;
+    font-weight: bold;
+    font-size: 1.125rem;
 
-    tr {
-        margin-bottom: 5rem;
+    &__head{
+        color: $color-light;
     }
-    td {
-        margin: 1rem;
-        width: 100%;
-        height: 5rem;
-        background-color: orange;
+    &__body{
+        color: $color-grey;
+        
+        td {
+            border: 1px solid $color-border;
+        }
+    }
+    td{
+        border-left: none;
+        border-right: none;
+        padding: 2rem .125rem;
+    }
+    th{
+        padding: 1rem .125rem;
     }
 }
