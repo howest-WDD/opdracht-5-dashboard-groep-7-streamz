@@ -57,7 +57,18 @@
         </ul>
       </nav>
       <section class="c-dashboard">
-        <div class="c-dashboard__item c-dashboard__belgium">kaart van belgie</div>
+        <div class="c-dashboard__item c-dashboard__belgium">
+          <div class="c-gebruikersbedb">
+            <div class="c-gebruikersbedb__chartcont">
+              <canvas class="js-gebruikersdb c-gebruikersbedb__chart"></canvas>
+              <div class="c-gebruikersbedb__legendbox">
+
+              </div>
+            </div>
+
+            <img class="c-gebruikersbedb__kaart" src="img/belgium.svg" alt="" />
+          </div>
+        </div>
         <div class="c-dashboard__item c-dashboard__users">
           <div class="c-gebruikersdb">
             <div class="c-gebruikersdb__item">
@@ -94,8 +105,12 @@
             </div>
           </div>
         </div>
-        <div class="c-dashboard__item c-dashboard__subs">subscripties</div>
-        <div class="c-dashboard__item c-dashboard__watchhours">kijkuren</div>
+        <div class="c-dashboard__item c-dashboard__subs">
+          <canvas class="js-subsdb"></canvas>
+        </div>
+        <div class="c-dashboard__item c-dashboard__watchhours">
+          <canvas class="js-kijkurendb"></canvas>
+        </div>
         <div class="c-dashboard__item c-dashboard__movieswatched">
           <div class="c-contentwatcheddb">
             <div class="c-contentwatcheddb__type">
