@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/styles.css">
 
+    <script src="dist/main.js"></script>
+
     <title>Gebruikersbeheer</title>
 </head>
 <body>
-
   <section class="c-gebruikers">
 
     <select name="sort" id="sort" class="c-dropdown">
@@ -19,8 +20,7 @@
       <option value="naamAsc" class="c-dropdown__option">Naam (A-Z)</option>
       <option value="naamDescg" class="c-dropdown__option">Naam (Z-A)</option>
     </select>
-  
-    <table class="c-table">
+    <table class="c-table js-table">
         <thead class="c-table__head">
         <tr>
         <th class="c-table__head--check"></th>
@@ -33,15 +33,15 @@
         <th class="c-table__head--geslacht">Geslacht</th>
         </tr>
         </thead>
-        <tbody class="c-table__body">
-        <tr>
+        <tbody class="c-table__body js-table__body">
+        <!-- <tr>
           <td>
             <label class="c-contain">
             <input type="checkbox" />
             <div class="c-input"></div>
           </label>
         </td>
-        <td>cell2_1</td>
+        <td></td>
         <td>cell3_1</td>
         <td>cell4_1</td>
         <td>cell5_1</td>
@@ -64,7 +64,7 @@
         <td>cell7_2</td>
         <td>cell8_2</td>
         </tr>
-        <tr class="c-pink">
+        <tr>
         <td><label class="c-contain">
             <input type="checkbox" />
             <div class="c-input"></div>
@@ -141,7 +141,7 @@
         <td>cell6_8</td>
         <td>cell7_8</td>
         <td>cell8_8</td>
-        </tr>
+        </tr> -->
         </tbody>
         </table>
   </section>
