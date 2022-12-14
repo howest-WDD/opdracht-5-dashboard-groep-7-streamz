@@ -1,6 +1,6 @@
 .c-gebruikers {
   border-radius: .3125rem;
-    background-color: #171431;
+    background-color: $color-background;
     width: 75%;
     height: 200px;
     text-align: left;
@@ -9,12 +9,11 @@
     &__head{
     font-size: 15px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: $color-white;
     }
     &__body{
       font-size: 16px;
-      color: #CCCCCC;
-      font-family: 'Red Hat Text', sans-serif;
+      color: $color-text-grey;
       font-weight: bold;
     }
     td{

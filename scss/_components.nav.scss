@@ -5,7 +5,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: 0.2s ease-in-out;
-    background-color: $color-dark;
+    background-color: $color-background;
     &--active {
       padding-top: .5rem;
       padding-bottom: 0.5rem;
@@ -22,20 +22,20 @@
         align-items: center;
     }
     &__list{
-        background-color: $color-dark!important;
+        background-color: $color-background!important;
     }
     &__item {
       list-style-type: none;
       display: inline-block;
       @include media-breakpoint-down(lg) {
-        color: $color-dark;
+        color: $color-background;
         padding-top: 1rem;
       }
     }
     &__link {
       text-decoration: none;
       margin: 1rem;
-      color: $color-dark;
+      color: $color-background;
       font-size: 1rem;
       position: relative;
       padding-bottom: 2px;  
@@ -140,7 +140,7 @@
         background-color: $color-light;
         transform: translateX(1000px);
         a {
-          color: $color-dark;
+          color: $color-background;
         }
       }
     }
@@ -291,7 +291,7 @@
         background-color: $color-light;
         transform: translateX(1000px);
         a {
-          color: $color-dark;
+          color: $color-background;
         }
       }
     }
