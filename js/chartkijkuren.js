@@ -27,13 +27,20 @@ const chartkijkuren = function () {
       ],
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true,
           max: 5,
           ticks: {
+            color: "white",
             // forces step size to be 5 units
             stepSize: 1, // <----- This prop sets the stepSize
+          },
+        },
+        x: {
+          ticks: {
+            color: "white",
           },
         },
       },

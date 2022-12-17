@@ -1,13 +1,28 @@
 .c-gebruikersdb {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  // flex-grow: 1;
+  flex-basis: 0;
+  padding: 1.5625rem;
+  min-width: 0;
   &__item {
     text-align: end;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5625rem;
-    padding: 0 5rem;
+    border-left: solid 2px white;
+    &:first-child {
+      border-left: none;
+    }
+    width: calc((100%) / 4) !important;
+    @include media-breakpoint-down(xxl) {
+      width: calc((100%) / 2) !important;
+    }
+    @include media-breakpoint-down(md) {
+      width: calc((100% / 1)) !important;
+      margin-top: 2rem;
+    }
   }
   &__title {
     color: $color-text-grey;

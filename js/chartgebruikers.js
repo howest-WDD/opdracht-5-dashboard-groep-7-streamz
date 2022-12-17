@@ -17,11 +17,9 @@ const chartgebruikers = function () {
       ],
     },
     options: {
-      doughnut: {
-        plugins: {
-          legend: {
-            display: false,
-          },
+      plugins: {
+        legend: {
+          display: false,
         },
       },
     },

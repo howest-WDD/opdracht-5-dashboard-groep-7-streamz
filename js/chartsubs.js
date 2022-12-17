@@ -5,6 +5,7 @@ const chartsubs = function () {
     type: "bar",
     data: {
       labels: ["jul", "aug", "sept", "oct", "nov", "Dec"],
+      fontColor: "white",
       datasets: [
         {
           label: "Streamz",
@@ -25,21 +26,27 @@ const chartsubs = function () {
       ],
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true,
           max: 500000,
+          grid: { color: "white" },
           ticks: {
+            color: "white",
             // forces step size to be 5 units
             stepSize: 200000, // <----- This prop sets the stepSize
+          },
+        },
+        x: {
+          ticks: {
+            color: "white",
           },
         },
       },
     },
   });
 };
-
-
 
 const init = function () {
   chartsubs();

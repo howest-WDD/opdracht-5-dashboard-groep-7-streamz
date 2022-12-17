@@ -1,15 +1,17 @@
 .c-top5db {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: min-content auto;
   gap: 1.5625rem;
-  height: 100%;
+
+  // padding: 0 1.5625rem;
 
   &__image {
     position: relative;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    height: 26.875rem;
     &--1 {
       background: linear-gradient(rgba($color-background, 0.9), rgba($color-background, 0)), url(../img/top5-1.png);
     }

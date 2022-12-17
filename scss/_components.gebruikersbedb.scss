@@ -2,9 +2,42 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 1.5625rem;
   &__kaart {
     width: 40%;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  &__chartcont {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__legendbox {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 5rem;
+  }
+  &__legendlist {
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  &__legenditem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  &__legendcolor {
+    background-color: hotpink;
+    width: 0.5rem;
+    height: 1.875rem;
+    margin-left: 2rem;
   }
 }
