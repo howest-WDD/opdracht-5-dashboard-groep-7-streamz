@@ -32,6 +32,7 @@ const chartkijkuren = function () {
         y: {
           beginAtZero: true,
           max: 5,
+          grid: { color: "rgba(166, 169, 183, 0.2)" },
           ticks: {
             color: "white",
             // forces step size to be 5 units
@@ -39,6 +40,7 @@ const chartkijkuren = function () {
           },
         },
         x: {
+          grid: { color: "rgba(0,0,0,0)" },
           ticks: {
             color: "white",
           },
@@ -51,6 +53,13 @@ const chartkijkuren = function () {
       plugins: {
         legend: {
           display: false,
+        },
+      },
+      elements: {
+        point: {
+          borderWidth: 0,
+          radius: 1,
+          backgroundColor: "rgba(0,0,0,0)",
         },
       },
     },
