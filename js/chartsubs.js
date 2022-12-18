@@ -44,6 +44,11 @@ const chartsubs = function () {
           },
         },
       },
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
     },
   });
 };

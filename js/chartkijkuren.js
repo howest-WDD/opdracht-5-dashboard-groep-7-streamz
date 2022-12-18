@@ -48,6 +48,11 @@ const chartkijkuren = function () {
         display: true,
         text: "World population per region (in millions)",
       },
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
     },
   });
 };

@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     height: 26.875rem;
     &--1 {
-      background: linear-gradient(rgba($color-background, 0.9), rgba($color-background, 0)), url(../img/top5-1.png);
+      background-image: url(../img/top5-1.png);
     }
     &--2 {
       background-image: url(../img/top5-2.png);

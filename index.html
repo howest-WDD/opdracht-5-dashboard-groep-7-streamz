@@ -60,35 +60,39 @@
         <div class="c-dashboard__item c-dashboard__belgium">
           <div class="c-gebruikersbedb">
             <div class="c-gebruikersbedb__chartcont">
-              <div>
-                <canvas class="js-gebruikersdb c-gebruikersbedb__chart"></canvas>
+              <div class="c-gebruikersbedb__chartwrapper">
+                <canvas class="js-gebruikersdb c-gebruikersbedb__chart"> </canvas>
+                <div class="c-gebruikersbedb__charttext">
+                  <h1 class="c-gebruikersbedb__charttitle" >420.696</h1>
+                  <p class="c-gebruikersbedb__chartsubtitle">gebruikers</p>
+                </div>
               </div>
               <div class="c-gebruikersbedb__legendbox">
                 <h3>Totaal gebruikers</h3>
                 <ul class="c-gebruikersbedb__legendlist text-start">
                   <li class="c-gebruikersbedb__legenditem text-start">
                     <h3>West-Vlaanderen</h3>
-                    <div class="c-gebruikersbedb__legendcolor"></div>
+                    <div class="c-gebruikersbedb__legendcolor c-gebruikersbedb__legendcolor--wv"></div>
                   </li>
                   <li class="c-gebruikersbedb__legenditem text-start">
                     <h3>Oost-Vlaanderen</h3>
-                    <div class="c-gebruikersbedb__legendcolor"></div>
+                    <div class="c-gebruikersbedb__legendcolor c-gebruikersbedb__legendcolor--ov"></div>
                   </li>
                   <li class="c-gebruikersbedb__legenditem text-start">
                     <h3>Antwerpen</h3>
-                    <div class="c-gebruikersbedb__legendcolor"></div>
+                    <div class="c-gebruikersbedb__legendcolor c-gebruikersbedb__legendcolor--a"></div>
                   </li>
                   <li class="c-gebruikersbedb__legenditem text-start">
                     <h3>Limburg</h3>
-                    <div class="c-gebruikersbedb__legendcolor"></div>
+                    <div class="c-gebruikersbedb__legendcolor c-gebruikersbedb__legendcolor--l"></div>
                   </li>
                   <li class="c-gebruikersbedb__legenditem text-start">
                     <h3>Vlaams-Brabant</h3>
-                    <div class="c-gebruikersbedb__legendcolor"></div>
+                    <div class="c-gebruikersbedb__legendcolor c-gebruikersbedb__legendcolor--vb"></div>
                   </li>
                   <li class="c-gebruikersbedb__legenditem text-start">
                     <h3>Brussel</h3>
-                    <div class="c-gebruikersbedb__legendcolor"></div>
+                    <div class="c-gebruikersbedb__legendcolor c-gebruikersbedb__legendcolor--b"></div>
                   </li>
                 </ul>
               </div>
@@ -134,10 +138,28 @@
           </div>
         </div>
         <div class="c-dashboard__item c-dashboard__subs">
-          <canvas class="js-subsdb"></canvas>
+          <div class="d-flex justify-content-between">
+            <h3>Abonnementen</h3>
+            <div class="d-flex">
+              <p>streamz</p>
+              <p>streamz+</p>
+              <p>gratis</p>
+            </div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <canvas class="js-subsdb pb-4"></canvas>
         </div>
         <div class="c-dashboard__item c-dashboard__watchhours">
-          <canvas class="js-kijkurendb"></canvas>
+          <div class="d-flex justify-content-between">
+            <h3>Gemiddelde kijkuren / dag</h3>
+            <div class="d-flex">
+              <p>streamz</p>
+              <p>streamz+</p>
+              <p>gratis</p>
+            </div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <canvas class="js-kijkurendb pb-4"></canvas>
         </div>
         <div class="c-dashboard__item c-dashboard__movieswatched">
           <div class="c-contentwatcheddb">

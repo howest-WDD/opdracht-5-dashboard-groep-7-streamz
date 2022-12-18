@@ -14,13 +14,51 @@
   &__chartcont {
     display: flex;
     justify-content: space-between;
-    
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
   }
+  &__chartwrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__charttext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+  &__charttitle {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &__chartsubtitle {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: $color-text-grey;
+    margin-top: -0.5rem;
+  }
+  &__chart {
+    position: relative;
+    object-fit: cover;
+  }
+
   &__legendbox {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     margin-left: 5rem;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      margin-top: 5rem;
+      margin-left: 0;
+    }
   }
   &__legendlist {
     list-style: none;
@@ -35,9 +73,26 @@
     margin-top: 1rem;
   }
   &__legendcolor {
-    background-color: hotpink;
     width: 0.5rem;
     height: 1.875rem;
     margin-left: 2rem;
+    &--wv {
+      background-color: $color-chart-orange;
+    }
+    &--ov {
+      background-color: $color-chart-yellow;
+    }
+    &--a {
+      background-color: $color-chart-pink;
+    }
+    &--l {
+      background-color: $color-chart-pink2;
+    }
+    &--vb {
+      background-color: $color-chart-pink3;
+    }
+    &--b {
+      background-color: $color-chart-grey;
+    }
   }
 }
