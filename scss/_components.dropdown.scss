@@ -4,7 +4,12 @@
   width: 18.75rem;
   border: none;
   border-radius: .3125rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
+  &--show{
+    width: 6.5625rem;
+    height: 1.875rem;
+    padding: 0 1rem;
+  }
   &:focus-visible{
     outline: none;
   }

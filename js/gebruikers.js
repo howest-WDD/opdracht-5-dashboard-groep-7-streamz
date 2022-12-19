@@ -12,6 +12,8 @@ const showGebruikers = function () {
       const gebdat = dataUsers.dateOfBirth;
       const geslacht = dataUsers.gender;
 
+      const gebdatSlice = gebdat.slice(0,10);
+
       tableHtml+=`
       <tr>
           <td>
@@ -25,7 +27,7 @@ const showGebruikers = function () {
         <td>`+firstName+` `+lastName+`</td>
         <td>`+email+`</td>
         <td>`+type+`</td>
-        <td>`+gebdat+`</td>
+        <td>`+gebdatSlice+`</td>
         <td>`+geslacht+`</td>
         </tr>
         <tr>
