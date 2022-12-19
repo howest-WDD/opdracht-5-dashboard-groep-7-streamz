@@ -9,21 +9,88 @@
     <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body>
-    <nav></nav>
+    <nav class="c-nav js-nav">
+        <div class="o-container container col-md-fluid">
+            <div class="row">
+                <div class="col-9 col-md-4 c-nav__logo">
+                    <a href="index.html" class="c-logo">
+                        <img class="c-logo__svg" src="./img/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-3 col-md-8 c-nav__containerfix">
+                    <div class="c-navtoggled__container">
+                        <input class="c-nav__toggle" type="checkbox">
+                        <span class="c-nav__bar c-nav__bar--top"></span>
+                        <span class="c-nav__bar c-nav__bar--mid"></span>
+                        <span class="c-nav__bar c-nav__bar--bottom"></span>
+
+                        <ul class="c-nav__list">
+                            <li class="c-nav__item">
+                            </li>
+                            <li class="c-nav__item">
+                                <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
+                                <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
+                            </li>
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="jobs.html">Portfolio</a>
+                            </li>
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="c-sidenav col-lg-2 navbar-primary">
+        <ul class="c-sidenav__menu navbar-primary-menu">
+            <li class="c-sidenav__item">
+                <a class="c-sidenav__link" href="#">Dasboard</a>
+            </li>
+            <li class="c-sidenav__item">
+                <a class="c-sidenav__link" href="#">Content</a>
+            </li>  
+            <li class="c-sidenav__item">
+                <a class="c-sidenav__link" href="#">Gebruikers</a>
+            </li>     
+        </ul>
+    </nav>
 
     <table class="c-overzichtspagina">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        
+        <thead class="c-overzichtspagina__head">
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Id</td>
+                <td>Titel</td>
+                <td>Categorie</td>
+                <td>Gepubliceerd?</td>
+                <td>Taal</td>
+            </tr>
+        </thead>
+
+        <tbody class="c-overzichtspagina__body">
+
+            <tr>
+                <td>
+                    <label class="c-overzichtspagina__check">
+                        <input type="checkbox" />
+                        <div class="c-overzichtspagina__check--input"></div>
+                    </label>
+                </td>
+                <td></td>
+                <td>Id</td>
+                <td>Titel</td>
+                <td>Categorie</td>
+                <td>Gepubliceerd?</td>
+                <td>Taal</td>
+            </tr>
+
+        </tbody>
     </table>
+
+    <script src="dist/main.js"></script>
 </body>
 </html>

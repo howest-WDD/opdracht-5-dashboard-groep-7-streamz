@@ -1,0 +1,18 @@
+.c-search{
+  background-color: $color-itembackground;
+  color: $color-light;
+  width: 18.75rem;
+  border: none;
+  border-radius: .3125rem;
+  padding: 1rem 1rem;
+  padding-left: 3rem;
+  margin-left: 1.875rem;
+  &:focus-visible{
+    outline: none;
+  }
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg id='search' xmlns='http://www.w3.org/2000/svg' width='29.559' height='29.558' viewBox='0 0 29.559 29.558'%3E%3Cpath id='Path_209' data-name='Path 209' d='M23.377,23.377a1.847,1.847,0,0,1,2.614,0L33.1,30.489A1.848,1.848,0,1,1,30.492,33.1L23.38,25.991a1.847,1.847,0,0,1,0-2.614Z' transform='translate(-4.086 -4.086)' fill='%23838495' fill-rule='evenodd'/%3E%3Cpath id='Path_210' data-name='Path 210' d='M12.008,22.169A10.161,10.161,0,1,0,1.847,12.008,10.161,10.161,0,0,0,12.008,22.169ZM24.016,12.008A12.008,12.008,0,1,1,12.008,0,12.008,12.008,0,0,1,24.016,12.008Z' fill='%23838495' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: left 0.7rem top 50%;
+  background-size: 1.875rem auto;
+}

@@ -1,11 +1,12 @@
-.c-gebruikers {
+.c-table {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   border-radius: .3125rem;
-    background-color: $color-background;
-    width: 75%;
+    background-color: $color-itembackground;
+    width: 100%;
     height: 200px;
     text-align: left;
     border-collapse: collapse;
-    margin: auto;
     &__head{
     font-size: 15px;
     font-weight: bold;
@@ -16,16 +17,67 @@
       color: $color-text-grey;
       font-weight: bold;
     }
+    &__footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    &__header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      margin-top: 1.875rem;
+      flex-wrap: wrap;
+
+    }
+    &__filters{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+    }
+    &__icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      &--1{
+        margin: 0 1.875rem;
+        &:hover{
+          path{
+          fill: $color-accent;
+          cursor: pointer;
+          }
+        }
+      }
+      &--2{
+        &:hover{
+          path{
+          fill: $color-accent;
+          cursor: pointer;
+          }
+        }
+      }
+      
+    }
     td{
       border: 1px solid #5C659D;
       border-left: none;
       border-right: none;
-      padding: 2rem .125rem;
+      padding: 2rem .5rem;
     }
     th{
-    padding: 1rem .125rem;
+    padding: 1rem .5rem;
     }
 
+    img{
+      width: 60px;
+      height: auto;
+    }
     .c-contain *,
 .c-contain *::before,
 .c-contain *::after {
@@ -68,12 +120,19 @@
 
 .c-contain input:checked ~ .c-input::after {
   display: block;
+
 }
+
+tr:has(input:checked){
+  background-color: $color-accent;
+  color: $color-light;
+}
+
+
 
 .c-contain:hover input[type="checkbox"]:not([disabled]):checked ~ .c-input,
-.c-contain input[type="checkbox"]:checked:focus ~ .c-input {
+.c-contain input[type="checkbox"]:checked ~ .c-input {
   background: #e2e8f0;
-  border-color: #64748b;
+  border-color: transparent;
   }
 }
-

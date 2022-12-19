@@ -1,0 +1,30 @@
+.c-pagination {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1.875rem;
+  &__link{
+    color: $color-light;
+  float: left;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: $color-itembackground;
+    &:hover{
+      background-color: $color-accent;
+      color: $color-light;
+      text-decoration: none;
+    }
+    &--active{
+      background-color: $color-accent;
+      color: $color-light;
+      text-decoration: none;
+    }
+  }
+}

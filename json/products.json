@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+        "title": "Geldwolven",
+        "image": "https://images4.persgroep.net/rcs/5POUJjL7fxtB3FZvz_2LkR56TxI/diocontent/225137705/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Series",
+        "categorie": "misdaad",
+        "status": "published",
+        "language": "Vlaams"
+        },
+        {
+        "title": "2DEZIT",
+        "image": "https://images3.persgroep.net/rcs/uAADMAEKh46vns9AkbzorXxrQGo/diocontent/222005572/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Series",
+        "categorie": "melodrama",
+        "status": "published",
+        "language": "Vlaams"
+        },
+        {
+        "title": "Boss Baby: Familiezaken",
+        "image": "https://images4.persgroep.net/rcs/moxlEfuUIHItrMVd_dMnTdXtUjg/diocontent/215915824/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Kids",
+        "categorie": "animatie",
+        "status": "published",
+        "language": "Vlaams"
+        },
+        {
+        "title": "Galaxy Park",
+        "image": "https://images3.persgroep.net/rcs/GvwQeKuKrw6V8x_uQZkHXLivLj8/diocontent/219692610/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Kids",
+        "categorie": "drama",
+        "status": "published",
+        "language": "Vlaams"
+        },
+        {
+        "title": "Safety First: The Movie",
+        "image": "https://images1.persgroep.net/rcs/0sC6Wyh2pWSnl5UYQX5lP3BMagk/diocontent/202278183/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Films",
+        "categorie": "komedie",
+        "status": "unpublished",
+        "language": "Vlaams"
+        },
+        {
+        "title": "The Flight Attendant",
+        "image": "https://images1.persgroep.net/rcs/Lx6d0B9x0td1Q4se3WPi4cqKYVI/diocontent/215016745/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Series",
+        "categorie": "drama",
+        "status": "published",
+        "language": "Engels"
+        },
+        {
+        "title": "The Big Sick",
+        "image": "https://images3.persgroep.net/rcs/URi6xOvUmrhj-Wk57acuRiUvKSU/diocontent/176942317/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Films",
+        "categorie": "komedie",
+        "status": "unpublished",
+        "language": "Engels"
+        },
+        {
+        "title": "Child's Play",
+        "image": "https://images2.persgroep.net/rcs/AhGXfyyBDrdAxtr03QrMsHWBCzE/diocontent/175030317/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Films",
+        "categorie": "horror",
+        "status": "published",
+        "language": "Engels"
+        },
+        {
+        "title": "Spitsbroers",
+        "image": "https://images3.persgroep.net/rcs/35GmrgE0hcyo_2hXWzttimUhQ0g/diocontent/206525382/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Series",
+        "categorie": "drama",
+        "status": "published",
+        "language": "Vlaams"
+        },        
+        {
+        "title": "Paw Patrol",
+        "image": "https://images2.persgroep.net/rcs/LmP8Ol0Dq-H6lygcyc2-Vyqnytk/diocontent/223727081/_fitwidth/320?appId=038a353bad43ac27fd436dc5419c256b&quality=0.8&format=webp",
+        "type": "Kids",
+        "categorie": "animatie",
+        "status": "published",
+        "language": "Vlaams"
+        }     
+    ]
+}
