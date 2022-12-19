@@ -1,5 +1,6 @@
 .c-table {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   border-radius: .3125rem;
     background-color: $color-itembackground;
     width: 100%;
@@ -15,6 +16,53 @@
       font-size: 16px;
       color: $color-text-grey;
       font-weight: bold;
+    }
+    &__footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    &__header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      margin-top: 1.875rem;
+      flex-wrap: wrap;
+
+    }
+    &__filters{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+    }
+    &__icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      &--1{
+        margin: 0 1.875rem;
+        &:hover{
+          path{
+          fill: $color-accent;
+          cursor: pointer;
+          }
+        }
+      }
+      &--2{
+        &:hover{
+          path{
+          fill: $color-accent;
+          cursor: pointer;
+          }
+        }
+      }
+      
     }
     td{
       border: 1px solid #5C659D;
@@ -88,4 +136,3 @@ tr:has(input:checked){
   border-color: transparent;
   }
 }
-
