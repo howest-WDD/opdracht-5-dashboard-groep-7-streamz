@@ -7,90 +7,57 @@
     <title>Overzichtspagina - film/serie</title>
 
     <link rel="stylesheet" href="dist/styles.css">
-</head>
-<body>
-    <nav class="c-nav js-nav">
-        <div class="o-container container col-md-fluid">
-            <div class="row">
-                <div class="col-9 col-md-4 c-nav__logo">
-                    <a href="index.html" class="c-logo">
-                        <img class="c-logo__svg" src="./img/logo.svg" alt="Logo">
-                    </a>
-                </div>
-                <div class="col-3 col-md-8 c-nav__containerfix">
-                    <div class="c-navtoggled__container">
-                        <input class="c-nav__toggle" type="checkbox">
-                        <span class="c-nav__bar c-nav__bar--top"></span>
-                        <span class="c-nav__bar c-nav__bar--mid"></span>
-                        <span class="c-nav__bar c-nav__bar--bottom"></span>
-
-                        <ul class="c-nav__list">
-                            <li class="c-nav__item">
-                            </li>
-                            <li class="c-nav__item">
-                                <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
-                                <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
-                            </li>
-                            <li class="c-nav__item">
-                                <a class="c-nav__link" href="jobs.html">Portfolio</a>
-                            </li>
-                            <li class="c-nav__item">
-                                <a class="c-nav__link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <nav class="c-sidenav col-lg-2 navbar-primary">
-        <ul class="c-sidenav__menu navbar-primary-menu">
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="#">Dasboard</a>
-            </li>
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="#">Content</a>
-            </li>  
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="#">Gebruikers</a>
-            </li>     
-        </ul>
-    </nav>
-
-    <table class="c-overzichtspagina">
-        
-        <thead class="c-overzichtspagina__head">
-            <tr>
-                <td></td>
-                <td></td>
-                <td>Id</td>
-                <td>Titel</td>
-                <td>Categorie</td>
-                <td>Gepubliceerd?</td>
-                <td>Taal</td>
-            </tr>
-        </thead>
-
-        <tbody class="c-overzichtspagina__body">
-
-            <tr>
-                <td>
-                    <label class="c-overzichtspagina__check">
-                        <input type="checkbox" />
-                        <div class="c-overzichtspagina__check--input"></div>
-                    </label>
-                </td>
-                <td></td>
-                <td>Id</td>
-                <td>Titel</td>
-                <td>Categorie</td>
-                <td>Gepubliceerd?</td>
-                <td>Taal</td>
-            </tr>
-
-        </tbody>
-    </table>
 
     <script src="dist/main.js"></script>
+
+</head>
+<body>
+    <section class="c-gebruikers">
+        <div class="c-table__header">
+          <div class="c-table__filters">
+          <select name="sort" id="sort" class="c-dropdown">
+            <option selected value="sorteerop" class="c-dropdown__option">Sorteren op</option>
+            <option class="c-dropdown__option">ID (0-9)</option>
+            <option value="naamDesc" class="c-dropdown__option">ID (9-0)</option>
+            <option class="c-dropdown__option">Naam (A-Z)</option>
+            <option value="naamDescg" class="c-dropdown__option">Naam (Z-A)</option>
+          </select>
+          <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search">    
+          </div>
+        </div>
+        <table class="c-table js-table" id="myTable">
+            <thead class="c-table__head">
+            <tr>
+            <th class="c-table__head--check">&nbsp;</th>
+            <th class="c-table__head--id">ID</th>
+            <th class="c-table__head--foto"></th>
+            <th class="c-table__head--naam">Title</th>
+            <th class="c-table__head--email">Categorie</th>
+            <th class="c-table__head--type">Published</th>
+            <th class="c-table__head--gebdat">Language</th>
+            <th class="c-table__head--geslacht">Actions</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__body js-tableproduct__body">
+            </tbody>
+            </table>
+            <div class="c-table__footer">
+              <select name="sort" id="sort" class="c-dropdown c-dropdown--show">
+                <option selected class="c-dropdown__option">Toon: 10</option>
+                <option class="c-dropdown__option">Toon: 25</option>
+                <option class="c-dropdown__option">Toon: 50</option>
+                <option class="c-dropdown__option">Toon: 100</option>
+              </select>
+              <div class="c-pagination">
+                <a href="#" class="c-pagination__link">&laquo;</a>
+                <a href="#" class="c-pagination__link c-pagination__link--active">1</a>
+                <a href="#" class="c-pagination__link">2</a>
+                <a href="#" class="c-pagination__link">3</a>
+                <a href="#" class="c-pagination__link">&raquo;</a>
+              </div>
+              
+            </div>
+            
+      </section>
 </body>
 </html>
