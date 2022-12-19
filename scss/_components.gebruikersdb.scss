@@ -1,13 +1,37 @@
 .c-gebruikersdb {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  // flex-grow: 1;
+  flex-basis: 0;
+  padding: 1.5625rem;
+  min-width: 0;
   &__item {
     text-align: end;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5625rem;
-    padding: 0 5rem;
+    border-left: solid 1px $color-text-grey;
+    &:first-child {
+      border-left: none;
+    }
+    width: calc((100%) / 4) !important;
+    @include media-breakpoint-down(xxl) {
+      width: calc((100%) / 2) !important;
+      &:nth-child(3) {
+        border-left: none;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      width: calc((100% / 1)) !important;
+      margin-top: 1rem;
+      border-left: none;
+      padding-top: 1rem;
+      border-top: solid 1px $color-text-grey;
+      &:first-child {
+        border-top: none;
+      }
+    }
   }
   &__title {
     color: $color-text-grey;

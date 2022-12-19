@@ -1,10 +1,43 @@
 .c-dashboard {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 500px 152px 414px 134px 134px 430px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  // grid-template-rows: 500px 152px 414px 134px 134px 350px;
+  grid-template-rows: minmax(0, 1fr);
+  grid-template-areas:
+    "belgium belgium belgium belgium belgium"
+    "users users users users users"
+    "subs subs subs watchhours watchhours"
+    "movies movies upcoming upcoming upcoming"
+    "series series upcoming upcoming upcoming"
+    "top top top top top";
   gap: 1.5625rem;
   padding: 1.875rem;
-  margin-left: 295px;
+  margin-left: 18.4375rem;
+  @include media-breakpoint-down(xl) {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0;
+    grid-template-areas:
+      "belgium belgium"
+      "users users"
+      "subs subs"
+      "watchhours watchhours"
+      "movies series"
+      "upcoming upcoming"
+      "top top";
+  }
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    grid-template-areas:
+      "belgium"
+      "users"
+      "subs"
+      "watchhours"
+      "movies"
+      "series"
+      "upcoming"
+      "top";
+  }
 }
 
 .c-dashboard__item {
@@ -13,42 +46,34 @@
 }
 
 .c-dashboard__belgium {
-  grid-column-start: 1;
-  grid-column-end: 6;
+  grid-area: belgium;
 }
 .c-dashboard__users {
-  grid-column-start: 1;
-  grid-column-end: 6;
+  grid-area: users;
 }
 .c-dashboard__subs {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-area: subs;
+  height: 26.25rem;
+  padding: 2.75rem;
+  padding-bottom: 4rem;
 }
 .c-dashboard__watchhours {
-  grid-column-start: 4;
-  grid-column-end: 6;
+  grid-area: watchhours;
+  height: 26.25rem;
+  padding: 2.75rem;
+  padding-bottom: 4rem;
 }
 .c-dashboard__movieswatched {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-area: movies;
 }
 .c-dashboard__serieswatched {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-area: series;
 }
 .c-dashboard__upcoming {
-  grid-column-start: 3;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 6;
+  grid-area: upcoming;
 }
 .c-dashboard__top5 {
-  grid-column-start: 1;
-  grid-column-end: 6;
+  grid-area: top;
   background-color: transparent;
 }
 

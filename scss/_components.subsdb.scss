@@ -1,0 +1,32 @@
+.c-subsdb {
+  &__legendlist {
+    display: flex;
+    list-style: none;
+  }
+  &__legenditem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // justify-content: center;
+    margin-right: 0.9375rem;
+    h3{
+        font-size: .75rem;
+    }
+  }
+  &__legendcolor {
+    width: 0.5rem;
+    height: 1.625rem;
+    margin-right: .3125rem;
+    margin-bottom: 0.5rem;
+    &--streamz {
+      background-color: $color-chart-pink;
+    }
+    &--streamzpremium {
+      background-color: $color-chart-pink2;
+    }
+    &--gratis {
+      background-color: $color-chart-yellow;
+    }
+  }
+}
