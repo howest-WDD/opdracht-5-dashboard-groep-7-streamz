@@ -39,6 +39,7 @@ const chartsubs = function () {
             color: "white",
             // forces step size to be 5 units
             stepSize: 200000, // <----- This prop sets the stepSize
+            callback: (value, index, values) => (index == values.length - 1 ? undefined : value),
           },
         },
         x: {

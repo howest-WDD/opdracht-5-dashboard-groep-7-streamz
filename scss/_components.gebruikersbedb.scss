@@ -25,8 +25,36 @@
     fill: #0c0921;
   }
   &__provincie {
-    &:hover {
-      fill: hotpink;
+    transition: all 0.3s;
+    &--westvlaanderen {
+      &:hover {
+        fill: $color-chart-orange;
+      }
+    }
+    &--oostvlaanderen {
+      &:hover {
+        fill: $color-chart-yellow;
+      }
+    }
+    &--antwerpen {
+      &:hover {
+        fill: $color-chart-pink;
+      }
+    }
+    &--vlaamsbrabant {
+      &:hover {
+        fill: $color-chart-pink2;
+      }
+    }
+    &--limburg {
+      &:hover {
+        fill: $color-chart-pink3;
+      }
+    }
+    &--brussel {
+      &:hover {
+        fill: $color-chart-grey;
+      }
     }
   }
   &__chartcont {
@@ -103,6 +131,7 @@
     width: 0.5rem;
     height: 1.875rem;
     margin-left: 2rem;
+    margin-bottom: 0.5rem;
     &--wv {
       background-color: $color-chart-orange;
     }
