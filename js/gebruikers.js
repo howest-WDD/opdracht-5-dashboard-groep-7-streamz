@@ -15,7 +15,7 @@ const showGebruikers = function () {
       const gebdatSlice = gebdat.slice(0,10);
 
       tableHtml+=`
-      <tr>
+      <tr class="js-table__body--row">
           <td>
             <label class="c-contain">
             <input type="checkbox" />
@@ -24,13 +24,12 @@ const showGebruikers = function () {
         </td>
         <td>`+count+`</td>
         <td><img src="`+img+`" alt="`+firstName+` `+lastName+`"></td>
-        <td>`+firstName+` `+lastName+`</td>
+        <td class="js-table__body--name">`+firstName+` `+lastName+`</td>
         <td>`+email+`</td>
         <td>`+type+`</td>
         <td>`+gebdatSlice+`</td>
         <td>`+geslacht+`</td>
-        </tr>
-        <tr>
+      </tr>
       `;
       count++;
     }
