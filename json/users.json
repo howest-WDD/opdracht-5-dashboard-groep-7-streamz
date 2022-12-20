@@ -5407,6 +5407,70 @@
       "status": "active",
       "lastLogin": "2021-09-24T16:48:36.455Z",
       "paymentMethod": "Cash"
+    },
+    {
+      "lastName": "Fadel",
+      "firstName": "Wilmer",
+      "title": "Dhr.",
+      "username": "Fadel",
+      "email": "Wilmer.fadel@example.Net",
+      "gender": "Man",
+      "dateOfBirth": "1976-01-12T10:41:06.605Z",
+      "type": "Streamz",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "address": {
+        "street": "kiekestraat",
+        "houseNumber": "80",
+        "city": "Oostrozebeke",
+        "zipCode": "8291",
+        "country": "Belgium"
+      },
+      "phoneNumber": [
+        {
+          "type": "fixed",
+          "number": "056 72 18 18"
+        },
+        {
+          "type": "mobile",
+          "number": "0478 29 19 19"
+        }
+      ],
+      "created": "2007-07-12T10:40:26.455Z",
+      "status": "inactive",
+      "lastLogin": "2020-02-24T16:48:36.455Z",
+      "paymentMethod": "Visa"
+    },
+    {
+      "lastName": "Pagac",
+      "firstName": "Mariella",
+      "title": "Mevr.",
+      "username": "Pagac",
+      "email": "Pagac_mariella@example.net",
+      "gender": "Vrouw",
+      "dateOfBirth": "1988-12-12T10:41:06.605Z",
+      "type": "Free trial",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "address": {
+        "street": "Ooienvaarsstraat",
+        "houseNumber": "80",
+        "city": "Izegem",
+        "zipCode": "9091",
+        "country": "Belgium"
+      },
+      "phoneNumber": [
+        {
+          "type": "fixed",
+          "number": "059 62 18 18"
+        },
+        {
+          "type": "mobile",
+          "number": "0479 29 89 19"
+        }
+      ],
+      "created": "2013-08-12T10:40:26.455Z",
+      "status": "inactive",
+      "lastLogin": "2019-09-24T16:48:36.455Z",
+      "paymentMethod": "Visa"
     }
   ]
 }
