@@ -18,9 +18,11 @@
           <div class="c-table__filters">
           <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search">   
           <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--mrg c-dropdown--show " onChange = "showItems(this)">
-            <option selected class="c-dropdown__option" value="show10">Toon: 10</option>
-            <option class="c-dropdown__option" value="show25">Toon: 25</option>
-            <option class="c-dropdown__option" value="show50">Toon: 50</option>
+            <option selected class="c-dropdown__option" value="show5">Toon: 5</option>
+            <option class="c-dropdown__option" value="show15">Toon: 15</option>
+            <option class="c-dropdown__option" value="show30">Toon: 30</option>
+            <option class="c-dropdown__option" value="show45">Toon: 45</option>
+            <option class="c-dropdown__option" value="show45">Toon: 60</option>
           </select>
 
             <!-- <div class="c-pagination">
@@ -52,6 +54,8 @@
 
 <script>
 var myArray = []
+
+$("#js-tableproduct__body > tr.filtered:lt(10)").show();
 
 $('#sort').on('change', function() {
   var value = $(this).val();
@@ -173,6 +177,29 @@ function buildTable(data) {
       table.innerHTML += row
   }
 }
+
+$(function () {
+    var numShown = 5; // Initial rows shown & index
+    var numMore = 10;  // Increment
+
+    var $table = $('table').find('tbody');  // tbody containing all the rows
+    var numRows = $table.find('tr').length; // Total # rows
+    // Hide rows and add clickable div
+    $table.find('tr:gt(' + (numShown - 1) + ')').hide().end()
+        .after('<tbody id="more"><tr><td colspan="' +
+               $table.find('tr:first td').length + '</tbody></td></tr>');
+
+    $('#show-limit-items').on('change', function() {
+        numShown = numShown + numMore;
+
+        // change rows remaining if less than increment
+        if (numRows - numShown < numMore) {
+            $('#more span').html(numRows - numShown);
+        }
+        $table.find('tr:lt(' + numShown + ')').show();
+    })
+
+})
 
 </script>
 </body>
