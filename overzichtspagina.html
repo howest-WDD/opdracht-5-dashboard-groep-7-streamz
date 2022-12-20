@@ -7,38 +7,31 @@
     <title>Overzichtspagina - film/serie</title>
 
     <link rel="stylesheet" href="dist/styles.css">
-
-    <script src="dist/main.js"></script>
+<!-- 
+    <script src="dist/main.js"></script> -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
 </head>
 <body class="js-page-table">
     <section class="c-gebruikers">
         <div class="c-table__header">
           <div class="c-table__filters">
-          <select name="sort" id="sort" class="c-dropdown">
-            <option selected value="sorteerop" class="c-dropdown__option">Sorteren op</option>
-            <option class="c-dropdown__option">ID (0-9)</option>
-            <option value="naamDesc" class="c-dropdown__option">ID (9-0)</option>
-            <option class="c-dropdown__option">Naam (A-Z)</option>
-            <option value="naamDescg" class="c-dropdown__option">Naam (Z-A)</option>
-          </select>
           <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search">    
           </div>
         </div>
-        <table class="c-table js-table" id="myTable">
+        <table class="c-table js-table">
             <thead class="c-table__head">
             <tr>
             <th class="c-table__head--check">&nbsp;</th>
-            <th class="c-table__head--id">ID</th>
+            <th class="c-table__head--id" id="table-head-id" data-order="desc">ID &#9650</th>
             <th class="c-table__head--foto"></th>
-            <th class="c-table__head--naam">Title</th>
+            <th class="c-table__head--naam" id="table-head-naam" data-column="title" data-order="desc">Title &#9650</th>
             <th class="c-table__head--email">Categorie</th>
             <th class="c-table__head--type">Published</th>
             <th class="c-table__head--gebdat">Language</th>
-            <th class="c-table__head--geslacht">Actions</th>
             </tr>
             </thead>
-            <tbody class="c-table__body js-tableproduct__body">
+            <tbody class="c-table__body" id="js-tableproduct__body">
             </tbody>
             </table>
             <div class="c-table__footer">
@@ -59,24 +52,114 @@
             
       </section>
 
-    <script>
-      function deleteRow(r) {
-        document.getElementById("myTable").deleteRow(r);
-      }
+<script>
+var myArray = []
 
-      function showItems(x) {
-        switch(x.value) {
-					case "show10":
-						console.log("selected 0");
-						break;
-					case "show25":
-            console.log("selected 25");
-						break;
-					default: 
-            console.log("selected 50");
-						break;
-				}
-      }
-    </script>
+$('#sort').on('change', function() {
+  var value = $(this).val();
+  alert(value);
+});
+
+$('#search-input').on('keyup', function() {
+  var value = $(this).val()
+  //console.log(value)
+  var data = searchTable(value, myArray)
+  buildTable(data)
+})
+
+$('#table-head-id').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+$('#table-head-naam').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+buildTable(myArray)
+
+function searchTable(value, data) {
+  var filteredData = []
+
+  for (var i = 0; i < data.length; i++){
+    value = value.toLowerCase()
+    var title = data[i].title.toLowerCase()
+    
+    if (title.includes(value)) {
+      filteredData.push(data[i])
+    }
+  }
+
+  return filteredData
+}
+
+$.ajax({
+  method: 'GET',
+  url: 'json/products.json',
+  success: function(response) {
+    myArray = response.products
+    buildTable(myArray)
+    //console.log(myArray)
+  }
+})
+
+function buildTable(data) {
+  var table = document.getElementById('js-tableproduct__body')
+  table.innerHTML = ''
+
+  for (var i = 0; i < data.length; i++) {
+    var row = `<tr class="js-table__body--row">
+          <td>
+            <label class="c-contain">
+            <input type="checkbox" />
+            <div class="c-input"></div>
+          </label>
+        </td>
+        <td>#${data[i].id}</td>
+        <td><img src="${data[i].image}" alt="${data[i].title}"></td>
+        <td>${data[i].title}</td>
+        <td>${data[i].type}, ${data[i].categorie}</td>
+        <td>${data[i].status}</td>
+        <td>${data[i].language}</td>
+      </tr>`
+
+      table.innerHTML += row
+  }
+}
+
+</script>
 </body>
 </html>
