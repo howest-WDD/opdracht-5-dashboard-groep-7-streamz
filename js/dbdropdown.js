@@ -18,4 +18,3 @@ const init = function () {
 };
 
 document.addEventListener("DOMContentLoaded", init);
-0;
