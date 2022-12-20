@@ -1,0 +1,138 @@
+.c-table {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: .3125rem;
+    background-color: $color-itembackground;
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    border-collapse: collapse;
+    &__head{
+    font-size: 15px;
+    font-weight: bold;
+    color: $color-white;
+    }
+    &__body{
+      font-size: 16px;
+      color: $color-text-grey;
+      font-weight: bold;
+    }
+    &__footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    &__header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      margin-top: 1.875rem;
+      flex-wrap: wrap;
+
+    }
+    &__filters{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+    }
+    &__icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      &--1{
+        margin: 0 1.875rem;
+        &:hover{
+          path{
+          fill: $color-accent;
+          cursor: pointer;
+          }
+        }
+      }
+      &--2{
+        &:hover{
+          path{
+          fill: $color-accent;
+          cursor: pointer;
+          }
+        }
+      }
+      
+    }
+    td{
+      border: 1px solid #5C659D;
+      border-left: none;
+      border-right: none;
+      padding: 2rem .5rem;
+    }
+    th{
+    padding: 1rem .5rem;
+    }
+
+    img{
+      width: 60px;
+      height: auto;
+    }
+    .c-contain *,
+.c-contain *::before,
+.c-contain *::after {
+  box-sizing: content-box !important;
+}
+
+.c-contain {
+  position: relative;
+  cursor: pointer;
+  margin-left: 1rem;
+  input {
+    z-index: -1;
+    opacity: 0;
+  }
+  input[type="checkbox"] ~ .c-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+    background: rgba(0, 0, 0, 0);
+    transition: background 250ms;
+    border: 2px solid #5C659D;
+    border-radius: .3125rem;
+    &::after{
+      content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid #43424B;
+  border-width: 0 2px 2px 0;
+  transition: background 250ms;
+  transform: rotate(45deg);
+    }
+  }
+}
+
+.c-contain input:checked ~ .c-input::after {
+  display: block;
+
+}
+
+tr:has(input:checked){
+  background-color: $color-accent;
+  color: $color-light;
+}
+
+
+
+.c-contain:hover input[type="checkbox"]:not([disabled]):checked ~ .c-input,
+.c-contain input[type="checkbox"]:checked ~ .c-input {
+  background: #e2e8f0;
+  border-color: transparent;
+  }
+}

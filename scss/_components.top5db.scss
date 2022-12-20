@@ -1,17 +1,19 @@
 .c-top5db {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: min-content auto;
   gap: 1.5625rem;
-  height: 100%;
+
+  // padding: 0 1.5625rem;
 
   &__image {
     position: relative;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    min-height: 30rem;
     &--1 {
-      background: linear-gradient(rgba($color-background, 0.9), rgba($color-background, 0)), url(../img/top5-1.png);
+      background-image: url(../img/top5-1.png);
     }
     &--2 {
       background-image: url(../img/top5-2.png);
@@ -26,7 +28,7 @@
       background-image: url(../img/top5-5.png);
     }
     &:hover {
-      .c-top5db__text {
+      .c-top5db__textbox {
         visibility: visible;
       }
     }
@@ -45,11 +47,26 @@
     align-items: center;
     color: $color-accent;
   }
-  &__text {
+  &__textbox {
     visibility: hidden;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0rem;
     right: 50%;
     transform: translateX(50%);
+    padding: 2rem 1rem;
+    border-top: solid 4px $color-accent;
+    background-color: $color-itembackground;
+    width: 101%;
+    @include media-breakpoint-down(md) {
+      visibility: visible;
+    }
+  }
+  &__maand{
+    color: $color-text-grey;
+  }
+  &__uur{
+    p{
+      margin-top: -1rem;
+    }
   }
 }

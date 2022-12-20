@@ -1,0 +1,21 @@
+.c-dropdown{
+  background-color: $color-accent;
+  color: $color-light;
+  width: 18.75rem;
+  border: none;
+  border-radius: .3125rem;
+  padding: 1rem;
+  &--show{
+    width: 6.5625rem;
+    height: 1.875rem;
+    padding: 0 1rem;
+  }
+  &:focus-visible{
+    outline: none;
+  }
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.207' height='6.707' viewBox='0 0 12.207 6.707'%3E%3Cg id='ARROW' transform='translate(11.854 0.354) rotate(90)'%3E%3Cline id='Line_12' data-name='Line 12' x1='6' y1='6' fill='none' stroke='%23fff' stroke-width='1'/%3E%3Cline id='Line_13' data-name='Line 13' x1='6' y1='6' transform='translate(0 11.5) rotate(-90)' fill='none' stroke='%23fff' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}

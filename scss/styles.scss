@@ -26,16 +26,26 @@
 /*---------------------------------------*/
 
 @import "components.dashboard";
+@import "components.gebruikersbedb";
 @import "components.gebruikersdb";
 @import "components.contentwatcheddb";
 @import "components.releasesdb";
 @import "components.top5db";
+@import "components.totop";
+@import "components.subsdb";
+@import "components.dropdowndb";
 
-@import "components.gebruikers";
-@import 'components.nav';
-@import 'components.sidenav';
+@import "components.nav";
+@import "components.sidenav";
 
-@import 'components.overzichtspagina';
+@import "components.pagination";
+@import "components.search";
+@import "components.dropdown";
+@import "components.table";
+
+
+
+@import "components.overzichtspagina";
 
 /*---------------------------------------/*
  # UTILITIES

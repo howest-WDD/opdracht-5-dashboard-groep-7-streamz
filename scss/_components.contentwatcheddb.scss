@@ -2,6 +2,22 @@
   display: flex;
   justify-content: space-between;
   padding: 2.1875rem;
+  @include media-breakpoint-only(md) {
+    flex-direction: column;
+  }
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+  &__type {
+    @include media-breakpoint-only(md) {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
   &__uren {
     display: flex;
     justify-content: space-between;
@@ -9,6 +25,12 @@
   &__maand {
     margin-left: 3rem;
     text-align: center;
+    @include media-breakpoint-only(md) {
+      margin-left: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
   }
   &__title {
     color: $color-text-grey;
@@ -28,6 +50,6 @@
     bottom: 0.5rem;
     position: absolute;
     left: -1rem;
-    width: .75rem;
+    width: 0.75rem;
   }
 }
