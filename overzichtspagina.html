@@ -16,17 +16,29 @@
     <section class="c-gebruikers">
         <div class="c-table__header">
           <div class="c-table__filters">
-          <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search">    
+          <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search">   
+          <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--mrg c-dropdown--show " onChange = "showItems(this)">
+            <option selected class="c-dropdown__option" value="show10">Toon: 10</option>
+            <option class="c-dropdown__option" value="show25">Toon: 25</option>
+            <option class="c-dropdown__option" value="show50">Toon: 50</option>
+          </select>
+
+            <!-- <div class="c-pagination">
+              <a href="#" class="c-pagination__link">&laquo;</a>
+              <a href="#" class="c-pagination__link c-pagination__link--active">1</a>
+              <a href="#" class="c-pagination__link">2</a>
+              <a href="#" class="c-pagination__link">3</a>
+              <a href="#" class="c-pagination__link">&raquo;</a>
+            </div> -->
           </div>
         </div>
         <table class="c-table js-table">
             <thead class="c-table__head">
             <tr>
-            <th class="c-table__head--check">&nbsp;</th>
-            <th class="c-table__head--id" id="table-head-id" data-order="desc">ID &#9650</th>
+            <th class="c-table__head--id" id="table-head-id" data-column="id" data-order="desc">ID &#9650</th>
             <th class="c-table__head--foto"></th>
             <th class="c-table__head--naam" id="table-head-naam" data-column="title" data-order="desc">Title &#9650</th>
-            <th class="c-table__head--email">Categorie</th>
+            <th class="c-table__head--email" id="table-head-cat" data-column="title" data-order="desc">Categorie &#9650</th>
             <th class="c-table__head--type">Published</th>
             <th class="c-table__head--gebdat">Language</th>
             </tr>
@@ -34,21 +46,7 @@
             <tbody class="c-table__body" id="js-tableproduct__body">
             </tbody>
             </table>
-            <div class="c-table__footer">
-              <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--show" onChange = "showItems(this)">
-                <option selected class="c-dropdown__option" value="show10">Toon: 10</option>
-                <option class="c-dropdown__option" value="show25">Toon: 25</option>
-                <option class="c-dropdown__option" value="show50">Toon: 50</option>
-              </select>
-              <div class="c-pagination">
-                <a href="#" class="c-pagination__link">&laquo;</a>
-                <a href="#" class="c-pagination__link c-pagination__link--active">1</a>
-                <a href="#" class="c-pagination__link">2</a>
-                <a href="#" class="c-pagination__link">3</a>
-                <a href="#" class="c-pagination__link">&raquo;</a>
-              </div>
-              
-            </div>
+
             
       </section>
 
@@ -109,6 +107,27 @@ $('#table-head-naam').on('click', function(){
 
 })
 
+$('#table-head-cat').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
 buildTable(myArray)
 
 function searchTable(value, data) {
@@ -138,16 +157,11 @@ $.ajax({
 
 function buildTable(data) {
   var table = document.getElementById('js-tableproduct__body')
+
   table.innerHTML = ''
 
   for (var i = 0; i < data.length; i++) {
     var row = `<tr class="js-table__body--row">
-          <td>
-            <label class="c-contain">
-            <input type="checkbox" />
-            <div class="c-input"></div>
-          </label>
-        </td>
         <td>#${data[i].id}</td>
         <td><img src="${data[i].image}" alt="${data[i].title}"></td>
         <td>${data[i].title}</td>
