@@ -18,7 +18,9 @@ const searchFilter = function() {
 };
 
 const init = function() {
+  if (document.querySelector(".js-page-table")) {
     searchFilter();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", init);

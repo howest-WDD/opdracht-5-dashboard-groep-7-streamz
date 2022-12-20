@@ -46,7 +46,9 @@ const showProducts = function () {
 
 
 const init = function () {   
-    showProducts();
+    if (document.querySelector(".js-page-table")) {
+      showProducts();
+    }
 };
 
 document.addEventListener("DOMContentLoaded", init);
