@@ -27,7 +27,9 @@ const chartgebruikers = function () {
 };
 
 const init = function () {
-  chartgebruikers();
+  if (document.querySelector(".js-page-dashboard")) {
+    chartgebruikers();
+  }
 };
 
 document.addEventListener("DOMContentLoaded", init);

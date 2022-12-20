@@ -59,7 +59,9 @@ const chartsubs = function () {
 };
 
 const init = function () {
-  chartsubs();
+  if (document.querySelector(".js-page-dashboard")) {
+    chartsubs();
+  }
 };
 
 document.addEventListener("DOMContentLoaded", init);
