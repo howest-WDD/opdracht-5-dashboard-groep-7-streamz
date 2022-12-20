@@ -5,7 +5,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: 0.2s ease-in-out;
-    background-color: $color-dark;
+    background-color: $color-background;
     &--active {
       padding-top: .5rem;
       padding-bottom: 0.5rem;
@@ -22,20 +22,21 @@
         align-items: center;
     }
     &__list{
-        background-color: $color-dark!important;
+        background-color: $color-background!important;
     }
     &__item {
       list-style-type: none;
       display: inline-block;
+      padding-right: 1.5rem;
       @include media-breakpoint-down(lg) {
-        color: $color-dark;
+        color: $color-background;
         padding-top: 1rem;
       }
     }
     &__link {
+      color: white;
       text-decoration: none;
       margin: 1rem;
-      color: $color-dark;
       font-size: 1rem;
       position: relative;
       padding-bottom: 2px;  
@@ -69,6 +70,15 @@
         transition: 0.2s;
         background-color: $color-light;
       }
+    }
+    &__clock{
+      font-weight: bold;
+      font-size: 18pt;
+    }
+    &__date{
+      font-weight: light;
+      color: #A6A9B7;
+      font-size: 10pt;
     }
     &__btn{
       background-color: $color-light;
@@ -140,7 +150,7 @@
         background-color: $color-light;
         transform: translateX(1000px);
         a {
-          color: $color-dark;
+          color: $color-background;
         }
       }
     }
@@ -155,7 +165,6 @@
     top: 0;
     transition: 0.2s ease-in-out;
     height: 5rem;
-  
     &--active {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
@@ -218,6 +227,7 @@
     }
   
     &__container {
+      margin-right: 2rem;
       margin-top: 0;
       display: flex;
       flex-direction: column;
@@ -291,7 +301,7 @@
         background-color: $color-light;
         transform: translateX(1000px);
         a {
-          color: $color-dark;
+          color: $color-background;
         }
       }
     }
