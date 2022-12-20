@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/styles.css">
-
-    <script src="dist/main.js"></script>
+    <!-- 
+    <script src="dist/main.js"></script> -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
     <title>Gebruikersbeheer</title>
 </head>
@@ -14,55 +15,261 @@
   <section class="c-gebruikers">
     <div class="c-table__header">
       <div class="c-table__filters">
-      <select name="sort" id="sort" class="c-dropdown">
-        <option selected value="sorteerop" class="c-dropdown__option">Sorteren op</option>
-        <option value="naamAsc" class="c-dropdown__option">ID (0-9)</option>
-        <option value="naamDesc" class="c-dropdown__option">ID (9-0)</option>
-        <option value="naamAsc" class="c-dropdown__option">Naam (A-Z)</option>
-        <option value="naamDescg" class="c-dropdown__option">Naam (Z-A)</option>
+      <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search">   
+      <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--mrg c-dropdown--show " onChange = "showItems(this)">
+        <option selected class="c-dropdown__option" value="show5">Toon: 5</option>
+        <option class="c-dropdown__option" value="show15">Toon: 15</option>
+        <option class="c-dropdown__option" value="show30">Toon: 25</option>
+        <option class="c-dropdown__option" value="show45">Toon: 35</option>
+        <option class="c-dropdown__option" value="show45">Toon: 50</option>
       </select>
-      <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search">    
+
+        <!-- <div class="c-pagination">
+          <a href="#" class="c-pagination__link">&laquo;</a>
+          <a href="#" class="c-pagination__link c-pagination__link--active">1</a>
+          <a href="#" class="c-pagination__link">2</a>
+          <a href="#" class="c-pagination__link">3</a>
+          <a href="#" class="c-pagination__link">&raquo;</a>
+        </div> -->
       </div>
     </div>
     <table class="c-table js-table" id="myTable">
         <thead class="c-table__head">
         <tr>
         <th class="c-table__head--check">&nbsp;</th>
-        <th class="c-table__head--id">ID</th>
+        <th class="c-table__head--id" id="table-head-id" data-column="id" data-order="desc">ID &#9650</th>
         <th class="c-table__head--foto"></th>
-        <th class="c-table__head--naam">Naam</th>
-        <th class="c-table__head--email">Email</th>
-        <th class="c-table__head--type">Type</th>
-        <th class="c-table__head--gebdat">Geboortedatum</th>
-        <th class="c-table__head--geslacht">Geslacht</th>
+        <th class="c-table__head--naam" id="table-head-naam" data-column="naam" data-order="desc">Naam &#9650</th>
+        <th class="c-table__head--email" id="table-head-email" data-column="email" data-order="desc">Email &#9650</th>
+        <th class="c-table__head--type" id="table-head-type" data-column="type" data-order="desc">Type &#9650</th>
+        <th class="c-table__head--gebdat" id="table-head-birthdate" data-column="birthdate" data-order="desc">Geboortedatum &#9650</th>
+        <th class="c-table__head--geslacht" id="table-head-gender" data-column="gender" data-order="desc">Geslacht &#9650</th>
         </tr>
         </thead>
         <tbody class="c-table__body js-table__body">
         </tbody>
         </table>
-        <div class="c-table__footer">
-          <select name="sort" id="sort" class="c-dropdown c-dropdown--show">
-            <option selected value="sorteerop" class="c-dropdown__option">Toon: 10</option>
-            <option value="naamAsc" class="c-dropdown__option">Toon: 25</option>
-            <option value="naamDesc" class="c-dropdown__option">Toon: 50</option>
-            <option value="naamAsc" class="c-dropdown__option">Toon: 100</option>
-          </select>
-          <div class="c-pagination">
-            <a href="#" class="c-pagination__link">&laquo;</a>
-            <a href="#" class="c-pagination__link c-pagination__link--active">1</a>
-            <a href="#" class="c-pagination__link">2</a>
-            <a href="#" class="c-pagination__link">3</a>
-            <a href="#" class="c-pagination__link">&raquo;</a>
-          </div>
-          
-        </div>
         
   </section>
 
   <script>
-    function deleteRow(r) {
-      document.getElementById("myTable").deleteRow(r);
+var myArray = []
+
+$('#search-input').on('keyup', function() {
+  var value = $(this).val()
+  //console.log(value)
+  var data = searchTable(value, myArray)
+  buildTable(data)
+})
+
+$('#table-head-id').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+$('#table-head-naam').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+$('#table-head-email').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+$('#table-head-type').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+$('#table-head-birthdate').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+$('#table-head-gender').on('click', function(){
+  var column = $(this).data('column')
+  var order = $(this).data('order')
+  //console.log('was clicked', column, order)
+  var text = $(this).html()
+  text = text.substring(0, text.length - 1);
+
+  if(order == 'desc') {
+    myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+    $(this).data('order', "asc")
+    text += '&#9660'
+  } else {
+    myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+    $(this).data('order', "desc")
+    text += '&#9650'
+  }
+  $(this).html(text)
+  buildTable(myArray)
+
+})
+
+buildTable(myArray)
+
+function searchTable(value, data) {
+  var filteredData = []
+
+  for (var i = 0; i < data.length; i++){
+    value = value.toLowerCase()
+    var title = data[i].firstName.toLowerCase()
+    
+    if (title.includes(value)) {
+      filteredData.push(data[i])
     }
+  }
+
+  return filteredData
+}
+
+$.ajax({
+  method: 'GET',
+  url: 'json/users.json',
+  success: function(response) {
+    myArray = response.users
+    buildTable(myArray)
+    //console.log(myArray)
+  }
+})
+
+function buildTable(data) {
+  var table = document.getElementById('js-table__body')
+
+  for (var i = 0; i < data.length; i++) {
+    var row = `<tr class="js-table__body--row">
+        <td>#</td>
+        <td><img src="${data[i].image}" alt="${data[i].firstName} ${data[i].lastName}"></td>
+        <td class="js-table__body--name">${data[i].firstName} ${data[i].lastName}</td>
+        <td>${data[i].email}</td>
+        <td>${data[i].type}</td>
+        <td>${data[i].dateOfBirth}</td>
+        <td>${data[i].gender}</td>
+        <td>
+          <div class="c-table__icons">
+            <svg class="c-table__icons--1" id="prullenbak" xmlns="http://www.w3.org/2000/svg" width="21.148" height="27.19" viewBox="0 0 21.148 27.19">
+            <path id="prullenbak-2" data-name="prullenbak" d="M6.511,27.169A3.03,3.03,0,0,0,9.532,30.19H21.616a3.03,3.03,0,0,0,3.021-3.021V9.042H6.511ZM26.148,4.511H20.861L19.35,3H11.8L10.287,4.511H5V7.532H26.148Z" transform="translate(-5 -3)" fill="#eee"/>
+            </svg>
+            <svg class="c-table__icons--2" id="editor" xmlns="http://www.w3.org/2000/svg" width="27.19" height="27.19" viewBox="0 0 27.19 27.19">
+            <path id="editor-2" data-name="editor" d="M3,24.524v5.664H8.664l16.7-16.7L19.7,7.819ZM29.749,9.1a1.5,1.5,0,0,0,0-2.13L26.214,3.439a1.5,1.5,0,0,0-2.13,0L21.321,6.2l5.664,5.664L29.749,9.1Z" transform="translate(-3 -2.998)" fill="#eee"/>
+            </svg>
+          </div>
+        </td>
+      </tr>`
+
+      table.innerHTML += row
+  }
+}
+
+$(function () {
+    var numShown = 5; // Initial rows shown & index
+    var numMore = 10;  // Increment
+
+    var $table = $('table').find('tbody');  // tbody containing all the rows
+    var numRows = $table.find('tr').length; // Total # rows
+    // Hide rows and add clickable div
+    $table.find('tr:gt(' + (numShown - 1) + ')').hide().end()
+        .after('<tbody id="more"><tr><td colspan="' +
+               $table.find('tr:first td').length + '</tbody></td></tr>');
+
+    $('#show-limit-items').on('change', function() {
+        numShown = numShown + numMore;
+
+        // change rows remaining if less than increment
+        if (numRows - numShown < numMore) {
+            $('#more span').html(numRows - numShown);
+        }
+        $table.find('tr:lt(' + numShown + ')').show();
+    })
+
+})
+
+//delete
+// function deleteRow(r) {
+//   document.getElementById("myTable").deleteRow(r);
+// }
   </script>
 </body>
 </html>
