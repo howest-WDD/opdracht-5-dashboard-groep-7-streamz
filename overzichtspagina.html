@@ -42,11 +42,10 @@
             </tbody>
             </table>
             <div class="c-table__footer">
-              <select name="sort" id="sort" class="c-dropdown c-dropdown--show">
-                <option selected class="c-dropdown__option">Toon: 10</option>
-                <option class="c-dropdown__option">Toon: 25</option>
-                <option class="c-dropdown__option">Toon: 50</option>
-                <option class="c-dropdown__option">Toon: 100</option>
+              <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--show" onChange = "showItems(this)">
+                <option selected class="c-dropdown__option" value="show10">Toon: 10</option>
+                <option class="c-dropdown__option" value="show25">Toon: 25</option>
+                <option class="c-dropdown__option" value="show50">Toon: 50</option>
               </select>
               <div class="c-pagination">
                 <a href="#" class="c-pagination__link">&laquo;</a>
@@ -63,6 +62,20 @@
     <script>
       function deleteRow(r) {
         document.getElementById("myTable").deleteRow(r);
+      }
+
+      function showItems(x) {
+        switch(x.value) {
+					case "show10":
+						console.log("selected 0");
+						break;
+					case "show25":
+            console.log("selected 25");
+						break;
+					default: 
+            console.log("selected 50");
+						break;
+				}
       }
     </script>
 </body>
