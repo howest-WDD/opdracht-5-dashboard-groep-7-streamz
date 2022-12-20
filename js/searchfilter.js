@@ -8,7 +8,7 @@ const searchFilter = function() {
   
         span_items.forEach(function(item){
           if(item.textContent.toLowerCase().indexOf(search_item) != -1){
-            item.closest(".js-table__body--row").style.display = "block";
+            item.closest(".js-table__body--row").style.display = "table-row";
           }
           else {
             item.closest(".js-table__body--row").style.display = "none";
