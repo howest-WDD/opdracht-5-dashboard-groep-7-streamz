@@ -45,6 +45,7 @@ const showProducts = function () {
 };
 
 
+
 const init = function () {   
     if (document.querySelector(".js-page-table")) {
       showProducts();
