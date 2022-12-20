@@ -11,7 +11,7 @@
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 26.875rem;
+    min-height: 30rem;
     &--1 {
       background-image: url(../img/top5-1.png);
     }
@@ -53,9 +53,20 @@
     bottom: 0rem;
     right: 50%;
     transform: translateX(50%);
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     border-top: solid 4px $color-accent;
     background-color: $color-itembackground;
-    width: 100%;
+    width: 101%;
+    @include media-breakpoint-down(md) {
+      visibility: visible;
+    }
+  }
+  &__maand{
+    color: $color-text-grey;
+  }
+  &__uur{
+    p{
+      margin-top: -1rem;
+    }
   }
 }
