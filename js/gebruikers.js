@@ -50,7 +50,9 @@ const showGebruikers = function () {
 
 
 const init = function () {   
-    showGebruikers();
+    if (document.querySelector(".js-page-table")) {
+      showGebruikers();
+    }
 };
 
 document.addEventListener("DOMContentLoaded", init);
