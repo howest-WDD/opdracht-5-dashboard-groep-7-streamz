@@ -43,18 +43,38 @@
     }
     &--vlaamsbrabant {
       &:hover {
-        fill: $color-chart-pink2;
+        fill: $color-chart-pink3;
       }
     }
     &--limburg {
       &:hover {
-        fill: $color-chart-pink3;
+        fill: $color-chart-pink2;
       }
     }
     &--brussel {
       &:hover {
         fill: $color-chart-grey;
       }
+    }
+  }
+  &__color {
+    &--wv {
+      fill: $color-chart-orange;
+    }
+    &--ov {
+      fill: $color-chart-yellow;
+    }
+    &--a {
+      fill: $color-chart-pink;
+    }
+    &--vb {
+      fill: $color-chart-pink3;
+    }
+    &--l {
+      fill: $color-chart-pink2;
+    }
+    &--b {
+      fill: $color-chart-grey;
     }
   }
   &__chartcont {
@@ -123,8 +143,13 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
+    cursor: default;
     h3 {
       font-size: 1rem;
+    }
+    &--wv:hover has .c-gebruikersbedb__provincie {
+      // transition: all 0.3s;
+      fill: $color-chart-orange;
     }
   }
   &__legendcolor {
