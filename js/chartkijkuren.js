@@ -67,7 +67,9 @@ const chartkijkuren = function () {
 };
 
 const init = function () {
-  chartkijkuren();
+  if (document.querySelector(".js-page-dashboard")) {
+    chartkijkuren();
+  }
 };
 
 document.addEventListener("DOMContentLoaded", init);

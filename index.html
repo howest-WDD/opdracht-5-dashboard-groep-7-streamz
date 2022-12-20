@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="dist/styles.css" />
     <script src="dist/main.js"></script>
   </head>
-  <body>
+  <body class="js-page-dashboard">
     <main>
       <nav class="c-nav js-nav">
         <div class="o-container container col-md-fluid">
@@ -170,7 +170,11 @@
                 <h3>Gratis</h3>
               </li>
             </ul>
-            <i class="bi bi-three-dots"></i>
+            <i class="bi bi-three-dots js-dropdownicondb"></i>
+            <div id="myDropdown" class="c-dropdowndb js-dropdowndb u-hidedropdown">
+              <a href="#" class="c-dropdowndb__item">6 maanden</a>
+              <a href="#" class="c-dropdowndb__item">Jaar</a>
+            </div>
           </div>
           <canvas class="js-subsdb pb-4"></canvas>
         </div>
@@ -191,7 +195,6 @@
                 <h3>onder 12</h3>
               </li>
             </ul>
-            <i class="bi bi-three-dots"></i>
           </div>
           <canvas class="js-kijkurendb pb-4"></canvas>
         </div>
@@ -251,7 +254,6 @@
           <div class="c-releasesdb">
             <div class="c-releasesdb__title">
               <h3>Aankomende releases</h3>
-              <p><i class="bi bi-three-dots"></i></p>
             </div>
             <div class="c-releasesdb__releases">
               <div class="c-releasesdb__left">
@@ -321,10 +323,15 @@
           <div class="c-top5db">
             <div class="c-top5db__image c-top5db__image--1">
               <h3 class="c-top5db__nr">1</h3>
-              <div class="c-top5db__text text-center">
-                <h3>Deze maand</h3>
-                <h3 class="c-top5db__amount">1.635.000</h3>
-                <p>uur</p>
+              <div class="c-top5db__textbox d-flex flex-column text-center">
+                <h3 class="c-top5db__texttitle mb-4">GELDWOLVEN</h3>
+                <div class="c-top5db__textinfo d-flex justify-content-around">
+                  <h3>deze maand</h3>
+                  <div class="d-flex flex-column ">
+                    <h3 class="c-top5db__amount">1.635.000</h3>
+                    <p>uur</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="c-top5db__image c-top5db__image--2">

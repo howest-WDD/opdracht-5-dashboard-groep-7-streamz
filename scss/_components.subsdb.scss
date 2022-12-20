@@ -1,4 +1,5 @@
 .c-subsdb {
+  position: relative;
   &__legendlist {
     display: flex;
     list-style: none;
@@ -10,14 +11,14 @@
     justify-content: space-between;
     // justify-content: center;
     margin-right: 0.9375rem;
-    h3{
-        font-size: .75rem;
+    h3 {
+      font-size: 0.75rem;
     }
   }
   &__legendcolor {
     width: 0.5rem;
     height: 1.625rem;
-    margin-right: .3125rem;
+    margin-right: 0.3125rem;
     margin-bottom: 0.5rem;
     &--streamz {
       background-color: $color-chart-pink;
@@ -28,5 +29,10 @@
     &--gratis {
       background-color: $color-chart-yellow;
     }
+  }
+  i {
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
   }
 }
