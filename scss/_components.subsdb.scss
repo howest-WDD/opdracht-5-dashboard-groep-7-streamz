@@ -3,6 +3,8 @@
   &__legendlist {
     display: flex;
     list-style: none;
+    padding-left: 0;
+    
   }
   &__legenditem {
     display: flex;
@@ -30,9 +32,14 @@
       background-color: $color-chart-yellow;
     }
   }
-  i {
+  &__dropdown {
     cursor: pointer;
     z-index: 10;
     font-size: 1.5rem;
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 }
