@@ -223,7 +223,7 @@ function buildTable(data) {
   for (var i = 0; i < data.length; i++) {
     var row = `<tr class="js-table__body--row">
         <td></td>
-        <td>#</td>
+        <td>#${data[i].id}</td>
         <td><img src="${data[i].image}" alt="${data[i].firstName} ${data[i].lastName}"></td>
         <td class="js-table__body--name">${data[i].firstName} ${data[i].lastName}</td>
         <td>${data[i].email}</td>
