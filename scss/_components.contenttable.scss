@@ -2,11 +2,9 @@
   margin-left: 18.4375rem;
   margin-right: 1rem;
 
-}
-@media (max-width: 1199.98px){
-    .c-content{
-        margin-left: 1rem;
+  @include media-breakpoint-down(lg) {
+    margin-left: 1rem;
     overflow-x:auto;
+  }
 
-    }
 }
