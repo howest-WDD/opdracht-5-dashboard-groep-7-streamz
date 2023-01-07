@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <script src="dist/main.js"></script>
+  </head>
+  <body class="js-page-instellingen">
+    <main>
+      <section class="c-instellingen">
+        <div class="c-instellingen__section c-instellingen__section--nav">
+          <ul class="c-instellingennav nav">
+            <li class="c-instellingennav__item">
+              <a href="" id="instelling-gebruikers-tab" data-bs-toggle="tab" data-bs-target="#instelling-gebruikers" role="tab" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
+                <div>icon</div>
+                <h3>gebruikers</h3>
+              </a>
+            </li>
+            <li class="active c-instellingennav__item">
+              <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-meldingen" role="tab" class="active c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
+                <div>icon</div>
+                <h3>meldingen</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="c-instellingen__section c-instellingen__section--window">
+          <div class="c-instellingencontent">
+            <div class="tab-content">
+              <div class="tab-pane" id="instelling-gebruikers" role="tabpanel">gebruikers</div>
+              <div class="tab-pane show active" id="instelling-meldingen" role="tabpanel">meldingen</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.c-instellingen {
+  display: grid;
+  grid-template-columns: min-content auto;
+  // grid-template-rows: 500px 152px 414px 134px 134px 350px;
+
+  gap: 1.5625rem;
+  padding: 1.875rem;
+  margin-left: 18.4375rem;
+
+  &__section {
+    // background-color: hotpink;
+    border-radius: 5px;
+    // height: 20rem;
+    &--nav {
+      // width: 400px;
+    }
+    &--window {
+      background-color: $color-itembackground;
+    }
+  }
+}
