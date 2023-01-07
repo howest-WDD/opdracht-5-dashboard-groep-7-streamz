@@ -1,0 +1,50 @@
+.c-form{
+    margin-top: 3rem;
+    &__container{
+        width: 100%;
+        padding: 3rem 0;
+    }
+    &__form{
+        padding: 3rem;
+        height: 100%;
+    }
+    &__label{
+        margin-bottom: .5rem;
+        color: $color-text-grey;
+    }
+    &__input{
+        background-color: $color-itembackground;
+        color: $color-white;
+        border: none;
+        &:focus{
+        background-color: $color-itembackground;
+        color: $color-white;
+        filter: none;
+        box-shadow: none;
+        }
+    }
+    &__radio{
+        background-color: $color-itembackground; 
+        color: $color-white;
+        border: none;
+        &:hover{
+            background: linear-gradient(90deg, rgba(242,13,58,1) 0%, rgba(255,10,90,1) 50%, rgba(204,2,67,1) 100%) !important;
+            color: $color-white !important;
+        }
+        &:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+            background: linear-gradient(90deg, rgba(242,13,58,1) 0%, rgba(255,10,90,1) 50%, rgba(204,2,67,1) 100%) !important;
+            color: $color-white !important;
+
+        }
+    }
+    
+    &__title{
+        // color: $color-turquoise;
+        // font-weight: $fw-bold;
+        margin-bottom: 1.5rem;
+    }
+    &__btn{
+        display: flex;
+        justify-content: end;
+    }
+}
