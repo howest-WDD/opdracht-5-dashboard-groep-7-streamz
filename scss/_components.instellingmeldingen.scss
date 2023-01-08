@@ -1,0 +1,18 @@
+.c-instellingmeldingen {
+  &__email {
+    display: flex;
+    margin-top: 3rem;
+  }
+  &__push {
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  &__meldinginfo {
+    width: 30%;
+    margin-right: 10rem;
+  }
+  &__setting {
+    margin: 1rem 0;
+  }
+}

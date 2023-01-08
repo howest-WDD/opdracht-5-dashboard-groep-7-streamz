@@ -1,0 +1,62 @@
+.c-instellingennav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content auto;
+
+  gap: 15px;
+
+  &__item {
+    background-color: $color-itembackground;
+    border-radius: 5px;
+    height: 122px;
+    width: 122px;
+    // cursor: pointer;
+    position: relative;
+    &::before {
+      content: "";
+      width: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0.375rem;
+      border-radius: 0 0 1.1875rem 1.1875rem;
+      background-color: $color-accent;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+        transition: width 0.3s ease-in-out;
+      }
+    }
+    // & > .active {
+    //   background-color: hotpink;
+    // }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-light;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    &:hover {
+      color: inherit;
+    }
+    i {
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+  .active {
+    position: relative;
+    &::before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0.375rem;
+      border-radius: 0 0 1.1875rem 1.1875rem;
+      background-color: $color-accent;
+    }
+  }
+}
