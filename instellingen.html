@@ -54,18 +54,52 @@
         <div class="c-instellingen__section c-instellingen__section--window">
           <div class="c-instellingencontent">
             <div class="tab-content">
-              <div class="tab-pane fade" id="instelling-gebruikers" role="tabpanel">gebruikers</div>
-              <section class="tab-pane fade c-instellingmeldingen" id="instelling-meldingen" role="tabpanel">
+              <section class="tab-pane fade" id="instelling-gebruikers" role="tabpanel">
+                <h2>instellingen voor gebruikers</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus illum officiis accusantium suscipit totam illo quia sapiente iure porro labore in amet natus, autem eius ipsa aliquid. Voluptas, ex vel.</p>
+                <div class="c-instelling__section">
+                  <div class="c-instellingencontent__settinginfo">
+                    <p class="fw-bold">titel setting categorie</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn mt-3">aanpassingen opslaan</button>
+                </div>
+              </section>
+              <section class="tab-pane fade c-instelling" id="instelling-meldingen" role="tabpanel">
                 <h2>instellingen voor meldingen</h2>
                 <p>stel in welke meldingen gebruikers standaard krijgen, deze kan de gebruiker zelf uit zetten</p>
-                <div class="c-instellingmeldingen__email">
-                  <div class="c-instellingmeldingen__meldinginfo">
+                <div class="c-instelling__email">
+                  <div class="c-instelling__settinginfo">
                     <p class="fw-bold">Email meldingen</p>
                     <p>stuur email meldingen naar gebruikers om te laten weten wat er gebeurd wanneer ze niet op het platform zitten</p>
                   </div>
-                  <div class="c-instellingmeldingen__settings">
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -74,8 +108,8 @@
                         <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
                       </div>
                     </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -84,8 +118,8 @@
                         <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
                       </div>
                     </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -94,8 +128,8 @@
                         <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
                       </div>
                     </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -104,8 +138,8 @@
                         <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
                       </div>
                     </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -116,12 +150,102 @@
                     </div>
                   </div>
                 </div>
-                <div class="c-instellingmeldingen__push">
-                  <div class="c-instellingmeldingen__meldinginfo">
+                <div class="c-instelling__push">
+                  <div class="c-instelling__settinginfo">
                     <p class="fw-bold">Push meldingen</p>
                     <p>Toon push meldingen aan de gebruiker om ze te laten weten wat er gebeurt terwijl ze op Streamz zitten.</p>
                   </div>
-                  <div class="c-instellingmeldingen__settings">
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn mt-3">aanpassingen opslaan</button>
+                </div>
+              </section>
+              <section class="tab-pane fade" id="instelling-subs" role="tabpanel">
+                <h2>instellingen voor abonnementen</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus illum officiis accusantium suscipit totam illo quia sapiente iure porro labore in amet natus, autem eius ipsa aliquid. Voluptas, ex vel.</p>
+                <div class="c-instelling__section">
+                  <div class="c-instellingencontent__settinginfo">
+                    <p class="fw-bold">titel setting categorie</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn mt-3">aanpassingen opslaan</button>
+                </div>
+              </section>
+              <section class="tab-pane fade show active c-instellinglayout" id="instelling-layout" role="tabpanel">
+                <h2>instellingen voor uiterlijk</h2>
+                <p>stel in hoe het platform er uit ziet voor gebruikers dmv. kleuren, layout etc in te stellen.</p>
+                <div class="c-instelling__section">
+                  <div class="c-instellingencontent__settinginfo">
+                    <p class="fw-bold">thema aanpassen</p>
+                    <p>Kies welk thema van kleuren de gebruikers te zien krijgen</p>
+                  </div>
+                  <div class="c-instellinglayout__settings">
                     <div class="c-instellingmeldingen__setting c-toggle">
                       <label class="c-toggle__toggler c-instellingmeldingen__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
@@ -164,12 +288,10 @@
                     </div>
                   </div>
                 </div>
-              </section>
-              <div class="tab-pane fade" id="instelling-subs" role="tabpanel">subs</div>
-              <section class="tab-pane fade show active c-instellinglayout" id="instelling-layout" role="tabpanel">
-                <h4>thema</h4>
-                <h4>layout</h4>
-                <p>evenementen</p>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn mt-3">aanpassingen opslaan</button>
+                 
+                </div>
               </section>
             </div>
           </div>

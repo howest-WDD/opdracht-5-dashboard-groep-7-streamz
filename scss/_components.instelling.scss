@@ -1,0 +1,29 @@
+.c-instelling {
+  &__settinginfo {
+    width: 30%;
+    margin-right: 10rem;
+  }
+  &__email {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+  }
+  &__section {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+  }
+  &__push {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+  }
+
+  &__meldinginfo {
+    width: 30%;
+    margin-right: 10rem;
+  }
+  &__setting {
+    margin: 1rem 0;
+  }
+}
