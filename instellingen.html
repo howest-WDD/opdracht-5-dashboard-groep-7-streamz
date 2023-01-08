@@ -15,14 +15,38 @@
           <ul class="c-instellingennav nav">
             <li class="c-instellingennav__item">
               <a href="" id="instelling-gebruikers-tab" data-bs-toggle="tab" data-bs-target="#instelling-gebruikers" role="tab" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
-                <div>icon</div>
+                <i class="bi bi-people"></i>
                 <h3>gebruikers</h3>
               </a>
             </li>
-            <li class="active c-instellingennav__item">
-              <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-meldingen" role="tab" class="active c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
-                <div>icon</div>
+            <li class="c-instellingennav__item">
+              <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-meldingen" role="tab" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-chat-left-text"></i>
                 <h3>meldingen</h3>
+              </a>
+            </li>
+            <li class="c-instellingennav__item">
+              <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-subs" role="tab" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-credit-card"></i>
+                <h3>abonnees</h3>
+              </a>
+            </li>
+            <li class="c-instellingennav__item">
+              <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-layout" role="tab" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center active">
+                <i class="bi bi-palette"></i>
+                <h3>Layout</h3>
+              </a>
+            </li>
+            <li class="c-instellingennav__item">
+              <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-subs" role="tab" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-lock"></i>
+                <h3>beveiliging</h3>
+              </a>
+            </li>
+            <li class="c-instellingennav__item">
+              <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-subs" role="tab" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
+                <i class="bi bi-sliders2"></i>
+                <h3>voorkeuren</h3>
               </a>
             </li>
           </ul>
@@ -30,8 +54,123 @@
         <div class="c-instellingen__section c-instellingen__section--window">
           <div class="c-instellingencontent">
             <div class="tab-content">
-              <div class="tab-pane" id="instelling-gebruikers" role="tabpanel">gebruikers</div>
-              <div class="tab-pane show active" id="instelling-meldingen" role="tabpanel">meldingen</div>
+              <div class="tab-pane fade" id="instelling-gebruikers" role="tabpanel">gebruikers</div>
+              <section class="tab-pane fade c-instellingmeldingen" id="instelling-meldingen" role="tabpanel">
+                <h2>instellingen voor meldingen</h2>
+                <p>stel in welke meldingen gebruikers standaard krijgen, deze kan de gebruiker zelf uit zetten</p>
+                <div class="c-instellingmeldingen__email">
+                  <div class="c-instellingmeldingen__meldinginfo">
+                    <p class="fw-bold">Email meldingen</p>
+                    <p>stuur email meldingen naar gebruikers om te laten weten wat er gebeurd wanneer ze niet op het platform zitten</p>
+                  </div>
+                  <div class="c-instellingmeldingen__settings">
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-instellingmeldingen__push">
+                  <div class="c-instellingmeldingen__meldinginfo">
+                    <p class="fw-bold">Push meldingen</p>
+                    <p>Toon push meldingen aan de gebruiker om ze te laten weten wat er gebeurt terwijl ze op Streamz zitten.</p>
+                  </div>
+                  <div class="c-instellingmeldingen__settings">
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instellingmeldingen__setting c-toggle">
+                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="tab-pane fade" id="instelling-subs" role="tabpanel">subs</div>
+              <section class="tab-pane fade show active c-instellinglayout" id="instelling-layout" role="tabpanel">
+                <h4>thema</h4>
+                <h4>layout</h4>
+                <p>evenementen</p>
+              </section>
             </div>
           </div>
         </div>
