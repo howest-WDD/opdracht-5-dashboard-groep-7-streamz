@@ -11,9 +11,9 @@ function showTime() {
     document.getElementById("MyClockDisplay").textContent = time;
 
     setTimeout(showTime, 1000);
-  var time = h + ":" + m;
-  document.getElementById("MyClockDisplay").innerText = time;
-  document.getElementById("MyClockDisplay").textContent = time;
+  // var time = h + ":" + m;
+  // document.getElementById("MyClockDisplay").innerText = time;
+  // document.getElementById("MyClockDisplay").textContent = time;
   setTimeout(showTime, 1000);
 }
 
@@ -37,10 +37,10 @@ const init = function () {
 
   document.addEventListener("DOMContentLoaded", init);
 
-const init = function () {
-  ShowDate();
-  showTime();
-};
+// const init = function () {
+//   ShowDate();
+//   showTime();
+// };
 
 document.addEventListener("DOMContentLoaded", init);
 
