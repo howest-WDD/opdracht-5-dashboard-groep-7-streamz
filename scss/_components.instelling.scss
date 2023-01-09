@@ -23,7 +23,18 @@
     width: 30%;
     margin-right: 10rem;
   }
+  &__settings {
+    width: 50%;
+  }
   &__setting {
     margin: 1rem 0;
+  }
+  &__colortheme {
+    width: 8rem;
+    height: 8rem;
+  }
+  &__radio {
+    margin-left: 0 !important;
+    margin-top: 1rem;
   }
 }

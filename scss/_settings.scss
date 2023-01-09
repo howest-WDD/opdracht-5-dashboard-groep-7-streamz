@@ -8,14 +8,22 @@ $color-positive: #8cea05;
 $color-accent: #ff0a5a;
 $color-light: #ffffff;
 $color-chart-pink: #ff0a5a;
-$color-chart-pink2: #CC0243;
-$color-chart-pink3: #F20D3A;
+$color-chart-pink2: #cc0243;
+$color-chart-pink3: #f20d3a;
 $color-chart-orange: #f64900;
 $color-chart-yellow: #fed71f;
 $color-chart-grey: #7d839f;
 $color-grey: #cccccc;
-$color-border: #5C659D;
+$color-border: #5c659d;
 
-$font-standard: 'Red Hat Text', sans-serif;
+$font-standard: "Red Hat Text", sans-serif;
 
+$form-check-input-bg: $color-background;
+$form-check-input-border: 5px;
+$form-check-input-border-radius: 5px;
+$form-check-radio-border-radius: 5px;
+$form-check-input-focus-box-shadow: none;
 
+$form-check-input-checked-color: $color-accent;
+$form-check-input-checked-bg-color: $color-accent;
+$form-check-input-checked-border-color: $color-background;
