@@ -1,10 +1,12 @@
 .c-instelling {
   &__header {
-    border-bottom: 1px solid $color-accent;
+    border-bottom: 3px solid $color-accent;
   }
   &__settinginfo {
     width: 30%;
-    margin-right: 10rem;
+    margin-right: 8rem;
+    // padding-right: 2rem;
+    // border-right: solid 1px $color-grey;
   }
   &__email {
     display: flex;
@@ -22,12 +24,8 @@
     justify-content: space-between;
   }
 
-  &__meldinginfo {
-    width: 30%;
-    margin-right: 10rem;
-  }
   &__settings {
-    width: 50%;
+    width: 60%;
   }
   &__setting {
     margin: 1rem 0;
@@ -39,5 +37,51 @@
   &__radio {
     margin-left: 0 !important;
     margin-top: 1rem;
+  }
+  &__subimage {
+    width: 100%;
+    background-color: hotpink;
+    margin-bottom: 2rem;
+  }
+  &__sub {
+    margin-right: 1.5rem;
+    width: 25%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__check {
+    background-color: $color-background;
+    color: $color-white;
+    border: none;
+    width: 5rem;
+    text-align: center;
+    &:hover {
+      background: linear-gradient(90deg, rgba(242, 13, 58, 1) 0%, rgba(255, 10, 90, 1) 50%, rgba(204, 2, 67, 1) 100%) !important;
+      color: $color-white !important;
+    }
+    &:checked + .btn,
+    :not(.btn-check) + .btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+      background: linear-gradient(90deg, rgba(242, 13, 58, 1) 0%, rgba(255, 10, 90, 1) 50%, rgba(204, 2, 67, 1) 100%) !important;
+      color: $color-white !important;
+    }
+  }
+  &__input {
+    background-color: $color-background;
+    color: $color-white;
+    border: none;
+    width: 5rem;
+    &:focus {
+      background-color: $color-background;
+      color: $color-white;
+      filter: none;
+      box-shadow: none;
+    }
+  }
+  &__save {
+    margin-top: 5rem;
   }
 }
