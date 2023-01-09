@@ -86,9 +86,77 @@
 
 <section class="c-inputfilmform">
     <div class="c-inputfilmform-container">
-        <div class="row justify-content-center">
-            <div class="text-center">test</div>
-        </div>
+        <form action="#" class="js-validate">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Film/serie?</p>
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput1" id="film">
+                                <label class="btn c-inputfilmform__radio" for="film">Film</label>
+                        
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput1" id="serie">
+                                <label class="btn c-inputfilmform__radio" for="serie">Serie</label>
+                            </div> 
+                        </div>
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Talen</p>
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="nederlands">
+                                <label class="btn c-inputfilmform__radio" for="nederlands">Nederlands</label>
+                        
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="frans">
+                                <label class="btn c-inputfilmform__radio" for="frans">Frans</label>
+
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="engels">
+                                <label class="btn c-inputfilmform__radio" for="engels">Engels</label>
+                            </div> 
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="row">
+                       <div class="col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingTitle">Titel</label>
+                                <input type="text" class="form-control c-inputfilmform__input" id="floatingTitle" minlength="2" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve een titel in te geven.</div>
+                            </div>
+                       </div>
+                       <div class="col-lg-6">
+                        <div class="c-inputfilmform-margins">
+                            <label class="c-inputfilmform__label" for="floatingRegisseur">Regisseur</label>
+                            <input type="text" class="form-control c-inputfilmform__input" id="floatingRegisseur" minlength="2" required>
+                            <div class="valid-feedback">Ziet er goed uit!</div>
+                            <div class="invalid-feedback">Gelieve een regisseur in te geven.</div>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <div class="c-inputfilmform-margins">
+                                 <label class="c-inputfilmform__label" for="floatingProducer">Producer</label>
+                                 <input type="text" class="form-control c-inputfilmform__input" id="floatingProducer" minlength="2" required>
+                                 <div class="valid-feedback">Ziet er goed uit!</div>
+                                 <div class="invalid-feedback">Gelieve een producer in te geven.</div>
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                         <div class="c-inputfilmform-margins">
+                             <label class="c-inputfilmform__label" for="floatingLand">Land</label>
+                             <input type="text" class="form-control c-inputfilmform__input" id="floatingLand" minlength="2" required>
+                             <div class="valid-feedback">Ziet er goed uit!</div>
+                             <div class="invalid-feedback">Gelieve een land in te geven.</div>
+                         </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 
