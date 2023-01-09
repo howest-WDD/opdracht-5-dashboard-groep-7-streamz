@@ -1,4 +1,7 @@
 .c-instelling {
+  &__header {
+    border-bottom: 1px solid $color-accent;
+  }
   &__settinginfo {
     width: 30%;
     margin-right: 10rem;

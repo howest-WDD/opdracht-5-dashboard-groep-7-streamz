@@ -6,11 +6,11 @@ function showTime() {
   h = h < 10 ? "0" + h : h;
   m = m < 10 ? "0" + m : m;
 
-  let time = h + ":" + m;
-  document.getElementById("MyClockDisplay").innerText = time;
-  document.getElementById("MyClockDisplay").textContent = time;
+    let time = h + ":" + m;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
 
-  setTimeout(showTime, 1000);
+    setTimeout(showTime, 1000);
   // var time = h + ":" + m;
   // document.getElementById("MyClockDisplay").innerText = time;
   // document.getElementById("MyClockDisplay").textContent = time;
@@ -24,9 +24,16 @@ function ShowDate() {
 }
 
 const init = function () {
-  showTime();
-  ShowDate();
+    showTime();
+    ShowDate();
 };
+
+  document.addEventListener("DOMContentLoaded", init);
+
+// const init = function () {
+//   ShowDate();
+//   showTime();
+// };
 
 document.addEventListener("DOMContentLoaded", init);
 
