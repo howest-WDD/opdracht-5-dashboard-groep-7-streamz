@@ -113,6 +113,17 @@
                                 <label class="btn c-inputfilmform__radio" for="engels">Engels</label>
                             </div> 
                         </div>
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Ondertitels</p>
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-nederlands">
+                                <label class="btn c-inputfilmform__radio" for="ondertitel-nederlands">Nederlands</label>
+                        
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-frans">
+                                <label class="btn c-inputfilmform__radio" for="ondertitel-frans">Frans</label>
+
+                            </div> 
+                        </div>
                     </div>
 
                 </div>
@@ -152,6 +163,49 @@
                              <div class="valid-feedback">Ziet er goed uit!</div>
                              <div class="invalid-feedback">Gelieve een land in te geven.</div>
                          </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-xl-4 col-lg-12">
+                             <div class="c-inputfilmform-margins">
+                                 <label class="c-inputfilmform__label" for="floatingRelease">Release datum</label>
+                                 <input type="date" class="form-control c-inputfilmform__input" id="floatingRelease" required>
+                                 <div class="valid-feedback">Ziet er goed uit!</div>
+                                 <div class="invalid-feedback">Gelieve een release in te geven.</div>
+                             </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                         <div class="c-inputfilmform-margins">
+                             <label class="c-inputfilmform__label" for="floatingLeeftijd">Leeftijd</label>
+                             <input type="number" class="form-control c-inputfilmform__input" id="floatingLeeftijd" min="18" max="100" required>
+                             <div class="valid-feedback">Ziet er goed uit!</div>
+                             <div class="invalid-feedback">Gelieve een leeftijd in te geven / je moet minstens 18+ zijn.</div>
+                         </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingSeizoenen">#Seiz.</label>
+                                <input type="number" class="form-control c-inputfilmform__input" id="floatingSeizoenen" min="1" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve de Seizoenen in te geven.</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingAfleveringen">#Afvl.</label>
+                                <input type="number" class="form-control c-inputfilmform__input" id="floatingAfleveringen" min="1" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve de afleveringen in te geven.</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingSpeeltijd">#Duur.</label>
+                                <input type="number" class="form-control c-inputfilmform__input" id="floatingSpeeltijd" min="1" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve de speeltijd in te geven.</div>
+                            </div>
                         </div>
                      </div>
                 </div>
