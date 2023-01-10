@@ -1,11 +1,17 @@
 .c-instellingen {
   display: grid;
   grid-template-columns: min-content auto;
-  // grid-template-rows: 500px 152px 414px 134px 134px 350px;
 
   gap: 1.5625rem;
   padding: 1.875rem;
   margin-left: 18.4375rem;
+  @include media-breakpoint-down(xxl) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  @include media-breakpoint-down(xl) {
+    margin-left: 0;
+  }
 
   &__section {
     // background-color: hotpink;
@@ -18,5 +24,4 @@
       background-color: $color-itembackground;
     }
   }
-  
 }
