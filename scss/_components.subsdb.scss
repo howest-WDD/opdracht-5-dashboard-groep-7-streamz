@@ -34,7 +34,7 @@
   }
   &__dropdown {
     cursor: pointer;
-    z-index: 10;
+    z-index: 1;
     font-size: 1.5rem;
     @include media-breakpoint-down(sm) {
       position: absolute;

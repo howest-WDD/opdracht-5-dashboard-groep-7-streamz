@@ -1,5 +1,4 @@
-
-  .c-sidenav {
+.c-sidenav {
     display: block;
     position: fixed;
     background-color: $color-background;
@@ -9,10 +8,35 @@
     overflow: hidden;
     border-right: 5px solid $color-accent;
     left: 0;
+    &__menu{
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+      align-items: start;
+      @include media-breakpoint-down(lg){
+        margin-top: 0rem;
+      }
+      &--2de{
+        margin-top: 1rem;
+      }
+    }
+    &__wrap{
+        @include media-breakpoint-up(lg){
+            display: none;
+      }
+    }
+    &__rapport{
+      @include media-breakpoint-down(lg){
+        margin-top: 2rem;
+      }
+    }
     &__item{
       text-align: center;
       margin-top: 5rem;
       list-style-type: none;
+      @include media-breakpoint-down(lg){
+        margin-top: 2.9rem;
+      }
     }
     &__link{
       text-decoration: none;
@@ -24,16 +48,27 @@
     @include media-breakpoint-down(lg){
       display: none;
     }
+    &__ra{
+      margin-left: 2rem;
+      margin-top: 3rem;
+    }
     &__icon{
       margin-right: 2rem;
-      width: 40px;
+      width: 32px;
+      height: 32px;
       &--active{
         background-color: $color-accent;
         border: 5px solid $color-accent;
         border-radius: .5rem;
       }
+      &--plus {
+        padding-left: .5rem;
+      }
     }
 
+  }
+  .c-btn__sidenav{
+    width: 12rem!important;
   }
  
   

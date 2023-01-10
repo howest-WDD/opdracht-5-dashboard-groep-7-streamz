@@ -16,6 +16,7 @@
       margin-top: 0;
     }
     &__logo {
+        z-index: 999;
         padding: 0;
         left: 0;
         display: flex;
@@ -23,7 +24,8 @@
     }
     &__list{
         background-color: $color-background!important;
-    }
+        color: white;
+        }
     &__item {
       list-style-type: none;
       display: inline-block;
@@ -31,6 +33,11 @@
       @include media-breakpoint-down(lg) {
         color: $color-background;
         padding-top: 1rem;
+      }
+    }
+    &__svg{
+      &:hover{
+        fill: $color-accent;
       }
     }
     &__link {
@@ -74,6 +81,9 @@
     &__clock{
       font-weight: bold;
       font-size: 18pt;
+      @include media-breakpoint-down(lg){
+        color: white;
+      }
     }
     &__date{
       font-weight: light;
@@ -139,7 +149,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        padding-top: 6rem;
+        padding-top: 3rem;
         text-align: center !important;
         li {
           text-align: center !important;
@@ -151,6 +161,9 @@
         transform: translateX(1000px);
         a {
           color: $color-background;
+          @include media-breakpoint-down(lg){
+            color: white;
+          }
         }
       }
     }
