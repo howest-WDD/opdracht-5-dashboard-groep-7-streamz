@@ -16,37 +16,37 @@
             <li class="c-instellingennav__item">
               <a href="" id="instelling-gebruikers-tab" data-bs-toggle="tab" data-bs-target="#instelling-gebruikers" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
                 <i class="bi bi-people"></i>
-                <h3>gebruikers</h3>
+                <h3 class="c-instellingennav__title">gebruikers</h3>
               </a>
             </li>
             <li class="c-instellingennav__item">
               <a href="" id="instelling-meldingen-tab" data-bs-toggle="tab" data-bs-target="#instelling-meldingen" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
                 <i class="bi bi-chat-left-text"></i>
-                <h3>meldingen</h3>
+                <h3 class="c-instellingennav__title">meldingen</h3>
               </a>
             </li>
             <li class="c-instellingennav__item">
               <a href="" id="instelling-abonnees-tab" data-bs-toggle="tab" data-bs-target="#instelling-subs" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
                 <i class="bi bi-credit-card"></i>
-                <h3>abonnees</h3>
+                <h3 class="c-instellingennav__title">abonnees</h3>
               </a>
             </li>
             <li class="c-instellingennav__item">
               <a href="" id="instelling-layout-tab" data-bs-toggle="tab" data-bs-target="#instelling-layout" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center active">
                 <i class="bi bi-palette"></i>
-                <h3>Layout</h3>
+                <h3 class="c-instellingennav__title">Layout</h3>
               </a>
             </li>
             <li class="c-instellingennav__item">
               <a href="" id="instelling-beveiliging-tab" data-bs-toggle="tab" data-bs-target="#instelling-subs" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
                 <i class="bi bi-lock"></i>
-                <h3>beveiliging</h3>
+                <h3 class="c-instellingennav__title">beveiliging</h3>
               </a>
             </li>
             <li class="c-instellingennav__item">
               <a href="" id="instelling-voorkeuren-tab" data-bs-toggle="tab" data-bs-target="#instelling-subs" class="c-instellingennav__link text-center d-flex flex-column align-items-center justify-content-center">
                 <i class="bi bi-sliders2"></i>
-                <h3>voorkeuren</h3>
+                <h3 class="c-instellingennav__title">voorkeuren</h3>
               </a>
             </li>
           </ul>
@@ -54,18 +54,88 @@
         <div class="c-instellingen__section c-instellingen__section--window">
           <div class="c-instellingencontent">
             <div class="tab-content">
-              <div class="tab-pane fade" id="instelling-gebruikers" role="tabpanel">gebruikers</div>
-              <section class="tab-pane fade c-instellingmeldingen" id="instelling-meldingen" role="tabpanel">
-                <h2>instellingen voor meldingen</h2>
-                <p>stel in welke meldingen gebruikers standaard krijgen, deze kan de gebruiker zelf uit zetten</p>
-                <div class="c-instellingmeldingen__email">
-                  <div class="c-instellingmeldingen__meldinginfo">
+              <section class="tab-pane fade" id="instelling-gebruikers" role="tabpanel">
+                <div class="c-instelling__header">
+                  <h2>instellingen voor gebruikers</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus illum officiis accusantium suscipit totam illo quia sapiente iure porro labore in amet natus, autem eius ipsa aliquid. Voluptas, ex vel.</p>
+                </div>
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
+                    <p class="fw-bold">profielen</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <input type="number" class="form-control c-instelling__input c-instelling__input--leeftijd" id="profielamount" value="2" required />
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">aantal profielen</p>
+                        <p class="c-toggle__text">Aantal profielenen een gebruiker kan aanmaken per account</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
+                    <p class="fw-bold">leeftijd</p>
+                    <p>minimum leeftijd om een account aan te maken op Streamz</p>
+                  </div>
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <input type="number" class="form-control c-instelling__input c-instelling__input--leeftijd" id="profielleeftijd" value="13" required />
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">min. leeftijd</p>
+                        <p class="c-toggle__text">minimum leeftijd om een account aan te maken op Streamz</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn mt-3">aanpassingen opslaan</button>
+                </div>
+              </section>
+              <section class="tab-pane fade c-instelling" id="instelling-meldingen" role="tabpanel">
+                <div class="c-instelling__header">
+                  <h2>instellingen voor meldingen</h2>
+                  <p>stel in welke meldingen gebruikers standaard krijgen, deze kan de gebruiker zelf uit zetten</p>
+                </div>
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
                     <p class="fw-bold">Email meldingen</p>
                     <p>stuur email meldingen naar gebruikers om te laten weten wat er gebeurd wanneer ze niet op het platform zitten</p>
                   </div>
-                  <div class="c-instellingmeldingen__settings">
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" checked />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" checked />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" checked />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -74,39 +144,9 @@
                         <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
                       </div>
                     </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
-                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
-                        <span class="c-toggle__switch"></span>
-                      </label>
-                      <div class="c-toggle__info">
-                        <p class="c-toggle__title">setting title</p>
-                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
-                      </div>
-                    </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
-                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
-                        <span class="c-toggle__switch"></span>
-                      </label>
-                      <div class="c-toggle__info">
-                        <p class="c-toggle__title">setting title</p>
-                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
-                      </div>
-                    </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
-                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
-                        <span class="c-toggle__switch"></span>
-                      </label>
-                      <div class="c-toggle__info">
-                        <p class="c-toggle__title">setting title</p>
-                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
-                      </div>
-                    </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
-                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" checked />
                         <span class="c-toggle__switch"></span>
                       </label>
                       <div class="c-toggle__info">
@@ -116,14 +156,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="c-instellingmeldingen__push">
-                  <div class="c-instellingmeldingen__meldinginfo">
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
                     <p class="fw-bold">Push meldingen</p>
                     <p>Toon push meldingen aan de gebruiker om ze te laten weten wat er gebeurt terwijl ze op Streamz zitten.</p>
                   </div>
-                  <div class="c-instellingmeldingen__settings">
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" checked />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -132,9 +182,9 @@
                         <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
                       </div>
                     </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
-                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" checked />
                         <span class="c-toggle__switch"></span>
                       </label>
                       <div class="c-toggle__info">
@@ -142,18 +192,8 @@
                         <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
                       </div>
                     </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
-                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
-                        <span class="c-toggle__switch"></span>
-                      </label>
-                      <div class="c-toggle__info">
-                        <p class="c-toggle__title">setting title</p>
-                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
-                      </div>
-                    </div>
-                    <div class="c-instellingmeldingen__setting c-toggle">
-                      <label class="c-toggle__toggler c-instellingmeldingen__toggle">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
                         <input class="c-toggle__checkbox js-toggle" type="checkbox" />
                         <span class="c-toggle__switch"></span>
                       </label>
@@ -164,12 +204,346 @@
                     </div>
                   </div>
                 </div>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn mt-3">aanpassingen opslaan</button>
+                </div>
               </section>
-              <div class="tab-pane fade" id="instelling-subs" role="tabpanel">subs</div>
-              <section class="tab-pane fade show active c-instellinglayout" id="instelling-layout" role="tabpanel">
-                <h4>thema</h4>
-                <h4>layout</h4>
-                <p>evenementen</p>
+              <section class="tab-pane fade c-instelling" id="instelling-subs" role="tabpanel">
+                <div class="c-instelling__header">
+                  <h2>instellingen voor abonnementen</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus illum officiis accusantium suscipit totam illo quia sapiente iure porro labore in amet natus, autem eius ipsa aliquid. Voluptas, ex vel.</p>
+                </div>
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
+                    <p class="fw-bold">titel setting categorie</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="c-instelling__settings c-instelling__settings--sub">
+                    <div class="c-instelling__sub d-flex flex-column">
+                      <img src="img/instellingenstreamz.png" alt="" class="c-instelling__subimage" />
+                      <form>
+                        <div class="">
+                          <p>Prijs</p>
+                          <div class="">
+                            <label class="c-form__label" for="streamzprijs">maandelijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzprijs" value="11.95" required />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzprijs6">6-maandelijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzprijs6" value="9.95" required />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzprijsjaar">jaarlijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzprijsjaar" value="8.95" required />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <p class="mt-5">instellingen</p>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzschermen">aantal schermen</label>
+                            <input type="number" class="form-control c-instelling__input" id="streamzschermen" value="3" required />
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamz360" />
+                            <label class="btn btn-primary c-instelling__check" for="streamz360">360p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamz480" />
+                            <label class="btn btn-primary c-instelling__check" for="streamz480">480p</label>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamz720" />
+                            <label class="btn btn-primary c-instelling__check" for="streamz720">720p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamz1080" />
+                            <label class="btn btn-primary c-instelling__check" for="streamz1080">1080p</label>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" id="streamz1440" />
+                            <label class="btn btn-primary c-instelling__check" for="streamz1440">1440p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" id="streamz2160" />
+                            <label class="btn btn-primary c-instelling__check" for="streamz2160">2160p</label>
+                          </div>
+                        </div>
+                        <div class="c-instelling__setting c-toggle mt-4">
+                          <label class="c-toggle__toggler c-instelling__toggle">
+                            <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                            <span class="c-toggle__switch"></span>
+                          </label>
+                          <div class="c-toggle__info">
+                            <p class="c-toggle__title">advertenties</p>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="c-instelling__sub d-flex flex-column">
+                      <img src="img/instellingenplus.png" alt="" class="c-instelling__subimage" />
+                      <form>
+                        <div class="">
+                          <p>Prijs (&euro;)</p>
+                          <div class="">
+                            <label class="c-form__label" for="streamzplusprijs">maandelijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzplusprijs" value="19.95" required />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzplusprijs6">6-maandelijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzplusprijs6" value="16.95" required />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzplusprijsjaar">jaarlijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzplusprijsjaar" value="15.95" required />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <p class="mt-5">instellingen</p>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzplusschermen">aantal schermen</label>
+                            <input type="number" class="form-control c-instelling__input" id="streamzplusschermen" value="5" required />
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzplus360" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzplus360">360p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzplus480" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzplus480">480p</label>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzplus720" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzplus720">720p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzplus1080" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzplus1080">1080p</label>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzplus1440" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzplus1440">1440p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzplus2160" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzplus2160">2160p</label>
+                          </div>
+                        </div>
+                        <div class="c-instelling__setting c-toggle mt-4">
+                          <label class="c-toggle__toggler c-instelling__toggle">
+                            <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                            <span class="c-toggle__switch"></span>
+                          </label>
+                          <div class="c-toggle__info">
+                            <p class="c-toggle__title">advertenties</p>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="c-instelling__sub d-flex flex-column">
+                      <img src="img/instellingengratis.png" alt="" class="c-instelling__subimage" />
+                      <form>
+                        <div class="">
+                          <p>Prijs</p>
+                          <div class="">
+                            <label class="c-form__label" for="streamzfreeprijs">maandelijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzfreeprijs" value="11.95" disabled />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzfreeprijs6">6-maandelijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzfreeprijs6" value="9.95" disabled />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzfreeprijsjaar">jaarlijks</label>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <input type="number" step=".01" class="form-control c-instelling__input c-instelling__input--prijs" id="streamzfreeprijsjaar" value="8.95" disabled />
+                              <p>/mnd</p>
+                            </div>
+                          </div>
+                          <p class="mt-5">instellingen</p>
+                          <div class="mt-3">
+                            <label class="c-form__label" for="streamzfreeschermen">aantal schermen</label>
+                            <input type="number" class="form-control c-instelling__input" id="streamzfreeschermen" value="1" required />
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzfree360" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzfree360">360p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzfree480" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzfree480">480p</label>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" checked id="streamzfree720" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzfree720">720p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" id="streamzfree1080" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzfree1080">1080p</label>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" id="streamzfree1440" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzfree1440">1440p</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" class="btn-check c-instelling__check" id="streamzfree2160" />
+                            <label class="btn btn-primary c-instelling__check" for="streamzfree2160">2160p</label>
+                          </div>
+                        </div>
+                        <div class="c-instelling__setting c-toggle mt-4">
+                          <label class="c-toggle__toggler c-instelling__toggle">
+                            <input class="c-toggle__checkbox js-toggle" checked type="checkbox" />
+                            <span class="c-toggle__switch"></span>
+                          </label>
+                          <div class="c-toggle__info">
+                            <p class="c-toggle__title">advertenties</p>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
+                    <p class="fw-bold">Promo's</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit necessitatibus, harum nihil tenetur unde ducimus ex</p>
+                  </div>
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">setting title</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn c-instelling__save">aanpassingen opslaan</button>
+                </div>
+              </section>
+              <section class="tab-pane fade show active c-instelling" id="instelling-layout" role="tabpanel">
+                <div class="c-instelling__header">
+                  <h2>instellingen voor uiterlijk</h2>
+                  <p>stel in hoe het platform er uit ziet voor gebruikers dmv. kleuren, layout etc in te stellen.</p>
+                </div>
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
+                    <p class="fw-bold">kleurthema aanpassen</p>
+                    <p>Kies welk thema van kleuren de gebruikers te zien krijgen</p>
+                  </div>
+                  <div class="d-flex flex-column c-instelling__settings">
+                    <div class="c-instelling__colorthemes">
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/colortheme1.png" alt="" class="c-instelling__colortheme" />
+                        <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked />
+                      </div>
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/colortheme2.png" alt="" class="c-instelling__colortheme" />
+                        <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                      </div>
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/colortheme3.png" alt="" class="c-instelling__colortheme" />
+                        <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
+                      </div>
+                    </div>
+                    <div class="mt-5 c-instelling__colorthemes">
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/colortheme4.png" alt="" class="c-instelling__colortheme" />
+                        <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1" />
+                      </div>
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/colortheme5.png" alt="" class="c-instelling__colortheme" />
+                        <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2" />
+                      </div>
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
+                        <img src="img/colortheme6.png" alt="" class="c-instelling__colortheme" />
+                        <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-instelling__section">
+                  <div class="c-instelling__settinginfo">
+                    <p class="fw-bold">evenement/feest versiering</p>
+                    <p>stel versieringen in die het platform wat feestelijker maken voor de gebruiker</p>
+                  </div>
+                  <div class="c-instelling__settings">
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" checked />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">Kerst/winter versieringen</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                    <div class="c-instelling__setting c-toggle">
+                      <label class="c-toggle__toggler c-instelling__toggle">
+                        <input class="c-toggle__checkbox js-toggle" type="checkbox" />
+                        <span class="c-toggle__switch"></span>
+                      </label>
+                      <div class="c-toggle__info">
+                        <p class="c-toggle__title">Paas versieringen</p>
+                        <p class="c-toggle__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, natus blanditiis id</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="c-btn mt-3">aanpassingen opslaan</button>
+                </div>
               </section>
             </div>
           </div>
