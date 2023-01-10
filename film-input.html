@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+    
+    <script src="dist/main.js"></script>
+
+
+    <title>film/serie-input</title>
+</head>
+<body class="js-form">
+<nav class="c-nav js-nav">
+    <div class="o-container">
+        <div class="row">
+            <div class="col-9 col-md-4 c-nav__logo">
+                <a href="index.html" class="c-logo">
+                    <img class="c-logo__svg" src="./img/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="col-3 col-md-8 c-nav__containerfix">
+                <div class="c-navtoggled__container">
+                    <input class="c-nav__toggle" type="checkbox">
+                    <span class="c-nav__bar c-nav__bar--top"></span>
+                    <span class="c-nav__bar c-nav__bar--mid"></span>
+                    <span class="c-nav__bar c-nav__bar--bottom"></span>
+
+                    <ul class="c-nav__list">
+                        <li class="c-nav__item">
+                        </li>
+                        <li class="c-nav__item">
+                            <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
+                            <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                            </svg></a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                            </svg></a>
+                        </li>
+                        <li class="c-nav__item">
+                          <a href="#" class="c-nav__link"><img src="./img/avatar.svg" alt="avatar">Gandalf The Gray</a>
+                        </li>
+                        <li class="c-nav__item">
+                          <a href="#" class="c-nav__link"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                          </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+  <nav class="c-sidenav col-2 navbar-primary">
+    <ul class="c-sidenav__menu navbar-primary-menu">
+        <li class="c-sidenav__item">
+            <a class="c-sidenav__link" href="#"><img class="c-sidenav__icon c-sidenav__icon--active" src="./img/dashboardicon.svg" alt="dashboardicon">Dashboard</a>
+        </li>
+        <li class="c-sidenav__item">
+            <a class="c-sidenav__link" href="#"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon">Content</a>
+        </li>  
+        <li class="c-sidenav__item">
+            <a class="c-sidenav__link" href="#"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon">Gebruikers</a>
+        </li>     
+    </ul>
+    <div class="c-sidenav__rapport">
+    <ul class="c-sidenav__menu navbar-primary-menu">
+      <li class="c-sidenav__item">
+          <a class="c-sidenav__link" href="#">Help</a>
+      </li>
+      <li class="c-sidenav__item">
+          <a class="c-sidenav__link" href="#">Instellingen</a>
+      </li>      
+  </ul>
+    <p>PDF rapport</p>
+    <p>Download maandelijks rapport</p>
+    <button class="c-btn">download</button>
+  </div>
+</nav>
+</div>
+</div>
+</nav>
+
+<section class="c-inputfilmform">
+    <div class="c-inputfilmform-container">
+        <div class="c-inputfilmform-margins"><H2>Voeg een film of serie toe</H2></div>
+        <form action="#" class="js-validate">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Film/serie?</p>
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput1" id="film">
+                                <label class="btn c-inputfilmform__radio" for="film">Film</label>
+                        
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput1" id="serie">
+                                <label class="btn c-inputfilmform__radio" for="serie">Serie</label>
+                            </div> 
+                        </div>
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Talen</p>
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="nederlands">
+                                <label class="btn c-inputfilmform__radio" for="nederlands">Nederlands</label>
+                        
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="frans">
+                                <label class="btn c-inputfilmform__radio" for="frans">Frans</label>
+
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="engels">
+                                <label class="btn c-inputfilmform__radio" for="engels">Engels</label>
+                            </div> 
+                        </div>
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Ondertitels</p>
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-nederlands">
+                                <label class="btn c-inputfilmform__radio" for="ondertitel-nederlands">Nederlands</label>
+                        
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-frans">
+                                <label class="btn c-inputfilmform__radio" for="ondertitel-frans">Frans</label>
+
+                            </div> 
+                        </div>
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Voeg afbeelding toe</p>
+                                <input type="file" name="image" id="image" accept="image/*" />
+                                <div class="c-form__preview c-inputfilmform__preview">
+                                <div class="c-form__preview c-inputfilmform__preview c-form__preview--avatar" id="js-avatar"></div>
+                                <button type="button" class="c-form__preview c-inputfilmform__preview c-form__preview--btn " id="upload-button" aria-labelledby="image" aria-describedby="image" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90.554" height="84.939" viewBox="0 0 90.554 84.939">
+                                    <path id="add-image" d="M96.554,14.911v8.941h-14.3V37.264H72.724V23.852h-14.3V14.911h14.3V1.5h9.532V14.911ZM56.043,46.2a6.941,6.941,0,0,0,7.149-6.712,7.167,7.167,0,0,0-14.3.006A6.942,6.942,0,0,0,56.043,46.2ZM72.724,60.662l-2.447-2.548a9.96,9.96,0,0,0-14.184,0l-3.123,3.263L29.83,37.264l-14.3,14.9V23.852H48.894V14.911H15.532c-5.264,0-9.532,4-9.532,8.941V77.5c0,4.938,4.268,8.941,9.532,8.941H72.724c5.264,0,9.532-4,9.532-8.941V46.2H72.724Z" fill="#a6a9b7"/>
+                                    </svg>
+                                </button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="row">
+                       <div class="col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingTitle">Titel</label>
+                                <input type="text" class="form-control c-inputfilmform__input" id="floatingTitle" minlength="2" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve een titel in te geven.</div>
+                            </div>
+                       </div>
+                       <div class="col-lg-6">
+                        <div class="c-inputfilmform-margins">
+                            <label class="c-inputfilmform__label" for="floatingRegisseur">Regisseur</label>
+                            <input type="text" class="form-control c-inputfilmform__input" id="floatingRegisseur" minlength="2" required>
+                            <div class="valid-feedback">Ziet er goed uit!</div>
+                            <div class="invalid-feedback">Gelieve een regisseur in te geven.</div>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <div class="c-inputfilmform-margins">
+                                 <label class="c-inputfilmform__label" for="floatingProducer">Producer</label>
+                                 <input type="text" class="form-control c-inputfilmform__input" id="floatingProducer" minlength="2" required>
+                                 <div class="valid-feedback">Ziet er goed uit!</div>
+                                 <div class="invalid-feedback">Gelieve een producer in te geven.</div>
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                         <div class="c-inputfilmform-margins">
+                             <label class="c-inputfilmform__label" for="floatingLand">Land</label>
+                             <input type="text" class="form-control c-inputfilmform__input" id="floatingLand" minlength="2" required>
+                             <div class="valid-feedback">Ziet er goed uit!</div>
+                             <div class="invalid-feedback">Gelieve een land in te geven.</div>
+                         </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-xl-4 col-lg-12">
+                             <div class="c-inputfilmform-margins">
+                                 <label class="c-inputfilmform__label" for="floatingRelease">Release datum</label>
+                                 <input type="date" class="form-control c-inputfilmform__input" id="floatingRelease" required>
+                                 <div class="valid-feedback">Ziet er goed uit!</div>
+                                 <div class="invalid-feedback">Gelieve een release in te geven.</div>
+                             </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                         <div class="c-inputfilmform-margins">
+                             <label class="c-inputfilmform__label" for="floatingLeeftijd">Leeftijd</label>
+                             <input type="number" class="form-control c-inputfilmform__input" id="floatingLeeftijd" min="18" max="100" required>
+                             <div class="valid-feedback">Ziet er goed uit!</div>
+                             <div class="invalid-feedback">Gelieve een leeftijd in te geven / je moet minstens 18+ zijn.</div>
+                         </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingSeizoenen">#Seiz.</label>
+                                <input type="number" class="form-control c-inputfilmform__input" id="floatingSeizoenen" min="1" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve de Seizoenen in te geven.</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingAfleveringen">#Afvl.</label>
+                                <input type="number" class="form-control c-inputfilmform__input" id="floatingAfleveringen" min="1" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve de afleveringen in te geven.</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingSpeeltijd">#Duur.</label>
+                                <input type="number" class="form-control c-inputfilmform__input" id="floatingSpeeltijd" min="1" required>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve de speeltijd in te geven.</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Categorie</p>
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput4" id="animatie">
+                                <label class="btn c-inputfilmform__radio" for="animatie">Animatie</label>
+                        
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput4" id="horror">
+                                <label class="btn c-inputfilmform__radio" for="horror">Horror</label>
+
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput4" id="komedie">
+                                <label class="btn c-inputfilmform__radio" for="komedie">Komedie</label>
+
+                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput4" id="misdaad">
+                                <label class="btn c-inputfilmform__radio" for="misdaad">Misdaad</label>
+
+                            </div> 
+                        </div>
+
+                        <div class="col-12">
+                            <div class="c-inputfilmform-margins">
+                                <label class="c-inputfilmform__label" for="floatingSamenvatting">Samenvatting</label>
+                                <textarea class="form-control c-inputfilmform__input" id="floatingSamenvatting" style="height: 15rem" placeholder="Typ hier de samenvatting van de film/serie..."></textarea>
+                                <div class="valid-feedback">Ziet er goed uit!</div>
+                                <div class="invalid-feedback">Gelieve een samenvatting in te geven.</div>
+                            </div> 
+                        </div>
+                     </div>
+                </div>
+                <div class="c-filminputform__btn d-flex flex-row-reverse">
+                    <div class="c-inputfilmform-margins">
+                        <button class="c-btn js-submit">Voeg toe</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
