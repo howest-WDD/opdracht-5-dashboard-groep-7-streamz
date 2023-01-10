@@ -1,7 +1,7 @@
 .c-inputfilmform {
 
     &-container {
-        background-color: hotpink;
+        //background-color: hotpink;
         width: 80%;
         height: 700px;
         margin-top: 2%;
@@ -14,10 +14,6 @@
 
     &__label {
         color: $color-text-grey;
-
-        &--avatar {
-            margin-left: 1rem;
-        }
     }
 
     &__btn{
@@ -45,9 +41,8 @@
     }
 
     &__preview {
-        margin-left: 1rem;
         height: 20rem;
-        width: 93%;
+        width: 100%;
       }
 
     &__input{
