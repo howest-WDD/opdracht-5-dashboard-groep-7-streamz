@@ -1,12 +1,14 @@
 const formValid = function () {
   const form = document.querySelector('.js-validate'); 
   const submit = document.querySelector('.js-submit'); 
-  const datePickerId = document.querySelector('.js-date');
-  const currentDate = new Date().toISOString().split("T")[0];
-  const currentYear = new Date().getFullYear().toString();
+  if(document.querySelector(".js-date")){
+    const datePickerId = document.querySelector('.js-date');
+    const currentDate = new Date().toISOString().split("T")[0];
+    const currentYear = new Date().getFullYear().toString();
 
-  datePickerId.max = currentDate;
-  datePickerId.min = (currentYear-200)+"-01-01";
+    datePickerId.max = currentDate;
+    datePickerId.min = (currentYear-200)+"-01-01";
+  }
  
     submit.addEventListener('click', function (e) { 
         if (!form.checkValidity()) { 
