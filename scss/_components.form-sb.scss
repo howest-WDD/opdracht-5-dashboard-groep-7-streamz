@@ -1,0 +1,19 @@
+.c-formsb{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    &__naam{
+        margin-right: 5rem;
+        background-color: $color-itembackground;
+        color: $color-light;
+        width: 18.75rem;
+        border: none;
+        border-radius: .3125rem;
+        padding: 1rem 1rem;
+        padding-left: 3rem;
+        &:focus-visible{
+          outline: none;
+        }
+    }
+
+  }
