@@ -42,8 +42,6 @@
     }
     
     &__title{
-        // color: $color-turquoise;
-        // font-weight: $fw-bold;
         margin-bottom: 1.5rem;
     }
     &__btn{
@@ -58,10 +56,14 @@
         position: relative;
         &--avatar{
             position: relative;
+            &:hover{
+                cursor: pointer;
+            }
         }
         &--btn{
             position: absolute;
             top: 0;
+            border: none;
         }
         &--hide{
             z-index: -1;
