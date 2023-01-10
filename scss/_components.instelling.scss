@@ -36,7 +36,7 @@
     @include media-breakpoint-down(md) {
       width: 100%;
     }
-    &--sub{
+    &--sub {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
@@ -107,6 +107,10 @@
     width: 100%;
     &--prijs {
       width: 70%;
+      &:disabled {
+        background-color: $color-background;
+        color: grey;
+      }
     }
     &--leeftijd {
       width: 5rem;
