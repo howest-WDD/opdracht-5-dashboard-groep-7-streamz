@@ -8,6 +8,25 @@
         margin-left: 18%;
     }
 
+    h2 {
+        font-weight: bolder;
+        color: $color-white;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+
+        &::after{
+            content: "";
+            background: linear-gradient(90deg, rgba(242,13,58,1) 0%, rgba(255,10,90,1) 50%, rgba(204,2,67,1) 100%) !important;
+            color: $color-white !important;
+            width: 4.5rem;
+            height: .5rem;
+            position: absolute;
+            top: 2.25rem;
+            left: 10.5rem;
+        }
+    }
+
     &-margins {
         margin: .5rem 1rem;
     }
