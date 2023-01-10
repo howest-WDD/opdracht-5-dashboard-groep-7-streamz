@@ -14,6 +14,15 @@
 
     &__label {
         color: $color-text-grey;
+
+        &--avatar {
+            margin-left: 1rem;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: end;
     }
 
     &__radio {
@@ -34,6 +43,12 @@
 
         }
     }
+
+    &__preview {
+        margin-left: 1rem;
+        height: 20rem;
+        width: 98%;
+      }
 
     &__input{
         background-color: $color-itembackground;
