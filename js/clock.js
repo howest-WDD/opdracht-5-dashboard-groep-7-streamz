@@ -9,12 +9,6 @@ function showTime() {
     let time = h + ":" + m;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
-
-    setTimeout(showTime, 1000);
-  // var time = h + ":" + m;
-  // document.getElementById("MyClockDisplay").innerText = time;
-  // document.getElementById("MyClockDisplay").textContent = time;
-  setTimeout(showTime, 1000);
 }
 
 function ShowDate() {
@@ -28,18 +22,5 @@ const init = function () {
     ShowDate();
 };
 
-  document.addEventListener("DOMContentLoaded", init);
-
-// const init = function () {
-//   ShowDate();
-//   showTime();
-// };
-
-document.addEventListener("DOMContentLoaded", init);
-
-// const init = function () {
-//   ShowDate();
-//   showTime();
-// };
 
 document.addEventListener("DOMContentLoaded", init);
