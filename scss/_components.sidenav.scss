@@ -9,20 +9,22 @@
     z-index: 3;
     border-right: 5px solid $color-accent;
     left: 0;
+    top: 0;
     &::-webkit-scrollbar {
       display: none;
     }
-    
     &__menu{
       display: flex;
       flex-direction: column;
-      margin-top: 4rem;
+      margin-top: 8rem;
       align-items: start;
       @include media-breakpoint-down(lg){
         margin-top: 0rem;
       }
       &--2de{
-        margin-top: 1rem;
+        margin-top: 5rem;
+        // justify-content: end;
+        ;
       }
     }
     &__wrap{
@@ -31,13 +33,17 @@
       }
     }
     &__rapport{
+        justify-content: end;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
       @include media-breakpoint-down(lg){
         margin-top: 2rem;
       }
     }
     &__item{
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 2rem;
       list-style-type: none;
       @include media-breakpoint-down(lg){
         margin-top: 2.9rem;
@@ -50,7 +56,7 @@
         color: $color-accent;
       }
     }
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(xl){
       display: none;
     }
     &__ra{
@@ -59,11 +65,13 @@
     }
     &__icon{
       margin-right: 2rem;
-      width: 32px;
-      height: 32px;
+      padding: .5rem;
+      // font-size: 20rem;
+      width: 2.25rem;
+      height: 2.25rem;
       &--active{
         background-color: $color-accent;
-        border: 5px solid $color-accent;
+        // border: 5px solid $color-accent;
         border-radius: .5rem;
       }
       &--plus {
