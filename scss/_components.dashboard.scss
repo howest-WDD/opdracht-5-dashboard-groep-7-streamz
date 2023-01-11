@@ -42,6 +42,8 @@
   &__item {
     background-color: $color-itembackground;
     border-radius: 5px;
+    visibility: hidden;
+    animation-fill-mode: forwards;
   }
 
   &__belgium {

@@ -118,6 +118,7 @@
   &__chart {
     position: relative;
     object-fit: cover;
+    min-width: 20rem;
   }
 
   &__legendbox {
