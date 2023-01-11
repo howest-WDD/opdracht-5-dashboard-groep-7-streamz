@@ -16,6 +16,8 @@
     width: 122px;
     // cursor: pointer;
     position: relative;
+    visibility: hidden;
+    animation-fill-mode: forwards;
     @include media-breakpoint-down(md) {
       height: auto;
       width: auto;

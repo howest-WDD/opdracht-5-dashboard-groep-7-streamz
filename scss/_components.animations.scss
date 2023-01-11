@@ -1,0 +1,50 @@
+.animate-pop {
+  animation-duration: 0.7s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.2);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+    visibility: visible;
+  }
+}
+
+.anim-delay-1 {
+  animation-delay: 0.1s;
+}
+.anim-delay-2 {
+  animation-delay: 0.2s;
+}
+.anim-delay-3 {
+  animation-delay: 0.3s;
+}
+.anim-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.anim-delay-instelling-1 {
+  animation-delay: 0.1s;
+}
+.anim-delay-instelling-2 {
+  animation-delay: 0.2s;
+}
+.anim-delay-instelling-3 {
+  animation-delay: 0.3s;
+}
+.anim-delay-instelling-4 {
+  animation-delay: 0.4s;
+}
+.anim-delay-instelling-5 {
+  animation-delay: 0.5s;
+}
+.anim-delay-instelling-6 {
+  animation-delay: 0.6s;
+}
