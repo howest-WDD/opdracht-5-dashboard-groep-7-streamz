@@ -17,6 +17,8 @@
     // background-color: hotpink;
     border-radius: 5px;
     // height: 20rem;
+    visibility: hidden;
+    animation-fill-mode: forwards;
     &--nav {
       // width: 400px;
     }
