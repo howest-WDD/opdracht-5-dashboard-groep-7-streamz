@@ -12,80 +12,80 @@
     <main>
       <nav class="c-nav js-nav">
         <div class="o-container">
-            <div class="row">
-                <div class="col-9 col-md-4 c-nav__logo">
-                    <a href="index.html" class="c-logo">
-                        <img class="c-logo__svg" src="./img/logo.svg" alt="Logo">
-                    </a>
-                </div>
-                <div class="col-3 col-md-8 c-nav__containerfix">
-                    <div class="c-navtoggled__container">
-                        <input class="c-nav__toggle" type="checkbox">
-                        <span class="c-nav__bar c-nav__bar--top"></span>
-                        <span class="c-nav__bar c-nav__bar--mid"></span>
-                        <span class="c-nav__bar c-nav__bar--bottom"></span>
+          <div class="row">
+            <div class="col-9 col-md-4 c-nav__logo">
+              <a href="index.html" class="c-logo">
+                <img class="c-logo__svg" src="./img/logo.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="col-3 col-md-8 c-nav__containerfix">
+              <div class="c-navtoggled__container">
+                <input class="c-nav__toggle" type="checkbox" />
+                <span class="c-nav__bar c-nav__bar--top"></span>
+                <span class="c-nav__bar c-nav__bar--mid"></span>
+                <span class="c-nav__bar c-nav__bar--bottom"></span>
 
-                        <ul class="c-nav__list" id="nav-list">
-                            <li class="c-nav__item">
-                            </li>
-                            <li class="c-nav__item">
-                                <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
-                                <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
-                            </li>
-                            <li class="c-nav__item">
-                                <a class="c-nav__link" href="#"><svg class="c-nav__svg bi bi-chat-left-text-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
-                                  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
-                                </svg></a>
-                            </li>
-                            <li class="c-nav__item">
-                                <a class="c-nav__link" href="#"><svg class="c-nav__svg bi bi-bell-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
-                                  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-                                </svg></a>
-                            </li>
-                            <li class="c-nav__item">
-                              <a href="#" class="c-nav__link"><img src="./img/avatar.svg" style="padding-right: 1rem" alt="avatar">Gandalf The Gray</a>
-                            </li>
-                            <li class="c-nav__item">
-                              <a href="#" class="c-nav__link"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
-                                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                              </svg></a>
-                            </li>
-                            <li id="c-nav-responsive-js"></li>
-                        </ul>
-                    </div> 
+                <ul class="c-nav__list" id="nav-list">
+                  <li class="c-nav__item"></li>
+                  <li class="c-nav__item">
+                    <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
+                    <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
+                  </li>
+                  <li class="c-nav__item">
+                    <a class="c-nav__link" href="#"
+                      ><svg class="c-nav__svg bi bi-chat-left-text-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" /></svg></a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a class="c-nav__link" href="#"
+                      ><svg class="c-nav__svg bi bi-bell-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" /></svg></a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#" class="c-nav__link"><img src="./img/avatar.svg" style="padding-right: 1rem" alt="avatar" />Gandalf The Gray</a>
+                  </li>
+                  <li class="c-nav__item">
+                    <a href="#" class="c-nav__link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" /></svg>
+                    </a>
+                  </li>
+                  <li id="c-nav-responsive-js"></li>
+                </ul>
+              </div>
+            </div>
+            <nav class="c-sidenav col-2 navbar-primary">
+              <ul class="c-sidenav__menu navbar-primary-menu">
+                <li class="c-sidenav__item">
+                  <a class="c-sidenav__link" href="index.html"><img class="c-sidenav__icon" src="./img/dashboardicon.svg" alt="dashboardicon" />Dashboard</a>
+                </li>
+                <li class="c-sidenav__item">
+                  <a class="c-sidenav__link" href="overzichtspagina.html"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon" />Content</a>
+                  <a href="film-input.html"><img class="c-sidenav__icon c-sidenav__icon--plus" src="./img/plus.svg" alt="dashboardicon" /></a>
+                </li>
+                <li class="c-sidenav__item">
+                  <a class="c-sidenav__link" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon" />Gebruikers</a>
+                </li>
+              </ul>
+              <div class="c-sidenav__rapport">
+                <ul class="c-sidenav__menu c-sidenav__menu--2de navbar-primary-menu">
+                  <li class="c-sidenav__item">
+                    <a class="c-sidenav__link" href="#"><img class="c-sidenav__icon" src="./img/help.svg" alt="dashboardicon" />Help</a>
+                  </li>
+                  <li class="c-sidenav__item">
+                    <a class="c-sidenav__link" href="instellingen.html"><img class="c-sidenav__icon c-sidenav__icon--active" src="./img/settings.svg" alt="dashboardicon" />Instellingen</a>
+                  </li>
+                </ul>
+                <div class="c-sidenav__ra">
+                  <p>PDF rapport</p>
+                  <p>Download maandelijks rapport</p>
+                  <button class="c-btn c-btn__sidenav">download</button>
                 </div>
-      <nav class="c-sidenav col-2 navbar-primary">
-        <ul class="c-sidenav__menu navbar-primary-menu">
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="index.html"><img class="c-sidenav__icon" src="./img/dashboardicon.svg" alt="dashboardicon">Dashboard</a>
-            </li>
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="overzichtspagina.html"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon">Content</a>
-                <a href="film-input.html"><img class="c-sidenav__icon c-sidenav__icon--plus" src="./img/plus.svg" alt="dashboardicon"></a>
-            </li>  
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon">Gebruikers</a>
-            </li>     
-        </ul>
-        <div class="c-sidenav__rapport">
-        <ul class="c-sidenav__menu c-sidenav__menu--2de navbar-primary-menu">
-          <li class="c-sidenav__item">
-              <a class="c-sidenav__link" href="#"><img class="c-sidenav__icon" src="./img/help.svg" alt="dashboardicon">Help</a>
-          </li>
-          <li class="c-sidenav__item">
-              <a class="c-sidenav__link" href="instellingen.html"><img class="c-sidenav__icon  c-sidenav__icon--active" src="./img/settings.svg" alt="dashboardicon">Instellingen</a>
-          </li>      
-      </ul>
-      <div class="c-sidenav__ra">
-        <p>PDF rapport</p>
-        <p>Download maandelijks rapport</p>
-        <button class="c-btn c-btn__sidenav">download</button>
-      </div>
-      </div>
-    </nav>
-    </div>
-    </div>
-    </nav>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </nav>
       <section class="c-instellingen">
         <div class="c-instellingen__section c-instellingen__section--nav">
           <ul class="c-instellingennav nav">
@@ -127,7 +127,7 @@
             </li>
           </ul>
         </div>
-        <div class="c-instellingen__section c-instellingen__section--window animate-pop anim-delay-instelling-6">
+        <div class="c-instellingen__section c-instellingen__section--window animate-pop anim-delay-instelling-5">
           <div class="c-instellingencontent">
             <div class="tab-content">
               <section class="tab-pane fade" id="instelling-gebruikers" role="tabpanel">
@@ -560,30 +560,42 @@
                   </div>
                   <div class="d-flex flex-column c-instelling__settings">
                     <div class="c-instelling__colorthemes">
-                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
-                        <img src="img/colortheme1.png" alt="" class="c-instelling__colortheme" />
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center c-instelling__colorthemecont">
+                        <label for="inlineRadio1">
+                          <img src="img/colortheme1.png" alt="" class="c-instelling__colortheme" />
+                        </label>
                         <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked />
                       </div>
-                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
-                        <img src="img/colortheme2.png" alt="" class="c-instelling__colortheme" />
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center c-instelling__colorthemecont">
+                        <label for="inlineRadio2">
+                          <img src="img/colortheme2.png" alt="" class="c-instelling__colortheme" />
+                        </label>
                         <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
                       </div>
-                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
-                        <img src="img/colortheme3.png" alt="" class="c-instelling__colortheme" />
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center c-instelling__colorthemecont">
+                        <label for="inlineRadio3">
+                          <img src="img/colortheme3.png" alt="" class="c-instelling__colortheme" />
+                        </label>
                         <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
                       </div>
                     </div>
                     <div class="mt-5 c-instelling__colorthemes">
-                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
-                        <img src="img/colortheme4.png" alt="" class="c-instelling__colortheme" />
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center c-instelling__colorthemecont">
+                        <label for="inlineRadio4">
+                          <img src="img/colortheme4.png" alt="" class="c-instelling__colortheme" />
+                        </label>
                         <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1" />
                       </div>
-                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
-                        <img src="img/colortheme5.png" alt="" class="c-instelling__colortheme" />
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center c-instelling__colorthemecont">
+                        <label for="inlineRadio5">
+                          <img src="img/colortheme5.png" alt="" class="c-instelling__colortheme" />
+                        </label>
                         <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2" />
                       </div>
-                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center">
-                        <img src="img/colortheme6.png" alt="" class="c-instelling__colortheme" />
+                      <div class="mt-5 mt-sm-0 form-check d-flex flex-column align-items-center justify-content-center c-instelling__colorthemecont">
+                        <label for="inlineRadio6">
+                          <img src="img/colortheme6.png" alt="" class="c-instelling__colortheme" />
+                        </label>
                         <input class="form-check-input c-instelling__radio" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3" />
                       </div>
                     </div>
