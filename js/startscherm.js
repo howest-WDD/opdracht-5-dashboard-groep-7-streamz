@@ -11,7 +11,7 @@ window.onload=function(){
         div.className = "c-sbtable__row";
     
         div.innerHTML = `
-        <td>${count}</td>
+        <td class="c-sbtable__count">${count}</td>
         <td>${name}</td>
         `;
         divs.push(div);

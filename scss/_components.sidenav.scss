@@ -1,13 +1,18 @@
 .c-sidenav {
+    padding-bottom: 4rem;
     display: block;
+    overflow-y: scroll;
     position: fixed;
     background-color: $color-background;
     height: 100vh;
     margin-right: .3rem;
     z-index: 3;
-    overflow: hidden;
     border-right: 5px solid $color-accent;
     left: 0;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
     &__menu{
       display: flex;
       flex-direction: column;
