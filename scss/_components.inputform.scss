@@ -1,10 +1,19 @@
 .c-inputfilmform {
 
+    @include media-breakpoint-down(xl) {
+        display: flex;
+        justify-content: center;
+    }
+
     &-container {
         //background-color: hotpink;
         width: 80%;
         height: 700px;
         margin-left: 18%;
+
+        @include media-breakpoint-down(xl) {
+            margin-left: 0;
+        }
     }
 
 
