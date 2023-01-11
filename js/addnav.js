@@ -1,7 +1,7 @@
 
 let added = false;
 function updateNav() {
-    var nav = document.querySelector("div#c-nav-responsive-js");
+    var nav = document.querySelector("li#c-nav-responsive-js");
     if (window.innerWidth <= 992) {
         if (!added) {
             added = true;
