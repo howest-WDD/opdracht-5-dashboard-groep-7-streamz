@@ -89,34 +89,43 @@
 </div>
 </nav>
 
-<form action="#" class="js-validate c-form__form">
-  <div class="c-content__form">
+
+<form onsubmit=" return false;" class=" js-detail js-validate c-form__form">
+  <!-- <div class="c-content__form">
     <div class="row">
       <div class="order-2 col-xl-8 col-12">
-        <div class="mb-3">
-          <label class="c-form__label" for="floatingFirstName">Voornaam</label>
-          <input type="text" class="form-control c-form__input" id="floatingFirstName" minlength="2" required>
+        <div class="row">
+          <div class="mb-3 col-lg-6 col-md-12">
+            <label class="c-form__label" for="floatingFirstName">Voornaam</label>
+            <input type="text" class="form-control c-form__input" id="floatingFirstName" minlength="2" required>
+            <div class="valid-feedback">Ziet er good uit</div>
+            <div class="invalid-feedback">Gelieve een naam in te geven</div>
+        </div>
+        <div class="mb-3 col-lg-6 col-md-12">
+          <label class="c-form__label" for="floatingLastName">Achternaam</label>
+          <input type="text" class="form-control c-form__input" id="floatingLastName" minlength="2" required>
           <div class="valid-feedback">Ziet er good uit</div>
           <div class="invalid-feedback">Gelieve een naam in te geven</div>
-      </div>
-      <div class="mb-3">
-        <label class="c-form__label" for="floatingLastName">Achternaam</label>
-        <input type="text" class="form-control c-form__input" id="floatingLastName" minlength="2" required>
-        <div class="valid-feedback">Ziet er good uit</div>
-        <div class="invalid-feedback">Gelieve een naam in te geven</div>
-      </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-lg-6 col-md-12">
       <div class="mb-3">
         <label class="c-form__label" for="floatingEmail">Email</label>
           <input type="email" class="form-control c-form__input" id="floatingEmail" required>
           <div class="valid-feedback">Ziet er good uit</div>
           <div class="invalid-feedback">Gelieve een correct email address in te geven</div>
       </div>
+    </div>
+    <div class="mb-3 col-lg-6 col-md-12">
       <div class="mb-3">
         <label class="c-form__label" for="floatingGebdat">Geboortedatum</label>
         <input type="date" class="form-control c-form__input js-date" id="floatingGebdat" required>
         <div class="valid-feedback">Ziet er good uit</div>
         <div class="invalid-feedback">Gelieve een datum in te geven</div>
       </div>
+      </div>
+        </div>
       <div class="c-form__btn">
         <button class="c-btn js-submit c-btn--blue m-1">Aanpassen</button>
         </div>
@@ -158,8 +167,7 @@
         </div> 
       </div>
     </div>
-  </div> 
+  </div>  -->
   </form>
-
 </body>
 </html>
