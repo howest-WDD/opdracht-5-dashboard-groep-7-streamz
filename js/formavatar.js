@@ -1,9 +1,7 @@
 const formUpload = function () {
-
 const UPLOAD_BUTTON = document.getElementById("upload-button");
 const FILE_INPUT = document.querySelector("input[type=file]");
 const AVATAR = document.getElementById("js-avatar");
-
 
 UPLOAD_BUTTON.addEventListener("click", () => FILE_INPUT.click());{
   FILE_INPUT.addEventListener("change", event => {
@@ -18,7 +16,7 @@ UPLOAD_BUTTON.addEventListener("click", () => FILE_INPUT.click());{
     UPLOAD_BUTTON.classList.add("c-form__preview--hide");
   };
 });
-}
+};
 
 
 AVATAR.addEventListener("click", () => FILE_INPUT.click());
@@ -41,7 +39,7 @@ FILE_INPUT.addEventListener("change", event => {
 const init = function () {
 
     if (document.querySelector(".js-form")) {
-        formUpload();
+        setTimeout(formUpload,500);
     }
   };
   

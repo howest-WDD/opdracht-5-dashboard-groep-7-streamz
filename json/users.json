@@ -141,7 +141,7 @@
       "email": "Keith.wyman@example.com",
       "gender": "Man",
       "dateOfBirth": "1989-11-12T10:41:06.605Z",
-      "type": "Free trial",
+      "type": "Gratis",
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",
       "address": {
         "street": "Marktstraat",
@@ -306,7 +306,7 @@
       "email": "Pagac_mariella@example.net",
       "gender": "Vrouw",
       "dateOfBirth": "1988-12-12T10:41:06.605Z",
-      "type": "Free trial",
+      "type": "Gratis",
       "image": "https://xsgames.co/randomusers/avatar.php?g=female",
       "address": {
         "street": "Ooienvaarsstraat",
@@ -570,7 +570,7 @@
       "email": "Keith.wyman@example.com",
       "gender": "Man",
       "dateOfBirth": "1989-11-12T10:41:06.605Z",
-      "type": "Free trial",
+      "type": "Gratis",
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",
       "address": {
         "street": "Marktstraat",
@@ -735,7 +735,7 @@
       "email": "Pagac_mariella@example.net",
       "gender": "Vrouw",
       "dateOfBirth": "1988-12-12T10:41:06.605Z",
-      "type": "Free trial",
+      "type": "Gratis",
       "image": "https://xsgames.co/randomusers/avatar.php?g=female",
       "address": {
         "street": "Ooienvaarsstraat",
