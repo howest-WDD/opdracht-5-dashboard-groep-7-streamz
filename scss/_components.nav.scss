@@ -7,7 +7,7 @@
     transition: 0.2s ease-in-out;
     background-color: $color-background;
     &--active {
-      padding-top: .5rem;
+      padding-top: .5r 0em;
       padding-bottom: 0.5rem;
       box-shadow: 0 0.0625rem 0.3125rem;
       color: $color-accent;
@@ -22,10 +22,6 @@
         display: flex;
         align-items: center;
     }
-    &__list{
-        background-color: $color-background!important;
-        color: white;
-        }
     &__item {
       list-style-type: none;
       display: inline-block;
@@ -33,6 +29,9 @@
       @include media-breakpoint-down(lg) {
         color: $color-background;
         padding-top: 1rem;
+        &--datetime{
+          display: none;
+        }
       }
     }
     &__svg{
@@ -82,14 +81,18 @@
       font-weight: bold;
       font-size: 18pt;
       @include media-breakpoint-down(lg){
-        color: white;
+        display: none;
+
       }
     }
     &__date{
       font-weight: light;
       color: #A6A9B7;
       font-size: 10pt;
+      @include media-breakpoint-down(lg){
+        display: none;
     }
+  }
     &__btn{
       background-color: $color-light;
       border-radius: 4rem;
@@ -137,20 +140,22 @@
     }
   
     &__list {
-      display: flex;
-      align-items: center;
+      display: inline-block;
       margin: 0;
+      background-color: $color-background!important;
+      color: white;
       @include media-breakpoint-down(lg) {
+        padding-left: 15%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
-        flex-direction: column;
         height: 200vh;
         position: fixed;
         top: 0;
         right: 0;
         padding-top: 3rem;
-        text-align: center !important;
+        margin-top: 5rem;
         li {
           text-align: center !important;
         }
