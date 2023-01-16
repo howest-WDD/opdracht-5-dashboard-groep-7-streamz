@@ -8,19 +8,19 @@ function updateNav() {
             nav.insertAdjacentHTML('beforeend', `
             <div class="c-sidenav__wrap">
             <ul class="c-sidenav__menu c-sidenav__menu--responsive navbar-primary-menu">
-                    <li class="c-sidenav__item">
+                    <li class="c-sidenav__item col-md-4">
                         <a class="c-sidenav__link" href="index.html"><img class="c-sidenav__icon c-sidenav__icon--active" src="./img/dashboardicon.svg" alt="dashboardicon">Dashboard</a>
                     </li>
-                    <li class="c-sidenav__item">
+                    <li class="c-sidenav__item col-md-4">
                         <a class="c-sidenav__link" href="overzichtspagina.html"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon">Content</a>
                     </li>  
-                    <li class="c-sidenav__item">
+                    <li class="c-sidenav__item col-md-4">
                         <a class="c-sidenav__link" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon">Gebruikers</a>
                     </li>
-                    <li class="c-sidenav__item">
+                    <li class="c-sidenav__item col-md-4">
                     <a class="c-sidenav__link" href=""><img class="c-sidenav__icon" src="./img/help.svg" alt="dashboardicon">Help</a>
                 </li>
-                <li class="c-sidenav__item">
+                <li class="c-sidenav__item col-md-4">
                     <a class="c-sidenav__link" href="instellingen.html"><img class="c-sidenav__icon" src="./img/settings.svg" alt="dashboardicon">Instellingen</a>
                 </li>       
                 </ul>
