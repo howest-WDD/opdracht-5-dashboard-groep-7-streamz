@@ -13,7 +13,7 @@
       <nav class="c-nav js-nav">
         <div class="o-container">
           <div class="row">
-            <div class="col-9 col-md-4 c-nav__logo">
+            <div class="col-9 col-md-4 c-nav__logo c-nav__logo--home animate-sidenav anim-delay-2">
               <a href="index.html" class="c-logo">
                 <img class="c-logo__svg" src="./img/logo.svg" alt="Logo" />
               </a>
@@ -25,8 +25,7 @@
                 <span class="c-nav__bar c-nav__bar--mid"></span>
                 <span class="c-nav__bar c-nav__bar--bottom"></span>
 
-
-                        <ul class="c-nav__list" id="nav-list">
+                <ul class="c-nav__list" id="nav-list">
                             <li class="c-nav__item">
                             </li>
                             <li class="c-nav__item c-nav__item--datetime">
@@ -54,39 +53,40 @@
                             <li style="list-style-type: none;" id="c-nav-responsive-js"></li>
                         </ul>
                     </div> 
+            </div>
+            <nav class="c-sidenav col-2 navbar-primary animate-sidenav">
+              <ul class="c-sidenav__menu navbar-primary-menu">
+                <li class="c-sidenav__item">
+                  <a class="c-sidenav__link" href="index.html"><img class="c-sidenav__icon c-sidenav__icon--active" src="./img/dashboardicon.svg" alt="dashboardicon" />Dashboard</a>
+                </li>
+                <li class="c-sidenav__item">
+                  <a class="c-sidenav__link" href="overzichtspagina.html"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon" />Content</a>
+                  <a href="film-input.html"><img class="c-sidenav__icon c-sidenav__icon--plus" src="./img/plus.svg" alt="dashboardicon" /></a>
+                </li>
+                <li class="c-sidenav__item">
+                  <a class="c-sidenav__link" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon" />Gebruikers</a>
+                </li>
+              </ul>
+              <div class="c-sidenav__rapport">
+                <ul class="c-sidenav__menu c-sidenav__menu--2de navbar-primary-menu">
+                  <li class="c-sidenav__item">
+                    <a class="c-sidenav__link" href="#"><img class="c-sidenav__icon" src="./img/help.svg" alt="dashboardicon" />Help</a>
+                  </li>
+                  <li class="c-sidenav__item">
+                    <a class="c-sidenav__link" href="instellingen.html"><img class="c-sidenav__icon" src="./img/settings.svg" alt="dashboardicon" />Instellingen</a>
+                  </li>
+                </ul>
+                <div class="c-sidenav__ra">
+                  <p>PDF rapport</p>
+                  <p>Download maandelijks rapport</p>
+                  <button class="c-btn c-btn__sidenav">download</button>
+
                 </div>
-      <nav class="c-sidenav col-2 navbar-primary">
-        <ul class="c-sidenav__menu navbar-primary-menu">
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="index.html"><img class="c-sidenav__icon c-sidenav__icon--active" src="./img/dashboardicon.svg" alt="dashboardicon">Dashboard</a>
-            </li>
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="overzichtspagina.html"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon">Content</a>
-                <a href="film-input.html"><img class="c-sidenav__icon c-sidenav__icon--plus" src="./img/plus.svg" alt="dashboardicon"></a>
-            </li>  
-            <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon">Gebruikers</a>
-            </li>     
-        </ul>
-        <div class="c-sidenav__rapport">
-        <ul class="c-sidenav__menu c-sidenav__menu--2de navbar-primary-menu">
-          <li class="c-sidenav__item">
-              <a class="c-sidenav__link" href="#"><img class="c-sidenav__icon" src="./img/help.svg" alt="dashboardicon">Help</a>
-          </li>
-          <li class="c-sidenav__item">
-              <a class="c-sidenav__link" href="instellingen.html"><img class="c-sidenav__icon" src="./img/settings.svg" alt="dashboardicon">Instellingen</a>
-          </li>      
-      </ul>
-      <div class="c-sidenav__ra">
-        <p>PDF rapport</p>
-        <p>Download maandelijks rapport</p>
-        <button class="c-btn c-btn__sidenav">download</button>
-      </div>
-      </div>
-    </nav>
-    </div>
-    </div>
-    </nav>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </nav>
 
       <section class="c-dashboard">
         <div class="c-dashboard__item c-dashboard__belgium animate-pop anim-delay-1">
@@ -366,7 +366,10 @@
             <div class="c-top5db__image c-top5db__image--2">
               <h3 class="c-top5db__nr">2</h3>
               <div class="c-top5db__textbox d-flex flex-column">
-                <h3 class="c-top5db__title mb-4">GELDWOLVEN</h3>
+                <h3 class="c-top5db__title mb-4">
+                  True crime Belgium: <br />
+                  De Messenmoorden
+                </h3>
                 <div class="c-top5db__info d-flex justify-content-between">
                   <h3 class="c-top5db__maand">deze maand</h3>
                   <div class="c-top5db__uur d-flex flex-column text-center">
@@ -379,7 +382,7 @@
             <div class="c-top5db__image c-top5db__image--3">
               <h3 class="c-top5db__nr">3</h3>
               <div class="c-top5db__textbox d-flex flex-column">
-                <h3 class="c-top5db__title mb-4">GELDWOLVEN</h3>
+                <h3 class="c-top5db__title mb-4">The sex lives of college girls</h3>
                 <div class="c-top5db__info d-flex justify-content-between">
                   <h3 class="c-top5db__maand">deze maand</h3>
                   <div class="c-top5db__uur d-flex flex-column text-center">
@@ -392,7 +395,7 @@
             <div class="c-top5db__image c-top5db__image--4">
               <h3 class="c-top5db__nr">4</h3>
               <div class="c-top5db__textbox d-flex flex-column">
-                <h3 class="c-top5db__title mb-4">GELDWOLVEN</h3>
+                <h3 class="c-top5db__title mb-4">2DEZIT</h3>
                 <div class="c-top5db__info d-flex justify-content-between">
                   <h3 class="c-top5db__maand">deze maand</h3>
                   <div class="c-top5db__uur d-flex flex-column text-center">
@@ -405,7 +408,7 @@
             <div class="c-top5db__image c-top5db__image--5">
               <h3 class="c-top5db__nr">5</h3>
               <div class="c-top5db__textbox d-flex flex-column">
-                <h3 class="c-top5db__title mb-4">GELDWOLVEN</h3>
+                <h3 class="c-top5db__title mb-4">the White Lotus</h3>
                 <div class="c-top5db__info d-flex justify-content-between">
                   <h3 class="c-top5db__maand">deze maand</h3>
                   <div class="c-top5db__uur d-flex flex-column text-center">
