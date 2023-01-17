@@ -50,7 +50,8 @@ const showGebruikers = function () {
 
 
 const init = function () {   
-    if (document.querySelector(".js-page-table")) {
+  if(".js-page-table  "){
+      console.log("aaaaa");
       showGebruikers();
     }
 };

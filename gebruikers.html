@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/styles.css">
-    <!-- 
-    <script src="dist/main.js"></script> -->
+    <link rel="stylesheet" href="dist/styles.css"> 
+    <script src="dist/main.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
     <title>Streamz - Gebruikers</title>
@@ -52,7 +51,7 @@
                             <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
                           </svg></a>
                         </li>
-                        <li id="c-nav-responsive-js"></li>
+                        <li style="list-style-type: none;" id="c-nav-responsive-js"></li>
                     </ul>
                 </div> 
             </div>
@@ -292,7 +291,7 @@ $.ajax({
 })
 
 function buildTable(data) {
-  var table = document.getElementById('js-table__body')
+  const table = document.getElementById('js-table__body')
 
   table.innerHTML = ''
 
@@ -311,7 +310,7 @@ function buildTable(data) {
             <svg class="c-table__icons--1" id="prullenbak" xmlns="http://www.w3.org/2000/svg" width="21.148" height="27.19" viewBox="0 0 21.148 27.19">
             <path id="prullenbak-2" data-name="prullenbak" d="M6.511,27.169A3.03,3.03,0,0,0,9.532,30.19H21.616a3.03,3.03,0,0,0,3.021-3.021V9.042H6.511ZM26.148,4.511H20.861L19.35,3H11.8L10.287,4.511H5V7.532H26.148Z" transform="translate(-5 -3)" fill="#eee"/>
             </svg>
-            <a href="gebruiker-detail.html">
+            <a href="gebruiker-detail.html?id=${data[i].id}" data-id=${data[i].id}>
             <svg class="c-table__icons--2" id="editor" xmlns="http://www.w3.org/2000/svg" width="27.19" height="27.19" viewBox="0 0 27.19 27.19">
             <path id="editor-2" data-name="editor" d="M3,24.524v5.664H8.664l16.7-16.7L19.7,7.819ZM29.749,9.1a1.5,1.5,0,0,0,0-2.13L26.214,3.439a1.5,1.5,0,0,0-2.13,0L21.321,6.2l5.664,5.664L29.749,9.1Z" transform="translate(-3 -2.998)" fill="#eee"/>
             </svg>
