@@ -17,6 +17,47 @@
   }
 }
 
+.animate-sidenav {
+  animation-duration: 0.7s;
+  animation-name: animate-sidenav;
+}
+
+@keyframes animate-sidenav {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+
+.animate-table{
+  animation-duration: 0.5s;
+  animation-name: animate-table;
+}
+
+@keyframes animate-table {
+  0% {
+    opacity: 0;
+    transform: translateY(80vh);
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+
+
 .anim-delay-1 {
   animation-delay: 0.1s;
 }

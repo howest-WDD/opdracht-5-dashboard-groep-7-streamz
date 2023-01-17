@@ -1,11 +1,11 @@
-.c-dropdown{
+.c-dropdown {
   background-color: $color-accent;
   color: $color-light;
   width: 18.75rem;
   border: none;
-  border-radius: .3125rem;
+  border-radius: 0.3125rem;
   padding: 1rem;
-  &:focus-visible{
+  &:focus-visible {
     outline: none;
   }
   &--mrg {
@@ -16,4 +16,8 @@
   background-repeat: no-repeat;
   background-position: right 0.7rem top 50%;
   background-size: 0.65rem auto;
+  &--anim {
+    visibility: hidden;
+    animation-fill-mode: forwards;
+  }
 }

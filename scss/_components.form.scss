@@ -19,6 +19,9 @@
         background-color: $color-itembackground;
         color: $color-white;
         border: none;
+        &[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
         &:focus{
         background-color: $color-itembackground;
         color: $color-white;
@@ -26,10 +29,13 @@
         box-shadow: none;
         }
     }
+    
     &__radio{
         background-color: $color-itembackground; 
         color: $color-white;
         border: none;
+        margin-right: 1rem;
+
         &:hover{
             background: linear-gradient(90deg, rgba(242,13,58,1) 0%, rgba(255,10,90,1) 50%, rgba(204,2,67,1) 100%) !important;
             color: $color-white !important;
