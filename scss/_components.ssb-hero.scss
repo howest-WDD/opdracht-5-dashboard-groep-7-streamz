@@ -1,0 +1,29 @@
+.c-hero {
+    position: relative;
+    margin-top: 4rem;
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 2em;
+      }
+      &__img{
+        width: 100%;
+      }
+      &__btn{
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: $color-accent;
+        border-radius: 1rem;
+        &:hover{
+          background-color: none;
+          border: 1px solid $color-accent;
+        }
+      }
+  }
