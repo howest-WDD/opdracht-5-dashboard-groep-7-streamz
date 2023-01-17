@@ -50,6 +50,23 @@
         color: $color-text-grey;
     }
 
+    &__select {
+        width: 100%;
+        height: 2.5rem;
+        background-color: $color-itembackground; 
+        color: $color-white;
+        border-radius: .5rem;
+        padding: 0 .5rem;
+
+        & * {
+            margin: 5rem;
+
+            &:hover {
+                background-color: hotpink;
+            }
+        }
+    }
+
     &__btn{
         display: flex;
         justify-content: end;

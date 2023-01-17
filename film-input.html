@@ -109,23 +109,23 @@
                         <div class="col-12">
                             <div class="c-inputfilmform-margins">
                                 <p class="c-inputfilmform__label">Talen</p>
-                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="nederlands">
+                                <input type="checkbox" class="btn-check c-inputfilmform__radio" name="optioninput2" id="nederlands">
                                 <label class="btn c-inputfilmform__radio" for="nederlands">Nederlands</label>
                         
-                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="frans">
+                                <input type="checkbox" class="btn-check c-inputfilmform__radio" name="optioninput2" id="frans">
                                 <label class="btn c-inputfilmform__radio" for="frans">Frans</label>
 
-                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput2" id="engels">
+                                <input type="checkbox" class="btn-check c-inputfilmform__radio" name="optioninput2" id="engels">
                                 <label class="btn c-inputfilmform__radio" for="engels">Engels</label>
                             </div> 
                         </div>
                         <div class="col-12">
                             <div class="c-inputfilmform-margins">
                                 <p class="c-inputfilmform__label">Ondertitels</p>
-                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-nederlands">
+                                <input type="checkbox" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-nederlands">
                                 <label class="btn c-inputfilmform__radio" for="ondertitel-nederlands">Nederlands</label>
                         
-                                <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-frans">
+                                <input type="checkbox" class="btn-check c-inputfilmform__radio" name="optioninput3" id="ondertitel-frans">
                                 <label class="btn c-inputfilmform__radio" for="ondertitel-frans">Frans</label>
 
                             </div> 
@@ -159,30 +159,44 @@
                        </div>
                        <div class="col-lg-6">
                         <div class="c-inputfilmform-margins">
-                            <label class="c-inputfilmform__label" for="floatingRegisseur">Regisseur</label>
-                            <input type="text" class="form-control c-inputfilmform__input" id="floatingRegisseur" minlength="2" required>
-                            <div class="valid-feedback">Ziet er goed uit!</div>
-                            <div class="invalid-feedback">Gelieve een regisseur in te geven.</div>
+                            <p class="c-inputfilmform__label">Regisseur</p>
+                            <select class="c-inputfilmform__select">
+                                <option value="" disabled selected>Kies een regisseur</option>
+                                <option value="regie1">Wesley Jakobs</option>
+                                <option value="regie2">Maarten Moerkerke</option>
+                                <option value="regie3">Mike White</option>
+                                <option value="regie4">Sam Esmail</option>
+                                <option value="regie5">Jelle Gordyn</option>
+                                <option value="regie6">Tara Nicole Weyr</option>
+                                <option value="regie7">Adam Bernstein</option>
+                            </select>
                         </div>
                        </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-6">
-                             <div class="c-inputfilmform-margins">
-                                 <label class="c-inputfilmform__label" for="floatingProducer">Producer</label>
-                                 <input type="text" class="form-control c-inputfilmform__input" id="floatingProducer" minlength="2" required>
-                                 <div class="valid-feedback">Ziet er goed uit!</div>
-                                 <div class="invalid-feedback">Gelieve een producer in te geven.</div>
-                             </div>
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Producer</p>
+                                <select class="c-inputfilmform__select">
+                                    <option value="" disabled selected>Kies een producer</option>
+                                    <option value="producer1">Wesley Jakobs</option>
+                                    <option value="producer2">Maarten Moerkerke</option>
+                                    <option value="producer3">Mike White</option>
+                                    <option value="producer4">Sam Esmail</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-lg-6">
-                         <div class="c-inputfilmform-margins">
-                             <label class="c-inputfilmform__label" for="floatingLand">Land</label>
-                             <input type="text" class="form-control c-inputfilmform__input" id="floatingLand" minlength="2" required>
-                             <div class="valid-feedback">Ziet er goed uit!</div>
-                             <div class="invalid-feedback">Gelieve een land in te geven.</div>
-                         </div>
+                            <div class="c-inputfilmform-margins">
+                                <p class="c-inputfilmform__label">Land</p>
+                                <select class="c-inputfilmform__select">
+                                    <option value="" disabled selected>Kies een land</option>
+                                    <option value="land1">Wesley Jakobs</option>
+                                    <option value="land2">Maarten Moerkerke</option>
+                                    <option value="land3">Mike White</option>
+                                </select>
+                            </div>
                         </div>
                      </div>
 
@@ -221,7 +235,7 @@
                         </div>
                         <div class="col-12">
                             <div class="c-inputfilmform-margins">
-                                <p class="c-inputfilmform__label">Categorie</p>
+                                <!-- <p class="c-inputfilmform__label">Categorie</p>
                                 <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput4" id="animatie">
                                 <label class="btn c-inputfilmform__radio" for="animatie">Animatie</label>
                         
@@ -232,9 +246,8 @@
                                 <label class="btn c-inputfilmform__radio" for="komedie">Komedie</label>
 
                                 <input type="radio" class="btn-check c-inputfilmform__radio" name="optioninput4" id="misdaad">
-                                <label class="btn c-inputfilmform__radio" for="misdaad">Misdaad</label>
-
-                            </div> 
+                                <label class="btn c-inputfilmform__radio" for="misdaad">Misdaad</label> -->
+                            </div>
                         </div>
 
                         <div class="col-12">
