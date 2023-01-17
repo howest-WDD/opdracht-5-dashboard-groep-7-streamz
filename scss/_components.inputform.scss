@@ -43,7 +43,7 @@
     }
 
     &-margins {
-        margin: .5rem 1rem;
+        margin: 1.25rem 1rem;
     }
 
     &__label {
@@ -65,6 +65,10 @@
                 background-color: hotpink;
             }
         }
+    }
+
+    &__categorieselect {
+        width: 104%;
     }
 
     &__btn{
