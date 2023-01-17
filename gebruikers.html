@@ -324,29 +324,6 @@ function buildTable(data) {
       table.innerHTML += row
   }
 }
-
-$(function () {
-    var numShown = 5; // Initial rows shown & index
-    var numMore = 10;  // Increment
-
-    var $table = $('table').find('tbody');  // tbody containing all the rows
-    var numRows = $table.find('tr').length; // Total # rows
-    // Hide rows and add clickable div
-    $table.find('tr:gt(' + (numShown - 1) + ')').hide().end()
-        .after('<tbody id="more"><tr><td colspan="' +
-               $table.find('tr:first td').length + '</tbody></td></tr>');
-
-    $('#show-limit-items').on('change', function() {
-        numShown = numShown + numMore;
-
-        // change rows remaining if less than increment
-        if (numRows - numShown < numMore) {
-            $('#more span').html(numRows - numShown);
-        }
-        $table.find('tr:lt(' + numShown + ')').show();
-    })
-
-})
 //delete
 // function deleteRow(r) {
 //   document.getElementById("myTable").deleteRow(r);
