@@ -7,4 +7,14 @@
       overflow-x:auto;
     }
 
+    &--btn {
+      padding: .5rem 1rem;
+      margin-left: 48rem;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        color: white;
+      }
+    }
 }

@@ -43,11 +43,34 @@
     }
 
     &-margins {
-        margin: .5rem 1rem;
+        margin: 1.25rem 1rem;
     }
 
     &__label {
         color: $color-text-grey;
+    }
+
+    &__select {
+        cursor: pointer;
+        width: 100%;
+        height: 2.5rem;
+        background-color: $color-itembackground; 
+        color: $color-white;
+        border-radius: .5rem;
+        padding: 0 .5rem;
+
+        & * {
+            margin: 5rem;
+
+            &:hover {
+                background-color: hotpink;
+            }
+        }
+    }
+
+    &__categorieselect {
+        cursor: pointer;
+        width: 103%;
     }
 
     &__btn{
@@ -79,7 +102,7 @@
     }
 
     &__preview {
-        height: 21.75rem;
+        height: 23rem;
         width: 100%;
       }
 
