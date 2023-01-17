@@ -1,0 +1,60 @@
+.c-sbblok{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    &__img{
+        width: 400px;
+        height: 600px;
+        margin: 10px;
+        &--add{
+            display: flex;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 1rem;
+            justify-content: center;
+        }
+    }
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__row{
+        h1{
+            text-transform: capitalize;
+        }
+    }
+    &__add{
+        justify-content: center;
+        height: 64px;
+    }
+    &__popup{
+        position: absolute;
+        background-color: #020012;
+        position: absolute;
+        visibility: visible;
+        display: flex;
+        justify-content: space-evenly;
+        width: 25%;
+        height: 3%;
+        padding: 20px;
+        z-index: 100;
+        top:45%;
+        left:45%;
+        transform:translate(-45%, -45%);
+        border: 2px solid white;
+        border-radius: 1rem;
+    }
+}
+
+.c-closebtn{
+    background-color: #020012;
+    color: $color-accent;
+    top: .2rem;
+    right: .2rem;
+    font-size: 24pt;
+}
+
+  
+  
+  
+  
