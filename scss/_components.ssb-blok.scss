@@ -3,22 +3,27 @@
     margin-bottom: 5rem;
     display: flex;
     &__img{
-        width: 400px;
-        height: 600px;
-        margin: 10px;
+        width: 200px;
+        height: 90%;
+        margin: 1rem 0 1rem 2rem;
         &--add{
             display: flex;
             align-items: center;
             border: 1px solid white;
             border-radius: 1rem;
             justify-content: center;
+            height: 18rem;
+            margin: 0;
         }
     }
     &__wrap{
         display: flex;
         flex-wrap: wrap;
+        height: 20rem;
+        width: 100%;
     }
     &__row{
+        cursor: pointer;
         h1{
             text-transform: capitalize;
         }
@@ -35,12 +40,11 @@
         display: flex;
         justify-content: space-evenly;
         width: 25%;
-        height: 3%;
+        height: 10%;
         padding: 20px;
         z-index: 100;
-        top:45%;
-        left:45%;
-        transform:translate(-45%, -45%);
+        top:55%;
+        left:30%;
         border: 2px solid white;
         border-radius: 1rem;
     }
@@ -52,6 +56,10 @@
     top: .2rem;
     right: .2rem;
     font-size: 24pt;
+}
+
+#product-rows{
+    width: 100%;
 }
 
   
