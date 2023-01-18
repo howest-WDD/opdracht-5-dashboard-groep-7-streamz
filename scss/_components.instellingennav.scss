@@ -18,6 +18,9 @@
     position: relative;
     visibility: hidden;
     animation-fill-mode: forwards;
+    @include media-breakpoint-down(xxl) {
+      width: auto;
+    }
     @include media-breakpoint-down(md) {
       height: auto;
       width: auto;
