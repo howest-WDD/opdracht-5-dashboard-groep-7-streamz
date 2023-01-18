@@ -3,8 +3,8 @@ style.setAttribute("id","multiselect_dropdown_styles");
 style.innerHTML = `
 .multiselect-dropdown{
   display: inline-block;
-  padding: 5px 10px 0px 10px;
-  height: 2.5rem;
+  padding: 5px 10px 5px 10px;
+  height: auto;
   cursor: pointer;
   width: 100%;
   border-radius: .5rem;

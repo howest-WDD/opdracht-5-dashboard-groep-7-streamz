@@ -60,18 +60,10 @@
         color: $color-white;
         border-radius: .5rem;
         padding: 0 .5rem;
-
-        & * {
-            margin: 5rem;
-
-            &:hover {
-                background-color: hotpink;
-            }
-        }
     }
 
     &__select2 {
-        width: 103%;
+        width: 105%;
     }
 
     &__categorieselect {
