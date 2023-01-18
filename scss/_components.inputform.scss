@@ -40,6 +40,7 @@
         input[type="file"] {
             display: none;
         }
+        
     }
 
     &-margins {
@@ -117,6 +118,9 @@
         color: $color-white;
         filter: none;
         box-shadow: none;
+        }
+        &[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
         }
     }
 }
