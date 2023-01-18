@@ -1,0 +1,6 @@
+.c-page-container {
+  margin: 0 1.875rem 1.875rem 20.3125rem;
+  @include media-breakpoint-down(xl) {
+    margin-left: 1.875rem;
+  }
+}
