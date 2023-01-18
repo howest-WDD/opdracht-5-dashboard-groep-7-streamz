@@ -174,6 +174,7 @@ function userDetail(){
 
   const init = function () {
     if(".js-detail"){
+      console.log("detail loaded");
         userDetail();
     }
     
