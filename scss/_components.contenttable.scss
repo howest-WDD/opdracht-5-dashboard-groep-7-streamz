@@ -18,7 +18,8 @@
       color: white;
       border: none;
       text-decoration: none;
-
+      visibility: hidden;
+  animation-fill-mode: forwards;
       &:hover {
         color: white;
       }
