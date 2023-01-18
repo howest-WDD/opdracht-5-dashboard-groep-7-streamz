@@ -54,8 +54,8 @@
 
     &__select {
         cursor: pointer;
-        width: 100%;
         height: 2.5rem;
+        width: 100%;
         background-color: $color-itembackground; 
         color: $color-white;
         border-radius: .5rem;
@@ -68,6 +68,10 @@
                 background-color: hotpink;
             }
         }
+    }
+
+    &__select2 {
+        width: 103%;
     }
 
     &__categorieselect {
