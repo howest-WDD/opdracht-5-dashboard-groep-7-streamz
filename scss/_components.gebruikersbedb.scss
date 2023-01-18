@@ -8,7 +8,7 @@
 
   &__kaart {
     text-align: center;
-    width: 50%;
+    width: 40%;
     // fill: hotpink;
     @include media-breakpoint-down(lg) {
       display: none;
@@ -17,7 +17,7 @@
   &__svg {
     object-fit: cover;
     height: 40%;
-    width: 80%;
+    width: 100%;
     fill: $color-background;
     stroke: $color-itembackground;
   }
@@ -81,7 +81,7 @@
     display: flex;
     justify-content: center;
     // margin-left: 5rem;
-    width: 50%;
+    width: 60%;
     @include media-breakpoint-down(lg) {
       width: 80%;
     }

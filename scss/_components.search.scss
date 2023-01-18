@@ -6,6 +6,11 @@
   border-radius: 0.3125rem;
   padding: 1rem 1rem;
   padding-left: 3rem;
+
+  //van sam voor animations, niet weg doen /////////////////
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  /////////////////////////////////////////////
   &:focus-visible {
     outline: none;
   }
