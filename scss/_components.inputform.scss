@@ -7,9 +7,9 @@
 
     &-container {
         //background-color: hotpink;
-        width: 80%;
+        width: 82%;
         height: 700px;
-        margin-left: 18%;
+        margin-left: 18.4375rem;
 
         @include media-breakpoint-down(xl) {
             margin-left: 0;
