@@ -85,21 +85,20 @@
             </div>
           </nav>
         </div>
-      </div>
     </nav>
     <section class="c-content__table">
       <div class="c-table__header">
-        <div class="c-table__filters">
-          <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search animate-pop anim-delay-2" />
-          <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--mrg c-dropdown--show animate-pop anim-delay-3" onChange="showItems(this)">
+        <div class="c-table__filters c-content__table--mrg ">
+          <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search animate-pop anim-delay-2 " />
+          <!-- <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--mrg c-dropdown--show animate-pop anim-delay-3" onChange="showItems(this)">
             <option selected class="c-dropdown__option" value="show5">Toon: 5</option>
             <option class="c-dropdown__option" value="show15">Toon: 15</option>
             <option class="c-dropdown__option" value="show30">Toon: 25</option>
             <option class="c-dropdown__option" value="show45">Toon: 35</option>
             <option class="c-dropdown__option" value="show45">Toon: 50</option>
-          </select>
+          </select> -->
 
-          <a class="c-content__table--btn animate-pop anim-delay-4" href="film-input.html">Film/serie toevoegen</a>
+          <a class="c-content__table--btn animate-pop anim-delay-4 " href="film-input.html">Film/serie toevoegen</a>
 
           <!-- <div class="c-pagination">
               <a href="#" class="c-pagination__link">&laquo;</a>
@@ -108,6 +107,7 @@
               <a href="#" class="c-pagination__link">3</a>
               <a href="#" class="c-pagination__link">&raquo;</a>
             </div> -->
+            
         </div>
 
         <table class="c-table js-table animate-table" id="product-table">
@@ -125,6 +125,7 @@
         </thead>
         <tbody class="c-table__body" id="js-tableproduct__body"></tbody>
       </table>
+      </div>
     </section>
 
     <script>
@@ -236,10 +237,10 @@
         <td><img src="${data[i].image}" alt="${data[i].title}"></td>
         <td>${data[i].title}</td>
         <td>${data[i].type}, ${data[i].categorie}</td>
-        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${data[i].statusicon}" class="bi bi-file-earmark-check" viewBox="0 0 16 16">
+        <td><svg xmlns="http://www.w3.org/2000/svg" fill="${data[i].statusicon}" class="bi bi-file-earmark-check c-table__publishedicon" viewBox="0 0 16 16">
   <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
   <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-</svg> ${data[i].status}</td>
+</svg> <span class="c-table__published">${data[i].status}</span></td>
         <td>${data[i].language}</td>
         <td>
           <div class="c-table__icons">

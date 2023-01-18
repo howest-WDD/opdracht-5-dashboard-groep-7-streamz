@@ -11,6 +11,21 @@
   visibility: hidden;
   animation-fill-mode: forwards;
   /////////////////////////////////////////////
+  /// 
+  &__publishedicon {
+    margin-right: .5rem;
+    height: 24px;
+    width: auto;
+
+  }
+
+  &__published {
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
   &__head {
     font-size: 15px;
     font-weight: bold;
