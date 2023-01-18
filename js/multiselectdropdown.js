@@ -88,7 +88,7 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-function MultiselectDropdown(options){
+const MultiselectDropdown = function(options){
   var config={
     search:true,
     height:'15rem',
@@ -216,6 +216,10 @@ function MultiselectDropdown(options){
   });
 }
 
-window.addEventListener('load',()=>{
-  MultiselectDropdown(window.MultiselectDropdownOptions);
-});
+const init = function() {
+  if (document.querySelector(".js-multiselect")) {
+    MultiselectDropdown();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", init);
