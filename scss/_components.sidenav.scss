@@ -1,102 +1,99 @@
 .c-sidenav {
-    padding-bottom: 4rem;
-    display: block;
-    overflow-y: scroll;
-    position: fixed;
-    background-color: $color-background;
-    height: 100vh;
-    margin-right: .3rem;
-    z-index: 3;
-    border-right: 5px solid $color-accent;
-    left: 0;
-    top: 0;
-    &::-webkit-scrollbar {
+  padding-bottom: 4rem;
+  display: block;
+  overflow-y: scroll;
+  position: fixed;
+  background-color: $color-background;
+  height: 100vh;
+  width: 18.4375rem;
+  margin-right: 0.3rem;
+  z-index: 3;
+  border-right: 5px solid $color-accent;
+  left: 0;
+  top: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    align-items: start;
+    @include media-breakpoint-down(lg) {
+      align-items: center;
+      justify-content: center;
+      margin-top: 0rem;
+      flex-wrap: wrap;
+      flex-direction: row;
+      position: absolute;
+      top: 10rem;
+      left: 0;
+      margin-top: 5rem;
+      padding-left: 0;
+    }
+    &--2de {
+      margin-top: 5rem;
+      // justify-content: end;
+    }
+  }
+  &__wrap {
+    @include media-breakpoint-up(lg) {
       display: none;
     }
-    &__menu{
-      display: flex;
-      flex-direction: column;
-      margin-top: 8rem;
-      align-items: start;
-      @include media-breakpoint-down(lg){
-        align-items: center;
-        justify-content: center;
-        margin-top: 0rem;
-        flex-wrap: wrap;
-        flex-direction: row;
-        position: absolute;
-        top: 10rem;
-        left: 0;
-        margin-top: 5rem;
-        padding-left: 0;
-      }
-      &--2de{
-        margin-top: 5rem;
-        // justify-content: end;
-        ;
-      }
-    }
-    &__wrap{
-        @include media-breakpoint-up(lg){
-            display: none;
-      }
-    }
-    &__rapport{
-        justify-content: end;
-        flex-direction: column;
-        flex-wrap: wrap;
-        display: flex;
-      @include media-breakpoint-down(lg){
-        margin-top: 2rem;
-        position: absolute;
-        top: 30rem;
-        left: 40%;
-      }
-    }
-    &__item{
-      text-align: center;
+  }
+  &__rapport {
+    justify-content: end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    @include media-breakpoint-down(lg) {
       margin-top: 2rem;
-      list-style-type: none;
-      @include media-breakpoint-down(lg){
-        margin-top: 2.9rem;
-      }
+      position: absolute;
+      top: 30rem;
+      left: 40%;
     }
-    &__link{
-      text-decoration: none;
-      color: white;
-      @include media-breakpoint-down(lg){
-        padding-left: 2rem;
-      }
-      &:hover{
-        color: $color-accent;
-      }
-    }
-    @include media-breakpoint-down(xl){
-      display: none;
-    }
-    &__ra{
-      margin-left: 2rem;
-      margin-top: 3rem;
-    }
-    &__icon{
-      margin-right: 2rem;
-      padding: .5rem;
-      // font-size: 20rem;
-      width: 2.25rem;
-      height: 2.25rem;
-      &--active{
-        background-color: $color-accent;
-        // border: 5px solid $color-accent;
-        border-radius: .5rem;
-      }
-      &--plus {
-        padding-left: .5rem;
-      }
-    }
-
   }
-  .c-btn__sidenav{
-    width: 12rem!important;
+  &__item {
+    text-align: center;
+    margin-top: 2rem;
+    list-style-type: none;
+    @include media-breakpoint-down(lg) {
+      margin-top: 2.9rem;
+    }
   }
- 
-  
+  &__link {
+    text-decoration: none;
+    color: white;
+    @include media-breakpoint-down(lg) {
+      padding-left: 2rem;
+    }
+    &:hover {
+      color: $color-accent;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    display: none;
+  }
+  &__ra {
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+  &__icon {
+    margin-right: 2rem;
+    padding: 0.5rem;
+    // font-size: 20rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    &--active {
+      background-color: $color-accent;
+      // border: 5px solid $color-accent;
+      border-radius: 0.5rem;
+    }
+    &--plus {
+      padding-left: 0.5rem;
+    }
+  }
+}
+.c-btn__sidenav {
+  width: 12rem !important;
+}
