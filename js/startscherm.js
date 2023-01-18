@@ -41,7 +41,7 @@ window.onload = function () {
         document.body.appendChild(popup);
     });
 
-    $(".c-sbblok__wrap").draggable({
+    $(".c-sbblok__row").draggable({
         connectToSortable: "#product-rows",
         helper: "clone",
         stop: function(event, ui) {
