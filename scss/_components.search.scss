@@ -23,4 +23,7 @@
     visibility: hidden;
     animation-fill-mode: forwards;
   }
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
 }
