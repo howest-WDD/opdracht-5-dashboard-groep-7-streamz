@@ -1,4 +1,4 @@
-import data from '../json/users.json';
+import data from "../json/users.json";
 let json = data;
 
 const showUserDetail = function(info, userId){
@@ -30,8 +30,8 @@ const showUserDetail = function(info, userId){
         <label class="btn c-form__radio" for="vrouw">Vrouw</label>
 
         <input type="radio" class="btn-check c-form__radio" name="options1" id="x">
-        <label class="btn c-form__radio" for="x">X</label>`
-      }else if(geslacht=="Vrouw"){
+        <label class="btn c-form__radio" for="x">X</label>`;
+      } else if (geslacht == "Vrouw") {
         geslachtChecked = `<input type="radio" class="btn-check c-form__radio" name="options1" id="man">
         <label class="btn c-form__radio" for="man">Man</label>
         
@@ -39,9 +39,8 @@ const showUserDetail = function(info, userId){
         <label class="btn c-form__radio" for="vrouw">Vrouw</label>
 
         <input type="radio" class="btn-check c-form__radio" name="options1" id="x">
-        <label class="btn c-form__radio" for="x">X</label>`
-      }
-      else{
+        <label class="btn c-form__radio" for="x">X</label>`;
+      } else {
         geslachtChecked = `<input type="radio" class="btn-check c-form__radio" name="options1" id="man">
         <label class="btn c-form__radio" for="man">Man</label>
         
@@ -49,10 +48,10 @@ const showUserDetail = function(info, userId){
         <label class="btn c-form__radio" for="vrouw">Vrouw</label>
 
         <input type="radio" class="btn-check c-form__radio" name="options1" id="x" checked>
-        <label class="btn c-form__radio" for="x">X</label>`
+        <label class="btn c-form__radio" for="x">X</label>`;
       }
 
-      if(type=="Gratis"){
+      if (type == "Gratis") {
         abbonChecked = `<input type="radio" class="btn-check c-form__radio" name="options2" id="gratis" checked>
         <label class="btn c-form__radio" for="gratis">Gratis</label>
 
@@ -60,8 +59,8 @@ const showUserDetail = function(info, userId){
         <label class="btn c-form__radio" for="streamz">Streamz</label>
 
         <input type="radio" class="btn-check c-form__radio" name="options2" id="streamz+">
-        <label class="btn c-form__radio" for="streamz+">Streamz +</label>`
-      }else if(type=="Streamz"){
+        <label class="btn c-form__radio" for="streamz+">Streamz +</label>`;
+      } else if (type == "Streamz") {
         abbonChecked = `<input type="radio" class="btn-check c-form__radio" name="options2" id="gratis" >
         <label class="btn c-form__radio" for="gratis">Gratis</label>
 
@@ -69,9 +68,8 @@ const showUserDetail = function(info, userId){
         <label class="btn c-form__radio" for="streamz">Streamz</label>
 
         <input type="radio" class="btn-check c-form__radio" name="options2" id="streamz+">
-        <label class="btn c-form__radio" for="streamz+">Streamz +</label>`
-      }
-      else{
+        <label class="btn c-form__radio" for="streamz+">Streamz +</label>`;
+      } else {
         abbonChecked = `<input type="radio" class="btn-check c-form__radio" name="options2" id="gratis" checked>
         <label class="btn c-form__radio" for="gratis">Gratis</label>
 
@@ -79,27 +77,30 @@ const showUserDetail = function(info, userId){
         <label class="btn c-form__radio" for="streamz">Streamz</label>
 
         <input type="radio" class="btn-check c-form__radio" name="options2" id="streamz+" checked>
-        <label class="btn c-form__radio" for="streamz+">Streamz +</label>`
+        <label class="btn c-form__radio" for="streamz+">Streamz +</label>`;
       }
-      
-    
-    
-    let formHtml='';
-      formHtml+=`
 
-      <div class="c-content__form">
+      let formHtml = "";
+      formHtml +=
+        `
+
+      <div class="c-content__form c-page-container">
     <div class="row">
       <div class="order-2 col-xl-8 col-12">
         <div class="row">
           <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-4">
             <label class="c-form__label" for="floatingFirstName">Voornaam</label>
-            <input type="text" class="form-control c-form__input" id="floatingFirstName" value="`+firstName+`" minlength="2" required>
+            <input type="text" class="form-control c-form__input" id="floatingFirstName" value="` +
+        firstName +
+        `" minlength="2" required>
             <div class="valid-feedback">Ziet er good uit</div>
             <div class="invalid-feedback">Gelieve een naam in te geven</div>
         </div>
         <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-5">
           <label class="c-form__label" for="floatingLastName">Achternaam</label>
-          <input type="text" class="form-control c-form__input" id="floatingLastName" value="`+lastName+`" minlength="2" required>
+          <input type="text" class="form-control c-form__input" id="floatingLastName" value="` +
+        lastName +
+        `" minlength="2" required>
           <div class="valid-feedback">Ziet er good uit</div>
           <div class="invalid-feedback">Gelieve een naam in te geven</div>
         </div>
@@ -108,7 +109,9 @@ const showUserDetail = function(info, userId){
         <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-6">
       <div class="mb-3">
         <label class="c-form__label" for="floatingEmail">Email</label>
-          <input type="email" class="form-control c-form__input" id="floatingEmail" value="`+email+`" required>
+          <input type="email" class="form-control c-form__input" id="floatingEmail" value="` +
+        email +
+        `" required>
           <div class="valid-feedback">Ziet er good uit</div>
           <div class="invalid-feedback">Gelieve een correct email address in te geven</div>
       </div>
@@ -116,7 +119,9 @@ const showUserDetail = function(info, userId){
     <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-7">
       <div class="mb-3">
         <label class="c-form__label" for="floatingGebdat">Geboortedatum</label>
-        <input type="date" class="form-control c-form__input js-date" id="floatingGebdat" value="`+gebdat+`" required>
+        <input type="date" class="form-control c-form__input js-date" id="floatingGebdat" value="` +
+        gebdat +
+        `" required>
         <div class="valid-feedback">Ziet er good uit</div>
         <div class="invalid-feedback">Gelieve een datum in te geven</div>
       </div>
@@ -196,12 +201,16 @@ const showUserDetail = function(info, userId){
       <div class="order-1 col-xl-4 col-12">
         <div class="mb-3 p-0 animate-pop anim-delay-1">
           <p class="c-form__label">Geslacht</p>
-          `+geslachtChecked+`
+          ` +
+        geslachtChecked +
+        `
           
         </div>   
         <div class="mb-3 p-0 animate-pop anim-delay-2">
             <p class="c-form__label">Type abonnement</p>
-            `+abbonChecked+`
+            ` +
+        abbonChecked +
+        `
         </div> 
          <div class="mb-3 p-0 animate-pop anim-delay-3">
             <p class="c-form__label">Avatar</p>
@@ -222,36 +231,30 @@ const showUserDetail = function(info, userId){
     </div>
   </div>`;
 
+      document.querySelector(".js-detail").innerHTML = formHtml;
 
-    document.querySelector('.js-detail').innerHTML = formHtml;
+      const UPLOAD_BUTTON = document.getElementById("upload-button");
+      const AVATAR = document.getElementById("js-avatar");
 
-    const UPLOAD_BUTTON = document.getElementById("upload-button");
-    const AVATAR = document.getElementById("js-avatar");
-
-    AVATAR.style.background = `url(${img}) center center/cover`;
-    UPLOAD_BUTTON.classList.add("c-form__preview--hide");
-     
-    
-}
-}
-  }
-
-
-function userDetail(){
-    const urlParams = new URLSearchParams(window.location.search); 
-    const userId = urlParams.get('id'); 
-    if(userId){
-      showUserDetail(json, userId);
+      AVATAR.style.background = `url(${img}) center center/cover`;
+      UPLOAD_BUTTON.classList.add("c-form__preview--hide");
     }
   }
-  
-
-  const init = function () {
-    if(".js-detail"){
-      console.log("detail loaded");
-        userDetail();
-    }
-    
 };
 
-  document.addEventListener("DOMContentLoaded", init);
+function userDetail() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const userId = urlParams.get("id");
+  if (userId) {
+    showUserDetail(json, userId);
+  }
+}
+
+const init = function () {
+  if (".js-detail") {
+    console.log("detail loaded");
+    userDetail();
+  }
+};
+
+document.addEventListener("DOMContentLoaded", init);

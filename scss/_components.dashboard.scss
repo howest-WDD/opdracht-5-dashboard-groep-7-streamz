@@ -11,11 +11,8 @@
     "series series upcoming upcoming upcoming"
     "top top top top top";
   gap: 1.5625rem;
-  padding: 1.875rem;
-  margin-left: 18.4375rem;
   @include media-breakpoint-down(xl) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    margin-left: 0;
     grid-template-areas:
       "belgium belgium"
       "users users"
@@ -27,7 +24,6 @@
   }
   @include media-breakpoint-down(md) {
     grid-template-columns: minmax(0, 1fr);
-    margin-left: 0;
     grid-template-areas:
       "belgium"
       "users"
