@@ -37,14 +37,13 @@
 }
 
 .animate-table {
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: animate-table;
 }
 
 @keyframes animate-table {
   0% {
     opacity: 0;
-    visibility: hidden;
   }
 
   100% {
@@ -62,14 +61,14 @@
 @keyframes animate-up {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    // transform: translateY(3rem);
     visibility: hidden;
   }
 
   100% {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    // transform: translateY(0);
   }
 }
 

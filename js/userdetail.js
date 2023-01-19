@@ -86,9 +86,9 @@ const showUserDetail = function(info, userId){
 
       <div class="c-content__form c-page-container">
     <div class="row">
-      <div class="order-2 col-xl-8 col-12">
+      <div class="order-2 col-xl-8 col-12 animate-up c-anim-visible anim-delay-2">
         <div class="row">
-          <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-4">
+          <div class="mb-3 col-lg-6 col-md-12 ">
             <label class="c-form__label" for="floatingFirstName">Voornaam</label>
             <input type="text" class="form-control c-form__input" id="floatingFirstName" value="` +
         firstName +
@@ -96,7 +96,7 @@ const showUserDetail = function(info, userId){
             <div class="valid-feedback">Ziet er good uit</div>
             <div class="invalid-feedback">Gelieve een naam in te geven</div>
         </div>
-        <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-5">
+        <div class="mb-3 col-lg-6 col-md-12 ">
           <label class="c-form__label" for="floatingLastName">Achternaam</label>
           <input type="text" class="form-control c-form__input" id="floatingLastName" value="` +
         lastName +
@@ -106,7 +106,7 @@ const showUserDetail = function(info, userId){
         </div>
         </div>
         <div class="row">
-        <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-6">
+        <div class="mb-3 col-lg-6 col-md-12">
       <div class="mb-3">
         <label class="c-form__label" for="floatingEmail">Email</label>
           <input type="email" class="form-control c-form__input" id="floatingEmail" value="` +
@@ -116,7 +116,7 @@ const showUserDetail = function(info, userId){
           <div class="invalid-feedback">Gelieve een correct email address in te geven</div>
       </div>
     </div>
-    <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-7">
+    <div class="mb-3 col-lg-6 col-md-12">
       <div class="mb-3">
         <label class="c-form__label" for="floatingGebdat">Geboortedatum</label>
         <input type="date" class="form-control c-form__input js-date" id="floatingGebdat" value="` +
@@ -133,7 +133,7 @@ const showUserDetail = function(info, userId){
         </div>
 
       <div class="mb-3 mt-3">
-      <div class="c-dashboard__item c-dashboard__users animate-pop anim-delay-8">
+      <div class="c-dashboard__item c-dashboard__users animate-up c-anim-visible anim-delay-2">
           <div class="c-fav">
             <div class="c-fav__item">
               <h2 class="c-fav__title">Favoriete Show</h2>
@@ -158,7 +158,7 @@ const showUserDetail = function(info, userId){
       </div>
 
       <div class="mb-3">
-      <div class="c-dashboard__item c-dashboard__users animate-pop anim-delay-8">
+      <div class="c-dashboard__item c-dashboard__users animate-up c-anim-visible anim-delay-3">
           <div class="c-fav">
             <div class="c-fav__item">
               <h2 class="c-fav__title">Favoriete Film</h2>
@@ -182,7 +182,7 @@ const showUserDetail = function(info, userId){
         </div>
       </div>
 
-      <div class="c-dashboard__item c-dashboard__subs animate-pop anim-delay-3">
+      <div class="c-dashboard__item c-dashboard__subs animate-up c-anim-visible anim-delay-4">
           <div class="d-flex flex-column flex-sm-row text-start align-items-start justify-content-between c-subsdb">
             <h3>Uren gekeken per maand</h3>
             <ul class="c-subsdb__legendlist text-start">
@@ -198,21 +198,21 @@ const showUserDetail = function(info, userId){
       
       </div>
 
-      <div class="order-1 col-xl-4 col-12">
-        <div class="mb-3 p-0 animate-pop anim-delay-1">
+      <div class="order-1 col-xl-4 col-12 animate-up c-anim-visible">
+        <div class="mb-3 p-0">
           <p class="c-form__label">Geslacht</p>
           ` +
         geslachtChecked +
         `
           
         </div>   
-        <div class="mb-3 p-0 animate-pop anim-delay-2">
+        <div class="mb-3 p-0">
             <p class="c-form__label">Type abonnement</p>
             ` +
         abbonChecked +
         `
         </div> 
-         <div class="mb-3 p-0 animate-pop anim-delay-3">
+         <div class="mb-3 p-0">
             <p class="c-form__label">Avatar</p>
             <input type="file" name="image" id="image" accept="image/*" />
             <div class="c-form__preview">
