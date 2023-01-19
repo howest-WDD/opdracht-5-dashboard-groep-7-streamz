@@ -1,121 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamz - Startscherm beheer</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="dist/styles.css" />
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <script src="dist/main.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav class="c-nav js-nav">
-      <div class="o-container">
-        <div class="row">
-          <div class="col-9 col-md-4 c-nav__logo">
-            <a href="index.html" class="c-logo">
-              <img class="c-logo__svg" src="./img/logo.svg" alt="Logo" />
-            </a>
-          </div>
-          <div class="col-3 col-md-8 c-nav__containerfix">
-            <div class="c-navtoggled__container">
-              <input class="c-nav__toggle" type="checkbox" />
-              <span class="c-nav__bar c-nav__bar--top"></span>
-              <span class="c-nav__bar c-nav__bar--mid"></span>
-              <span class="c-nav__bar c-nav__bar--bottom"></span>
+        <div class="o-container">
+            <div class="row">
+                <div class="col-9 col-md-4 c-nav__logo">
+                    <a href="index.html" class="c-logo">
+                        <img class="c-logo__svg" src="./img/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-3 col-md-8 c-nav__containerfix">
+                    <div class="c-navtoggled__container">
+                        <input class="c-nav__toggle" type="checkbox">
+                        <span class="c-nav__bar c-nav__bar--top"></span>
+                        <span class="c-nav__bar c-nav__bar--mid"></span>
+                        <span class="c-nav__bar c-nav__bar--bottom"></span>
 
-              <ul class="c-nav__list" id="nav-list">
-                <li class="c-nav__item"></li>
-                <li class="c-nav__item">
-                  <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
-                  <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
-                </li>
-                <li class="c-nav__item">
-                  <a class="c-nav__link" href="#"
-                    ><svg class="c-nav__svg bi bi-chat-left-text-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
-                      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" /></svg
-                  ></a>
-                </li>
-                <li class="c-nav__item">
-                  <a class="c-nav__link" href="#"
-                    ><svg class="c-nav__svg bi bi-bell-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
-                      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" /></svg
-                  ></a>
-                </li>
-                <li class="c-nav__item">
-                  <a href="#" class="c-nav__link"><img src="./img/avatar.svg" style="padding-right: 1rem" alt="avatar" />Gandalf The Gray</a>
-                </li>
-                <li style="list-style-type: none" id="c-nav-responsive-js"></li>
-              </ul>
+                        <ul class="c-nav__list" id="nav-list">
+                            <li class="c-nav__item c-nav__item--datetime">
+                                <div id="MyClockDisplay" class="c-nav__clock" onload="showTime()"></div>
+                                <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
+                            </li>
+                            <li class="c-nav__item c-nav__item--chat">
+                                <a class="c-nav__link" href="#"><svg class="c-nav__svg bi bi-chat-left-text-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                    </svg></a>
+                            </li>
+                            <li class="c-nav__item  c-nav__item--message">
+                                <a class="c-nav__link" href="#"><svg class="c-nav__svg bi bi-bell-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
+                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                    </svg></a>
+                            </li>
+                            <li class="c-nav__item">
+                                <a href="#" class="c-nav__link"><img src="./img/avatar.svg" style="padding-right: 1rem" alt="avatar">Gandalf The Gray</a>
+                            </li>
+                            <li style="list-style-type: none;" id="c-nav-responsive-js"></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="c-sidenav col-2 navbar-primary">
+                    <ul class="c-sidenav__menu navbar-primary-menu">
+                        <li class="c-sidenav__item">
+                            <a class="c-sidenav__link" href="index.html"><img class="c-sidenav__icon" src="./img/dashboardicon.svg" alt="dashboardicon">Dashboard</a>
+                        </li>
+                        <li class="c-sidenav__item">
+                            <a class="c-sidenav__link" href="overzichtspagina.html"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon">Content</a>
+                            <a href="film-input.html"><img class="c-sidenav__icon c-sidenav__icon--plus" src="./img/plus.svg" alt="dashboardicon"></a>
+                        </li>
+                        <li class="c-sidenav__item">
+                            <a class="c-sidenav__link" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon">Gebruikers</a>
+                        </li>
+                    </ul>
+                    <div class="c-sidenav__rapport">
+                        <ul class="c-sidenav__menu c-sidenav__menu--2de navbar-primary-menu">
+                            <li class="c-sidenav__item">
+                                <a class="c-sidenav__link" href="startscherm-beheer.html"><img class="c-sidenav__icon" src="./img/help.svg" alt="dashboardicon">Help</a>
+                            </li>
+                            <li class="c-sidenav__item">
+                                <a class="c-sidenav__link" href="instellingen.html"><img class="c-sidenav__icon" src="./img/settings.svg" alt="dashboardicon">Instellingen</a>
+                            </li>
+                        </ul>
+                        <div class="c-sidenav__ra">
+                            <p>PDF rapport</p>
+                            <p>Download maandelijks rapport</p>
+                            <button class="c-btn c-btn__sidenav">download</button>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </div>
-          <nav class="c-sidenav col-2 navbar-primary">
-            <ul class="c-sidenav__menu navbar-primary-menu">
-              <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="index.html"><img class="c-sidenav__icon" src="./img/dashboardicon.svg" alt="dashboardicon" />Dashboard</a>
-              </li>
-              <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="overzichtspagina.html"><img class="c-sidenav__icon" src="./img/movieicon.svg" alt="dashboardicon" />Content</a>
-                <a href="film-input.html"><img class="c-sidenav__icon c-sidenav__icon--plus" src="./img/plus.svg" alt="dashboardicon" /></a>
-              </li>
-              <li class="c-sidenav__item">
-                <a class="c-sidenav__link" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon" />Gebruikers</a>
-              </li>
-            </ul>
-            <div class="c-sidenav__rapport">
-              <ul class="c-sidenav__menu c-sidenav__menu--2de navbar-primary-menu">
-                <li class="c-sidenav__item">
-                  <a class="c-sidenav__link" href="startscherm-beheer.html"><img class="c-sidenav__icon c-sidenav__icon--active" src="./img/schermbeheer.svg" alt="dashboardicon" />Schermbeheer</a>
-                </li>
-                <li class="c-sidenav__item">
-                  <a class="c-sidenav__link" href="instellingen.html"><img class="c-sidenav__icon" src="./img/settings.svg" alt="dashboardicon" />Instellingen</a>
-                </li>
-              </ul>
-              <div class="c-sidenav__ra">
-                <p>PDF rapport</p>
-                <p>Download maandelijks rapport</p>
-                <button class="c-btn c-btn__sidenav">Download</button>
-              </div>
-            </div>
-          </nav>
         </div>
-      </div>
     </nav>
     <h2 class="c-maintitle">Schermbeheer</h2>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 offset-2">
-            <form class="c-formsb" id="sbform">
-              <label for="name"></label>
-              <input autocomplete="off" class="c-formsb__naam" placeholder="Blok Naam" type="text" id="name" name="name" required />
-              <button class="c-btn" type="submit">Submit</button>
-            </form>
-            <div class="c-hero">
-              <img class="c-hero__img" src="./img/hero.jfif" alt="hero" id="hero-img" />
-              <button class="c-hero__btn" id="change-img-btn">
-                <svg class="c-table__icons--2" id="editor" xmlns="http://www.w3.org/2000/svg" width="27.19" height="27.19" viewBox="0 0 27.19 27.19">
-                  <path id="editor-2" data-name="editor" d="M3,24.524v5.664H8.664l16.7-16.7L19.7,7.819ZM29.749,9.1a1.5,1.5,0,0,0,0-2.13L26.214,3.439a1.5,1.5,0,0,0-2.13,0L21.321,6.2l5.664,5.664L29.749,9.1Z" transform="translate(-3 -2.998)" fill="#eee"></path>
-                </svg>
-              </button>
-              <div class="c-hero__text">nummer 1 in België</div>
+        <div class="c-page-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form class="c-formsb" id="sbform">
+                        <label for="name"></label>
+                        <input autocomplete="off" class="c-formsb__naam" placeholder="Blok Naam" type="text" id="name" name="name" required>
+                        <button class="c-btn" type="submit">Voeg Toe</button>
+                    </form>
+                </div>
+
             </div>
-          </div>
+            <div class="row">
+                <div class="c-hero">
+                    <img class="c-hero__img" src="./img/hero.jfif" alt="hero" id="hero-img">
+                    <button class="c-hero__btn" id="change-img-btn"><svg class="c-table__icons--2" id="editor" xmlns="http://www.w3.org/2000/svg" width="27.19" height="27.19" viewBox="0 0 27.19 27.19">
+                            <path id="editor-2" data-name="editor" d="M3,24.524v5.664H8.664l16.7-16.7L19.7,7.819ZM29.749,9.1a1.5,1.5,0,0,0,0-2.13L26.214,3.439a1.5,1.5,0,0,0-2.13,0L21.321,6.2l5.664,5.664L29.749,9.1Z" transform="translate(-3 -2.998)" fill="#eee"></path>
+                        </svg></button>
+                    <div class="c-hero__text">nummer 1 in België</div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="c-sbblok col-12 offset-2">
-            <div class="c-dashboard__item c-dashboard__top5 animate-pop" id="product-rows"></div>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="c-sbblok">
+                    <div class="c-dashboard__item c-dashboard__top5 animate-pop" id="product-rows">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
     </main>
-  </body>
+</body>
+
 </html>

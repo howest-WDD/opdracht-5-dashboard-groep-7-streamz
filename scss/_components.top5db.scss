@@ -61,7 +61,7 @@
     border-top: solid 4px $color-accent;
     background-color: $color-itembackground;
     width: 101%;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       visibility: visible;
       bottom: 0;
     }
