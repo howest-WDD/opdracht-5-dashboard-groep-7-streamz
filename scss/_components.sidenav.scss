@@ -19,14 +19,13 @@
     flex-direction: column;
     margin-top: 8rem;
     align-items: start;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       align-items: center;
       justify-content: center;
       margin-top: 0rem;
       flex-wrap: wrap;
       flex-direction: row;
       position: absolute;
-      top: 10rem;
       left: 0;
       margin-top: 5rem;
       padding-left: 0;
@@ -36,36 +35,36 @@
       // justify-content: end;
     }
   }
-  &__wrap {
-    @include media-breakpoint-up(lg) {
-      display: none;
-    }
-  }
   &__rapport {
     justify-content: end;
     flex-direction: column;
     flex-wrap: wrap;
     display: flex;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       margin-top: 2rem;
       position: absolute;
-      top: 30rem;
-      left: 40%;
+      top: 35rem;
+      left: 0;
+      align-items: center;
     }
   }
   &__item {
     text-align: center;
     margin-top: 2rem;
     list-style-type: none;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       margin-top: 2.9rem;
+      display: flex;
+      justify-content: center;
     }
   }
   &__link {
     text-decoration: none;
     color: white;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       padding-left: 2rem;
+      display: flex;
+      justify-content: flex-start;
     }
     &:hover {
       color: $color-accent;

@@ -15,8 +15,8 @@
       }
       &__btn{
         position: absolute;
-        height: 60px;
-        width: 60px;
+        height: 4rem;
+        width: 4rem;
         bottom: 20px;
         right: 20px;
         background-color: $color-accent;
@@ -25,5 +25,8 @@
           background-color: none;
           border: 1px solid $color-accent;
         }
+      }
+      @include media-breakpoint-down(sm){
+        display: none;
       }
   }
