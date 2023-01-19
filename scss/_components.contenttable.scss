@@ -1,9 +1,6 @@
 .c-content__table{
 
-    @include media-breakpoint-down(lg) {
-      overflow-x:auto;
-    }
-
+    
     &--mrg {
       @include media-breakpoint-down(sm) {
         display: flex;

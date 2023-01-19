@@ -1,4 +1,11 @@
 .c-table {
+  
+  @include media-breakpoint-down(lg) {
+    display: block;
+    height: 100%;
+    overflow-x:auto;
+  }
+
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 0.3125rem;

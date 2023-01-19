@@ -34,8 +34,7 @@
                   <div id="MyDateDisplay" class="c-nav__date" onload="showDate()"></div>
                 </li>
                 <li class="c-nav__item">
-                  <a class="c-nav__link" href="#"
-                    ><svg class="c-nav__svg bi bi-chat-left-text-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
+                  <a class="c-nav__link" href="#"><svg class="c-nav__svg bi bi-chat-left-text-fill" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" viewBox="0 0 16 16">
                       <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" /></svg
                   ></a>
                 </li>
@@ -85,28 +84,15 @@
         </div>
       </div>
     </nav>
+
     <h2 class="c-maintitle">Gebruikers</h2>
     <section class="c-content__table c-page-container">
       <div class="c-table__header">
         <div class="c-table__filters">
           <input type="text" placeholder="Snel zoeken..." id="search-input" class="c-search animate-pop anim-delay-2" />
-          <select name="show-limit-items" id="show-limit-items" class="c-dropdown c-dropdown--mrg c-dropdown--show animate-pop anim-delay-3" onChange="showItems(this)">
-            <option selected class="c-dropdown__option" value="show5">Toon: 5</option>
-            <option class="c-dropdown__option" value="show15">Toon: 15</option>
-            <option class="c-dropdown__option" value="show30">Toon: 25</option>
-            <option class="c-dropdown__option" value="show45">Toon: 35</option>
-            <option class="c-dropdown__option" value="show45">Toon: 50</option>
-          </select>
-
-          <!-- <div class="c-pagination">
-          <a href="#" class="c-pagination__link">&laquo;</a>
-          <a href="#" class="c-pagination__link c-pagination__link--active">1</a>
-          <a href="#" class="c-pagination__link">2</a>
-          <a href="#" class="c-pagination__link">3</a>
-          <a href="#" class="c-pagination__link">&raquo;</a>
-        </div> -->
         </div>
       </div>
+
       <table class="c-table js-table animate-table" id="myTable">
         <thead class="c-table__head">
           <tr>
@@ -122,6 +108,7 @@
         </thead>
         <tbody class="c-table__body" id="js-table__body"></tbody>
       </table>
+      
     </section>
 
     <script>
