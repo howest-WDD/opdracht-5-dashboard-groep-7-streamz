@@ -40,7 +40,7 @@ style.innerHTML = `
     color: white;
 }
 .multiselect-dropdown-list-wrapper{
-  box-shadow: gray 0 3px 8px;
+  box-shadow: white 0 3px 8px;
   z-index: 100;
   padding:2px;
   border-radius: 4px;
@@ -85,7 +85,7 @@ style.innerHTML = `
   background-color: #ff0a5a;
 }
 .multiselect-dropdown span.maxselected {width:100%;}
-.multiselect-dropdown-all-selector {border-bottom:solid 2px #999;}
+.multiselect-dropdown-all-selector {border-bottom:solid 2px white;}
 `;
 document.head.appendChild(style);
 
