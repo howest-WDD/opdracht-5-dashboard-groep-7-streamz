@@ -1,20 +1,28 @@
 import data from "../json/users.json";
 let json = data;
 
-const showUserDetail = function (info, userId) {
-  for (const dataUsers of info.users) {
-    if (dataUsers.id == userId) {
-      const lastName = dataUsers.lastName;
-      const firstName = dataUsers.firstName;
-      const img = dataUsers.image;
-      const email = dataUsers.email;
-      const type = dataUsers.type;
-      const gebdat = dataUsers.dateOfBirth.split("T")[0];
-      const geslacht = dataUsers.gender;
-      let geslachtChecked = "";
-      let abbonChecked = "";
+const showUserDetail = function(info, userId){
 
-      if (geslacht == "Man") {
+    for(const dataUsers of info.users){
+
+        if(dataUsers.id==userId){
+        const lastName = dataUsers.lastName;
+        const firstName = dataUsers.firstName;
+        const img = dataUsers.image;
+        const email = dataUsers.email;
+        const type = dataUsers.type;
+        const gebdat = dataUsers.dateOfBirth.split("T")[0];
+        const geslacht = dataUsers.gender;
+        const favShow = dataUsers.favShow;
+        const favMovie = dataUsers.favMovie;
+        const favGenre = dataUsers.favGenre;
+        const hoursShow = dataUsers.hoursShow;
+        const hoursMovie = dataUsers.hoursMovie;
+      let geslachtChecked='';
+      let abbonChecked='';
+    
+
+      if(geslacht=="Man"){
         geslachtChecked = `<input type="radio" class="btn-check c-form__radio" name="options1" id="man" checked>
         <label class="btn c-form__radio" for="man">Man</label>
         
@@ -80,7 +88,7 @@ const showUserDetail = function (info, userId) {
     <div class="row">
       <div class="order-2 col-xl-8 col-12">
         <div class="row">
-          <div class="mb-3 col-lg-6 col-md-12">
+          <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-4">
             <label class="c-form__label" for="floatingFirstName">Voornaam</label>
             <input type="text" class="form-control c-form__input" id="floatingFirstName" value="` +
         firstName +
@@ -88,7 +96,7 @@ const showUserDetail = function (info, userId) {
             <div class="valid-feedback">Ziet er good uit</div>
             <div class="invalid-feedback">Gelieve een naam in te geven</div>
         </div>
-        <div class="mb-3 col-lg-6 col-md-12">
+        <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-5">
           <label class="c-form__label" for="floatingLastName">Achternaam</label>
           <input type="text" class="form-control c-form__input" id="floatingLastName" value="` +
         lastName +
@@ -98,7 +106,7 @@ const showUserDetail = function (info, userId) {
         </div>
         </div>
         <div class="row">
-        <div class="mb-3 col-lg-6 col-md-12">
+        <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-6">
       <div class="mb-3">
         <label class="c-form__label" for="floatingEmail">Email</label>
           <input type="email" class="form-control c-form__input" id="floatingEmail" value="` +
@@ -108,7 +116,7 @@ const showUserDetail = function (info, userId) {
           <div class="invalid-feedback">Gelieve een correct email address in te geven</div>
       </div>
     </div>
-    <div class="mb-3 col-lg-6 col-md-12">
+    <div class="mb-3 col-lg-6 col-md-12 animate-pop anim-delay-7">
       <div class="mb-3">
         <label class="c-form__label" for="floatingGebdat">Geboortedatum</label>
         <input type="date" class="form-control c-form__input js-date" id="floatingGebdat" value="` +
@@ -119,26 +127,92 @@ const showUserDetail = function (info, userId) {
       </div>
       </div>
         </div>
-      <div class="c-form__btn">
+
+        <div class="c-form__btn">
         <button class="c-btn js-submit c-btn--blue m-1">Aanpassen</button>
+        </div>
+
+      <div class="mb-3 mt-3">
+      <div class="c-dashboard__item c-dashboard__users animate-pop anim-delay-8">
+          <div class="c-fav">
+            <div class="c-fav__item">
+              <h2 class="c-fav__title">Favoriete Show</h2>
+              <div class="c-fav__amountcont">
+                <p class="c-fav__amount">`+favShow+`</p>
+              </div>
+            </div>
+            <div class="c-fav__item">
+              <h2 class="c-fav__title">Favoriete Genre</h2>
+              <div class="c-fav__amountcont">
+                <p class="c-fav__amount">`+favGenre+`</p>
+              </div>
+            </div>
+            <div class="c-fav__item">
+              <h2 class="c-fav__title">Uren Bekeken</h2>
+              <div class="c-fav__amountcont">
+                <p class="c-fav__amount">`+hoursShow+`</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <div class="mb-3">
+      <div class="c-dashboard__item c-dashboard__users animate-pop anim-delay-8">
+          <div class="c-fav">
+            <div class="c-fav__item">
+              <h2 class="c-fav__title">Favoriete Film</h2>
+              <div class="c-fav__amountcont">
+                <p class="c-fav__amount">`+favMovie+`</p>
+              </div>
+            </div>
+            <div class="c-fav__item">
+              <h2 class="c-fav__title">Favoriete Genre</h2>
+              <div class="c-fav__amountcont">
+                <p class="c-fav__amount">`+favGenre+`</p>
+              </div>
+            </div>
+            <div class="c-fav__item">
+              <h2 class="c-fav__title">Uren Bekeken</h2>
+              <div class="c-fav__amountcont">
+                <p class="c-fav__amount">`+hoursMovie+`</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-dashboard__item c-dashboard__subs animate-pop anim-delay-3">
+          <div class="d-flex flex-column flex-sm-row text-start align-items-start justify-content-between c-subsdb">
+            <h3>Uren gekeken per maand</h3>
+            <ul class="c-subsdb__legendlist text-start">
+              <li class="c-subsdb__legenditem text-start">
+                <div class="c-subsdb__legendcolor c-subsdb__legendcolor--streamz"></div>
+                <h3>Uren</h3>
+              </li>
+            </ul>
+          </div>
+          <canvas class="js-subsdb pb-4" style="display: block; box-sizing: border-box; height: 312px; width: 529.333px;" width="794" height="468"></canvas>
+        </div>
+      
+      
+      </div>
+
       <div class="order-1 col-xl-4 col-12">
-        <div class="mb-3 p-0 ">
+        <div class="mb-3 p-0 animate-pop anim-delay-1">
           <p class="c-form__label">Geslacht</p>
           ` +
         geslachtChecked +
         `
           
         </div>   
-        <div class="mb-3 p-0">
+        <div class="mb-3 p-0 animate-pop anim-delay-2">
             <p class="c-form__label">Type abonnement</p>
             ` +
         abbonChecked +
         `
         </div> 
-         <div class="mb-3 p-0">
+         <div class="mb-3 p-0 animate-pop anim-delay-3">
             <p class="c-form__label">Avatar</p>
             <input type="file" name="image" id="image" accept="image/*" />
             <div class="c-form__preview">
@@ -150,6 +224,9 @@ const showUserDetail = function (info, userId) {
               </button>
             </div>
         </div> 
+
+        
+
       </div>
     </div>
   </div>`;
