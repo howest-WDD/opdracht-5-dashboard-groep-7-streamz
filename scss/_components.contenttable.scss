@@ -1,9 +1,6 @@
 .c-content__table{
-  padding: 1.875rem;
-  margin-left: 18.4375rem;
 
     @include media-breakpoint-down(lg) {
-      margin-left: 1rem;
       overflow-x:auto;
     }
 
