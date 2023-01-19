@@ -70,9 +70,13 @@
   }
   &__movieswatched {
     grid-area: movies;
+    display: flex;
+    align-items: center;
   }
   &__serieswatched {
     grid-area: series;
+    display: flex;
+    align-items: center;
   }
   &__upcoming {
     grid-area: upcoming;
