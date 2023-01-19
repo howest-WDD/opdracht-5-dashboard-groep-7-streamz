@@ -36,16 +36,33 @@
   }
 }
 
-
-.animate-table{
-  animation-duration: 0.5s;
+.animate-table {
+  animation-duration: 2s;
   animation-name: animate-table;
 }
 
 @keyframes animate-table {
   0% {
     opacity: 0;
-    transform: translateY(80vh);
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.animate-up{
+  animation-duration: 1s;
+  animation-name: animate-table;
+}
+
+@keyframes animate-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
     visibility: hidden;
   }
 
@@ -55,8 +72,6 @@
     transform: translateY(0);
   }
 }
-
-
 
 .anim-delay-1 {
   animation-delay: 0.1s;
@@ -88,4 +103,9 @@
 }
 .anim-delay-instelling-6 {
   animation-delay: 0.6s;
+}
+
+.c-anim-visible {
+  visibility: hidden;
+  animation-fill-mode: forwards;
 }

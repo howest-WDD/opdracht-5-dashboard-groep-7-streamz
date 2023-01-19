@@ -1,9 +1,14 @@
 .c-contentwatcheddb {
   display: flex;
   justify-content: space-between;
-  padding: 2.1875rem;
+  padding: 0 2.1875rem;
+  width: 100%;
+  @include media-breakpoint-down(xl) {
+    padding: 2.1875rem;
+  }
   @include media-breakpoint-only(md) {
     flex-direction: column;
+    padding-top: 2.1875rem;
   }
   @include media-breakpoint-down(sm) {
     flex-direction: column;
@@ -21,6 +26,7 @@
   &__uren {
     display: flex;
     justify-content: space-between;
+  
   }
   &__maand {
     margin-left: 3rem;
@@ -31,6 +37,9 @@
     @include media-breakpoint-down(sm) {
       margin-left: 0;
     }
+  }
+  &__textuur{
+    margin-bottom: 0;
   }
   &__title {
     color: $color-text-grey;
