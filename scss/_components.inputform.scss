@@ -55,10 +55,21 @@
 
   &__select2 {
     width: 105%;
+    
+    @include media-breakpoint-down(lg) {
+
+      width: 100%;
+    }
+
   }
 
   &__categorieselect {
-    width: 103%;
+
+    width: 102%;
+    @include media-breakpoint-down(lg) {
+
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -102,7 +113,7 @@
     color: $color-white;
     margin-top: 0rem;
     border: none;
-    height: 2.5rem;
+    width: 100%;
     &:focus {
       background-color: $color-itembackground;
       color: $color-white;
