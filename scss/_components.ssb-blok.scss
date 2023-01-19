@@ -3,9 +3,10 @@
     margin-bottom: 5rem;
     display: flex;
     &__img{
-        width: 200px;
+        min-width: 200px;
         height: 90%;
-        margin: 1rem 0 1rem 2rem;
+        margin-right: 2rem;
+        border-radius: 1rem;
         &--add{
             display: flex;
             align-items: center;
@@ -13,17 +14,29 @@
             border-radius: 1rem;
             justify-content: center;
             height: 18rem;
-            margin: 0;
         }
     }
     &__wrap{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         height: 20rem;
-        width: 100%;
+        max-width: 100%;
     }
     &__row{
-        cursor: pointer;
+        cursor: grab;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            background-color: $color-itembackground;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-accent;
+          height: 30px ;
+          border-radius: 1rem;
+        }
+        &:active{
+            cursor: grabbing;
+        }
         h1{
             text-transform: capitalize;
         }
@@ -31,6 +44,7 @@
     &__add{
         justify-content: center;
         height: 64px;
+        cursor: pointer;
     }
     &__popup{
         position: absolute;
