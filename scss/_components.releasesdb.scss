@@ -2,9 +2,9 @@
   &__title {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 1.875rem 2rem 1.875rem;
+    margin: 2rem 1.5rem 2rem 1.5rem;
     align-items: center;
-    color: $color-text-grey;
+    color: $color-light;
     i {
       font-size: 1.5rem;
       color: $color-white;
@@ -19,34 +19,34 @@
     @include media-breakpoint-down(sm) {
       flex-direction: column;
       justify-content: center;
-      padding: 1rem;
+      padding: 0 1.5rem 1.5rem 1.5rem;
     }
   }
   &__left {
     width: 50%;
     border-right: solid 1px $color-accent;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem 0 1.5rem;
+
+    @include media-breakpoint-down(lg) {
+      padding: 0 1rem 0 1.5rem;
+    }
     @include media-breakpoint-down(sm) {
       padding: 0;
       width: 100%;
       border-right: none;
     }
-    @include media-breakpoint-down(lg) {
-      padding: 0;
-      padding: 0 1rem 0 1rem;
-    }
   }
   &__right {
     width: 50%;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1.5rem 0 1rem;
+
+    @include media-breakpoint-down(lg) {
+      padding: 0 1.5rem 0 1rem;
+    }
     @include media-breakpoint-down(sm) {
       padding: 0;
       width: 100%;
       margin-top: 1.5rem;
-    }
-    @include media-breakpoint-down(lg) {
-      padding: 0;
-      padding: 0 1rem 0 1rem;
     }
   }
   &__item {
@@ -71,5 +71,11 @@
   }
   &__days {
     color: $color-text-grey;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
   }
 }
