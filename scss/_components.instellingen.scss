@@ -3,14 +3,10 @@
   grid-template-columns: min-content auto;
 
   gap: 1.5625rem;
-  padding: 0 1.875rem;
-  margin-left: 18.4375rem;
+
   @include media-breakpoint-down(xxl) {
     grid-template-columns: 1fr;
     gap: 0;
-  }
-  @include media-breakpoint-down(xl) {
-    margin-left: 0;
   }
 
   &__section {
