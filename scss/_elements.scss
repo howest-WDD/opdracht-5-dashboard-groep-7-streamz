@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
   font-family: "Red Hat Text", sans-serif;
   position: relative;
+
+  background: linear-gradient(to bottom, $color-background, #030022);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh
 }
 
 h2 {
@@ -21,8 +26,8 @@ h3 {
   font-size: 1.125rem;
 }
 
-.o-container{
-    margin-left: 0;
-    margin-right: 0!important;
-    width: 100%;
+.o-container {
+  margin-left: 0;
+  margin-right: 0 !important;
+  width: 100%;
 }
