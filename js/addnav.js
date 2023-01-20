@@ -18,8 +18,8 @@ function updateNav() {
                         <a class="c-sidenav__link col-4" href="gebruikers.html"><img class="c-sidenav__icon" src="./img/usericon.svg" alt="dashboardicon">Gebruikers</a>
                     </li>
                     <li class="c-sidenav__item col-12">
-                    <a class="c-sidenav__link col-4" href=""><img class="c-sidenav__icon" src="./img/help.svg" alt="dashboardicon">Help</a>
-                </li>
+                    <a class="c-sidenav__link col-4" href="startscherm-beheer.html"><img class="c-sidenav__icon" src="./img/schermbeheer.svg" alt="dashboardicon" />Schermbeheer</a>
+                    </li>
                 <li class="c-sidenav__item col-12">
                     <a class="c-sidenav__link col-4" href="instellingen.html"><img class="c-sidenav__icon" src="./img/settings.svg" alt="dashboardicon">Instellingen</a>
                 </li>       
