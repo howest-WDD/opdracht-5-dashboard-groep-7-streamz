@@ -50,7 +50,7 @@ window.onload = function () {
     });
     $("#product-rows").sortable({
         receive: function(event, ui) {
-            $(this).append(ui.item);
+            $(this).prepend(ui.item);
         }
     });
 
