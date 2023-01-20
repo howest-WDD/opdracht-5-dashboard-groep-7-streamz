@@ -78,6 +78,9 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
   }
   &__icons {
     display: flex;

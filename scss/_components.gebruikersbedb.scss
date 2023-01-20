@@ -81,14 +81,11 @@
     display: flex;
     justify-content: center;
     // margin-left: 5rem;
-    width: 60%;
-    @include media-breakpoint-down(lg) {
-      width: 80%;
-    }
+    
     @include media-breakpoint-down(md) {
       flex-direction: column;
-      justify-content: space-around;
-      margin-top: 2rem;
+      justify-content: center;
+      margin: 0 5rem;
     }
   }
   &__chartwrapper {
@@ -96,6 +93,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media-breakpoint-down(md) {
+      padding: 0 2rem;
+      margin-left: 0;
+      height: 20rem;
+      width: 20rem;
+    }
   }
   &__charttext {
     position: absolute;
@@ -118,7 +121,12 @@
   &__chart {
     position: relative;
     object-fit: cover;
-    min-width: 20rem;
+    min-width: 15rem;
+    width: 20rem;
+    @include media-breakpoint-down(md) {
+
+      min-width: 15rem;
+    }
   }
 
   &__legendbox {
@@ -126,10 +134,15 @@
     justify-content: flex-start;
     flex-direction: column;
     margin-left: 5rem;
+    @include media-breakpoint-only(xl) {
+      flex-direction: column;
+      margin-left: 3rem;
+    }
 
     @include media-breakpoint-down(md) {
       flex-direction: column;
       margin-top: 5rem;
+      padding: 0 2rem;
       margin-left: 0;
     }
   }

@@ -51,17 +51,23 @@
   &__colorthemes {
     display: flex;
     justify-content: space-between;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
     }
   }
   &__colortheme {
     width: 8rem;
     height: 8rem;
     cursor: pointer;
+    @include media-breakpoint-down(sm) {
+      object-fit: cover;
+    }
   }
   &__colorthemecont {
     padding: 0;
+    width: 100%;
   }
   &__radio {
     margin-left: 0 !important;
