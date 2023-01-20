@@ -10,7 +10,7 @@ const chartsubs = function () {
         {
           label: "Uren bekeken",
           backgroundColor: ["#FF0A5A"],
-          data: [100, 99, 105, 80, 20, 60, 100, 99, 115, 70, 40, 50],
+          data: [200, 99, 205, 180, 120, 190, 300, 199, 215, 170, 140, 150],
           stack: 1,
         }
       ],
@@ -21,7 +21,7 @@ const chartsubs = function () {
         y: {
           stacked: true,
           beginAtZero: true,
-          max: 250,
+          max: 750,
           grid: { color: "rgba(166, 169, 183, 0.2)" },
           ticks: {
             color: "white",
