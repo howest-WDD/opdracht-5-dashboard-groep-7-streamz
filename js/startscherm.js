@@ -1,4 +1,3 @@
-const startscherm  = function () {
 window.onload = function () {
     var form = document.getElementById("sbform");
     form.addEventListener("submit", function(event) {
@@ -95,12 +94,3 @@ fetch("../json/products.json")
             productRows.appendChild(categoryRow);
         });
     });
-
- 
-    }
-    
-    const init = function () {
-    
-        if (document.querySelector(".sb-from")) {
-        }
-      };
