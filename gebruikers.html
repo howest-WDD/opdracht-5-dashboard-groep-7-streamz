@@ -94,9 +94,9 @@
         <thead class="c-table__head">
           <tr>
             <th class="c-table__head--check">&nbsp;</th>
-            <th class="c-table__head--id" id="table-head-id" data-column="id" data-order="desc">ID &#9650;</th>
+            <th class="c-table__head--id" id="table-head-id" data-column="naam" data-order="desc">ID &#9650;</th>
             <th class="c-table__head--foto"></th>
-            <th class="c-table__head--naam" id="table-head-naam" data-column="naam" data-order="desc">Naam &#9650;</th>
+            <th class="c-table__head--naam" id="table-head-naam" data-column="email" data-order="desc">Naam &#9650;</th>
             <th class="c-table__head--email" id="table-head-email" data-column="email" data-order="desc">Email &#9650;</th>
             <th class="c-table__head--type" id="table-head-type" data-column="type" data-order="desc">Type &#9650;</th>
             <th class="c-table__head--gebdat" id="table-head-birthdate" data-column="birthdate" data-order="desc">Geboortedatum &#9650;</th>
@@ -114,7 +114,7 @@
       $("#search-input").on("keyup", function () {
         var value = $(this).val();
         //console.log(value)
-        var data = searchTable(value, myArray);
+         var data = searchTable(value, myArray);
         buildTable(data);
       });
 
@@ -273,10 +273,10 @@
         for (var i = 0; i < data.length; i++) {
           var row = `<tr class="js-table__body--row">
         <td></td>
-        <td>#${data[i].id}</td>
+        <td>${data[i].id}</td>
         <td><img src="${data[i].image}" alt="${data[i].firstName} ${data[i].lastName}"></td>
         <td class="js-table__body--name">${data[i].firstName} ${data[i].lastName}</td>
-        <td>${data[i].email}</td>
+        <td>${data[i].email.toLowerCase()}</td>
         <td>${data[i].type}</td>
         <td>${data[i].dateOfBirth.slice(0, 10)}</td>
         <td>${data[i].gender}</td>
