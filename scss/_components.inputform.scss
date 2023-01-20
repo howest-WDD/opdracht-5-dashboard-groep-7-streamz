@@ -4,9 +4,9 @@
     justify-content: center;
   }
 
-  &-container {
-    // height: 700px;
-  }
+  // &-container {
+  //   // height: 700px;
+  // }
 
   h2 {
     font-weight: bolder;
@@ -55,7 +55,7 @@
 
   &__select2 {
     width: 105%;
-    
+
     @include media-breakpoint-down(lg) {
 
       width: 100%;
